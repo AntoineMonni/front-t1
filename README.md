@@ -2,17 +2,17 @@
 17
 
 # Nom du projet
-Starter H3
+Geek art
 
 # Equipe
-- xxxx
-- xxxx
-- xxxx
-- xxxx
-- xxxx
+- Antoine MONNIER
+- Boris LAPORTE
+- Stephen RICHARD
+- Martin ZISERMAN
+- Matthieu TOURDES
 
 # Description
-xxxx
+Discover Geek art based on the famous book "Geek art: une anthologie"
 
 # Instructions
 (sudo) npm install
