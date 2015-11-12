@@ -1,3 +1,7 @@
+Handlebars.registerHelper("log", function(something) {
+  console.log(something);
+});
+
 var Home = function(){
 
 	this.id = 'home';
@@ -7,6 +11,8 @@ var Home = function(){
 	this.images = {
 		'home-background': 'img/home-bg.jpg'
 	};
+
+	this.loadExternalJson('a');
 
 };
 
@@ -36,4 +42,26 @@ Home.prototype.animateOut = function() {
 		self.onAnimateOut();
 	});
 
+};
+
+Home.prototype.loadExternalJson = function (letter) {
+
+        var json = $.ajax({
+            dataType: "json",
+            url: "../assets/json/"+letter+".json"
+        });
+
+        // load your external HTML template
+        var homePartial = $.ajax({
+            url:"templates/home.hbs"
+        });
+
+        homePartial.done(function (html){
+			var template = Handlebars.compile(html);        	
+
+			json.done(function (data) {
+				$("#external").append(template(data));
+			});
+
+        });
 };

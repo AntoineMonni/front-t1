@@ -1,5 +1,9 @@
 <section id="home">
 
-	<h2>Home</h2>
+	<ul>
+		{{#each artist}}
+			<li>Name: {{this.name}} - <a href="#" data-section"author-detail">Id : {{this.id}}</a> - Age : {{this.age}} - {{this.presentation}}</li>
+		{{/each}}
+	</ul>
 	
 </section>
