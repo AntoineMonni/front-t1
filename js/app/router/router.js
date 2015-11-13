@@ -49,7 +49,6 @@ Router.prototype.createRoutes = function() {
 			view: 'home'
 		});
 
-		console.log( '## Navigate view home' );
 
 	});
 
@@ -60,7 +59,6 @@ Router.prototype.createRoutes = function() {
 			view: 'experience'
 		});
 
-		console.log( '## Navigate view experience' );
 
 	});
 

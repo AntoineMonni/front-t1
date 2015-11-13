@@ -39,8 +39,6 @@ ViewController.prototype.onNavigate = function(e) {
 	
 	var view = e.view;
 
-	console.log('## VC Navigate >> ', e);
-
 	// Go to next view
 	this.goTo( this.views[ view ] );
 

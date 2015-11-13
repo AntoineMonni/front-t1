@@ -5,7 +5,6 @@ Handlebars.registerHelper("log", function(something) {
 var Home = function(){
 
 	this.id = 'home';
-
 	View.apply(this, arguments);
 
 	this.images = {
@@ -23,7 +22,7 @@ Home.prototype.animateIn = function() {
 	View.prototype.animateIn.call(this);
 
 	var self = this;
-
+	console.log('this');
 	if ( !this.loaded ) return;
 
 	this.domElem.fadeIn(function(){
@@ -56,12 +55,70 @@ Home.prototype.loadExternalJson = function (letter) {
             url:"templates/home.hbs"
         });
 
-        homePartial.done(function (html){
-			var template = Handlebars.compile(html);        	
+        var self = this;
 
+        homePartial.done(function (html){
+			var template = Handlebars.compile(html);  
 			json.done(function (data) {
 				$("#external").append(template(data));
+				self.createGalaxy(data)
 			});
 
         });
+};
+
+Home.prototype.createGalaxy = function(data) {
+
+	var galaxy = new Galaxy(data)
+
+};
+
+var Galaxy = function(data) {
+	this.init(data)
+};
+Galaxy.prototype.init = function(data) {
+	this.data = data
+	this.setScale(followers)
+	this.draw()
+};
+Galaxy.prototype.setScale = function(accessor) {
+	this.scale = d3.scale.linear()
+		.domain([0, this.getMax(this.data, accessor)])
+		.range([0, 100])
+};
+Galaxy.prototype.draw = function() {
+	d3.select('.galaxyContainer')
+		.selectAll('.star')
+			.data(this.data.artist)
+		.enter().append('div')
+			.attr('class', 'star')
+			.style('width', function(d) {return this.scale(d.followers) + 'px'})
+			.style('height', function(d) {return this.scale(d.followers) + 'px'})
+			.style('background', '#F00F00');
+}
+Galaxy.prototype.getMax = function(obj, accessor) {
+	for (var i = 0; i < obj.artist.length; i++) {
+		if (i > 0) {
+			if (obj.artist[i][accessor] > currentMax) {
+				currentMax = obj.artist[i][accessor]
+			}
+		} else {
+			var currentMax = obj.artist[i][accessor];
+		}
+	}
+	console.log(currentMax);
+	return currentMax;	
+};
+Galaxy.prototype.getMin = function(obj, accessor) {
+	for (var i = 0; i < obj.artist.length; i++) {
+		if (i > 0) {
+			if (obj.artist[i][accessor] < currentMin) {
+				currentMin = obj.artist[i][accessor]
+			}
+		} else {
+			var currentMin = obj.artist[i][accessor];
+		}
+	}
+	console.log(currentMin)
+	return currentMin;
 };
