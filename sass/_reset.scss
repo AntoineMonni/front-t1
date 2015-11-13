@@ -1,3 +1,4 @@
+/*********** RESET **************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,14 +48,13 @@ table {
 	border-spacing: 0;
 }
 
-// RESET
 a, li {
 	outline-color: #fff;
 }
 
 input, select {
 	outline: none;
-	@include appearance(none);
+	apperance: none;
 	border: none;
 	padding: 0;
 }

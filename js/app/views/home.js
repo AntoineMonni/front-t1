@@ -1,124 +1,58 @@
-Handlebars.registerHelper("log", function(something) {
-  console.log(something);
-});
-
+// Class Home
 var Home = function(){
 
+	// On définit ici l'id de la vue
+	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
 	this.id = 'home';
+
+	// Appelle le constructeur de View
+	// Et ajoute les propriétés de View à Home
 	View.apply(this, arguments);
 
-	this.images = {
-		'home-background': 'img/home-bg.jpg'
-	};
-
-	this.loadExternalJson('a');
-
 };
 
+// Ici on dit que Home hérite de la classe parente View
+// Home va hériter de toutes les méthodes de View
 Home.prototype = Object.create(View.prototype);
 
-Home.prototype.animateIn = function() {
+
+// Ici on n'a pas besoin de créer de méthode show ni de méthode hide
+// Car le comportement que l'on souhaite n'a rien de spécifique
+// par rapport à celui de la classe parente View
+//
+// Etant donné que la classe Home hérite de la classe View
+// Si dans Home il n'y a pas de fonction show, alors ce sera
+// la fonction View.show qui sera exécutée par défaut
+
+
+// Méthode bind spécifique à Home
+Home.prototype.bind = function() {
 	
-	View.prototype.animateIn.call(this);
+	// On appelle d'abord la fonction bind de la classe parente View
+	// Equivalent de la fonction super() dans d'autres languages
+	View.prototype.bind.call(this);
 
+	// On stocke le contexte
 	var self = this;
-	console.log('this');
-	if ( !this.loaded ) return;
 
-	this.domElem.fadeIn(function(){
-		self.onAnimateIn();
-	});
-
-};
-
-Home.prototype.animateOut = function() {
+	// On bind le click sur le CtaButton
+	// Avec $.proxy on dit qu'au click sur le boutton :
+	// Exécute moi la fonction onCtaButtonClick
+	// En gardant le contexte passé en 2ème paramètre, this
+	this.ctaButton.on('click', $.proxy(this.onCtaButtonClick, this));
 	
-	View.prototype.animateOut.call(this);
-
-	var self = this;
-
-	this.domElem.fadeOut(function(){
-		self.onAnimateOut();
-	});
-
 };
 
-Home.prototype.loadExternalJson = function (letter) {
+// Méthode onCtaButtonClick spécifique à Home
+Home.prototype.onCtaButtonClick = function(e) {
+	
+	// On intercepte le click
+	e.preventDefault();
 
-        var json = $.ajax({
-            dataType: "json",
-            url: "../assets/json/"+letter+".json"
-        });
+	// On exécute la fonction pour cacher la vue
+	this.hide();
 
-        // load your external HTML template
-        var homePartial = $.ajax({
-            url:"templates/home.hbs"
-        });
+	// On dit à la vue TheMovie de s'afficher
+	app.pages.theMovie.show();
 
-        var self = this;
-
-        homePartial.done(function (html){
-			var template = Handlebars.compile(html);  
-			json.done(function (data) {
-				$("#external").append(template(data));
-				self.createGalaxy(data)
-			});
-
-        });
-};
-
-Home.prototype.createGalaxy = function(data) {
-
-	var galaxy = new Galaxy(data)
-
-};
-
-var Galaxy = function(data) {
-	this.init(data)
-};
-Galaxy.prototype.init = function(data) {
-	this.data = data
-	this.setScale(followers)
-	this.draw()
-};
-Galaxy.prototype.setScale = function(accessor) {
-	this.scale = d3.scale.linear()
-		.domain([0, this.getMax(this.data, accessor)])
-		.range([0, 100])
-};
-Galaxy.prototype.draw = function() {
-	d3.select('.galaxyContainer')
-		.selectAll('.star')
-			.data(this.data.artist)
-		.enter().append('div')
-			.attr('class', 'star')
-			.style('width', function(d) {return this.scale(d.followers) + 'px'})
-			.style('height', function(d) {return this.scale(d.followers) + 'px'})
-			.style('background', '#F00F00');
-}
-Galaxy.prototype.getMax = function(obj, accessor) {
-	for (var i = 0; i < obj.artist.length; i++) {
-		if (i > 0) {
-			if (obj.artist[i][accessor] > currentMax) {
-				currentMax = obj.artist[i][accessor]
-			}
-		} else {
-			var currentMax = obj.artist[i][accessor];
-		}
-	}
-	console.log(currentMax);
-	return currentMax;	
-};
-Galaxy.prototype.getMin = function(obj, accessor) {
-	for (var i = 0; i < obj.artist.length; i++) {
-		if (i > 0) {
-			if (obj.artist[i][accessor] < currentMin) {
-				currentMin = obj.artist[i][accessor]
-			}
-		} else {
-			var currentMin = obj.artist[i][accessor];
-		}
-	}
-	console.log(currentMin)
-	return currentMin;
 };

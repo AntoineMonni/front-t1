@@ -1,142 +1,83 @@
-"use strict"
+// On crée une classe App qui sera notre classe principale
+var App = function(){
 
-function App(){
+	// On crée un objet vide qui nous servira à stocker nos vues / pages
+	this.pages = {};
 
-	this.window = $(window);
+	this.currentPage = null;
 
-	this.mainContainer = $('main');
-
-	// Signals
-	this._onResize = new signals.Signal();
-	this._onUpdate = new signals.Signal();
-
-	// Datas
-	this.datas = null;
-
-	// Datas path
-	this.datasPath = '/assets/json/';
-
-	// Save templates
-	this.templates = window.templates;
-
-	// Set lang
-	this.lang = 'fr';
-
-	// Init
+	// On éxécute la fonction init de la classe
 	this.init();
 
 };
 
-// Init app
+// Init
 App.prototype.init = function() {
 	
-	// Load datas
-	this.loadDatas();
+	// On crée une instance de la classe Home
+	this.pages.home = new Home();
+
+	// On crée une instance de la classe TheMovie
+	this.pages.theMovie = new TheMovie();
 
 };
 
-// Load datas
-App.prototype.loadDatas = function() {
-	
-	// Save context
+// On attend que le DOM soit prêt
+$(document).ready(function(){
+
+	// On crée une instance de notre classe App
+	// Et on la stock dans une variable globale app
+	app = new App();
+
 	var self = this;
 
-	// Get datas
-	$.getJSON( this.datasPath + this.lang + '.json', function(response){
+	crossroads.addRoute('/', function(){
+  	
+		if ( app.currentPage != null ) app.currentPage.hide();
 
-		// Save datas
-		self.datas = response;
+		app.pages.home.show();
 
-		// Once datas are loaded
-		self.onDatasLoaded();
+		app.currentPage = app.pages.home;
 
 	});
 
-};
+	crossroads.addRoute('/the-movie', function(){
+  	
+		if ( app.currentPage != null ) app.currentPage.hide();
 
-// Once datas are loaded
-App.prototype.onDatasLoaded = function() {
+		app.pages.theMovie.show();
 
-	// Bind common events
-	this.bind();
+		app.currentPage = app.pages.theMovie;
 
-	// Create router
-	this.router = new Router();
+	});
 
-	// Create viewController
-	this.viewController = new ViewController();
+	// Bind URL change
+	History.Adapter.bind(window, "statechange", function(e){
+	  // URL has changed
 
-	// Create mainLoader
-	this.mainLoader = new MainLoader();
+	  // Value of History hash
+		var newUrl = History.getState().hash;
 
-	// Listen mainLoader for onAnimateIn event
-	this.mainLoader._onAnimateIn.add(this.onMainLoaderAnimateIn, this);
+		console.log('new url is', newUrl);
 
-	// Start loading common assets
-	this.mainLoader.animateIn();
+		crossroads.parse( newUrl );
 
-};
+	});
 
-// Bind common events
-App.prototype.bind = function() {
-	
-	// Bind resize event
-	this.window.on("resize", $.proxy(this.resize, this));
+	$('header nav a').on('click', function(e){
 
-};
+		e.preventDefault();
 
-// Resize
-App.prototype.resize = function() {
-	
-	// Save new window width & height
-	this.w = this.window.width();
-	this.h = this.window.height();
+		var url = $(this).attr('href');
 
-	// Dispatch resize event
-	this._onResize.dispatch();
+		History.pushState(null, null, url);
 
-};
+		console.log(url);
 
-// Update
-App.prototype.update = function() {
-		
-	// Dispatch onUpdate event at every requestAnimationFrame
-	this._onUpdate.dispatch();
-
-};
-
-// Template
-App.prototype.template = function(templateId, datas) {
-
-	// Return compiled template from templateId & datas
-	return this.templates[ templateId ]( datas );
-
-};
-
-App.prototype.onMainLoaderAnimateIn = function() {
-	
-	// Remove listener
-	this.mainLoader._onAnimateIn.remove(this.onMainLoaderAnimateIn, this);
-
-	// Bind viewController
-	this.viewController.bind();
-
-	// Init router
-	this.router.init();
-
-};
-
-App.prototype.getObjectLength = function( obj ){
-
-  return Object.size(obj);
-
-};
+	});
 
 
-Object.size = function(obj) {
-    var size = 0, key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-};
+	// Parse URL for the first time
+	crossroads.parse( History.getState().hash );
+
+});

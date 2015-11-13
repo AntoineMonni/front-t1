@@ -1,35 +1,59 @@
-// Bourbon
-@import "bourbon/bourbon";
-
-// Reset
 @import "reset";
-
-// Fonts
 @import "fonts";
 
-// Body
-html, body {
+// http://pierrerossignol.fr/h3/sass.zip
+
+/*********** BODY **************/
+
+body{
+	font-family: 'klavika-web', 'Open Sans', sans-serif;
+	background: #e5e5e3;
+	overflow: hidden;
+}
+
+/*********** COMMON **************/
+
+/* Main container */
+#main{
+	z-index: 1;
+	overflow: hidden;
+}
+
+/* Section */
+section{
 	width: 100%;
-
-	-moz-osx-font-smoothing: grayscale;
-	 -webkit-font-smoothing: antialiased;
-			-moz-font-smoothing: antialiased;
-			 -ms-font-smoothing: antialiased;
-					 font-smoothing: antialiased;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;	
 }
 
-body {
-	color: #000;
-	font-size: 12px;
-	@include fontReg();
+/* Common CTA */
+.cta{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	color: #FFF;
+	background: #2c2c2d;
+	font-size: 14px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border: 1px solid #FFF;
+	display: inline-block;
+	text-align: center;
+	min-width: 90px;
+	transition: all 0.3s ease-out;
 }
 
-// Common
-@import "common/components";
+.cta:hover{
+	background: #FFF;
+	color: #9F8234;
+}
 
-@import "common/loader";
-@import "common/header";
-@import "common/footer";
-
-// Views
+@import "views/header";
 @import "views/home";
+@import "views/the-movie";
+@import "views/trailer";
+@import "views/casting";
