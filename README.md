@@ -1,6 +1,6 @@
 ## front-t1
 
-#Equipe xx
+#Equipe 11 : Geek art
 
 - Antoine Monnier
 - Boris Laporte
