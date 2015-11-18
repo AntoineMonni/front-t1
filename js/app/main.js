@@ -17,8 +17,11 @@ App.prototype.init = function() {
 	// On crée une instance de la classe Home
 	this.pages.home = new Home();
 
-	// On crée une instance de la classe TheMovie
-	this.pages.theMovie = new TheMovie();
+	// On crée une instance de la classe Galaxy
+	this.pages.galaxy = new Galaxy();
+
+	// On crée une instance de la classe Artist
+	this.pages.artist = new Artist();
 
 };
 
@@ -41,14 +44,13 @@ $(document).ready(function(){
 
 	});
 
-	crossroads.addRoute('/the-movie', function(){
+	crossroads.addRoute('/galaxy', function(){
   	
 		if ( app.currentPage != null ) app.currentPage.hide();
 
-		app.pages.theMovie.show();
+		app.pages.galaxy.show();
 
-		app.currentPage = app.pages.theMovie;
-
+		app.currentPage = app.pages.galaxy;
 	});
 
 	// Bind URL change

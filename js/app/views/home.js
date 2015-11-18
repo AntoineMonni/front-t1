@@ -52,7 +52,7 @@ Home.prototype.onCtaButtonClick = function(e) {
 	// On exécute la fonction pour cacher la vue
 	this.hide();
 
-	// On dit à la vue TheMovie de s'afficher
-	app.pages.theMovie.show();
+	// On dit à la vue Galaxy de s'afficher
+	app.pages.galaxy.show();
 
 };

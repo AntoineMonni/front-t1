@@ -7,6 +7,8 @@ var View = function(){
 
 	// On définit le CTA en fonction du domElem
 	this.ctaButton = this.domElem.find('.cta');
+	this.artistButton = this.domElem.find('.artist');
+	this.closeButton = this.domElem.find('.close');
 
 };
 
