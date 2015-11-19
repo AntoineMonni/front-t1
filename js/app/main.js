@@ -35,7 +35,6 @@ $(document).ready(function(){
 	var self = this;
 
 	crossroads.addRoute('/', function(){
-  	
 		if ( app.currentPage != null ) app.currentPage.hide();
 
 		app.pages.home.show();
@@ -44,14 +43,44 @@ $(document).ready(function(){
 
 	});
 
-	crossroads.addRoute('/galaxy', function(){
-  	
+	crossroads.addRoute(/^\/[A-Z]{1}$/, function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
 
 		app.pages.galaxy.show();
 
 		app.currentPage = app.pages.galaxy;
+
 	});
+
+	crossroads.addRoute(/^\/[A-Z]{1}\/\w+.?\w*/, function(){
+		if ( app.currentPage != null ) app.currentPage.hide();
+
+		app.pages.artist.show();
+
+		app.currentPage = app.pages.artist;
+	});
+
+	// crossroads.addRoute('/{letter}/', function(ltr){
+	// console.log("tessst");
+	// 	if ( app.currentPage != null ) app.currentPage.hide();
+
+	// 	console.log(ltr);
+	// 	app.pages.galaxy.show();
+
+	// 	app.currentPage = app.pages.galaxy;
+
+	// });
+
+	// crossroads.addRoute('/{letter}/{name}/', function(ltr,name){
+ //  		console.log("tessst");
+	// 	if ( app.currentPage != null ) app.currentPage.hide();
+
+	// 	console.log(ltr);
+	// 	console.log(name);
+	// 	app.pages.artist.show();
+
+	// 	app.currentPage = app.pages.artist;
+	// });
 
 	// Bind URL change
 	History.Adapter.bind(window, "statechange", function(e){
@@ -61,6 +90,7 @@ $(document).ready(function(){
 		var newUrl = History.getState().hash;
 
 		console.log('new url is', newUrl);
+		console.log(app.currentPage);
 
 		crossroads.parse( newUrl );
 
@@ -81,5 +111,7 @@ $(document).ready(function(){
 
 	// Parse URL for the first time
 	crossroads.parse( History.getState().hash );
+
+	console.log(app_templates);
 
 });
