@@ -4,6 +4,7 @@
 /*********** VARS **************/
 
 $green: #58B171;
+$futura : 'Futura';
 $bebas: 'Bebas Neue';
 $medium: 'Gotham Medium';
 $book: 'Gotham Book';
@@ -13,7 +14,6 @@ $light: 'Gotham Light';
 /*********** BODY **************/
 
 body{
-	font-family: 'klavika-web', 'Open Sans', sans-serif;
 	background: #fafafa;
 	overflow: hidden;
 }
@@ -34,13 +34,29 @@ body{
 		position: absolute;
 		top: 0px;
 		left: 0px;	
+		color: rgba(0, 0, 0, 0.8);
 	}
 
 /* Common elements */
 	a{
 		text-decoration: none;
 		color: #000;
+		font-family: $medium;
+		font-size: 14px;
 	}
+
+	p{
+		font-family: $book;
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	h2,
+	h4{
+		font-family: $bold;
+		font-size: 24px;
+	}
+
 
 	.underline {
 		text-decoration: none;
@@ -91,3 +107,5 @@ body{
 @import "views/home";
 @import "views/galaxy";
 @import "views/artist";
+@import "views/page";
+@import "views/footer";

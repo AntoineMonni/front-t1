@@ -48,12 +48,17 @@
 				text-transform: uppercase;
 				padding: 10px 0;
 				margin-bottom: 15px;
-				border-top: 4px solid #000;
-				border-bottom: 4px solid #000;
+				border-top: 4px solid rgba(0, 0, 0, 0.8);
+				border-bottom: 4px solid rgba(0, 0, 0, 0.8);
 			}
 			.website {
 				span{
 					text-transform: uppercase;
+					font-family: $bold;
+				}
+				a{
+					font-family: $book;
+					font-size: 12px;
 				}
 			}
 		}

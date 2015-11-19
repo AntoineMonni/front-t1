@@ -9,29 +9,20 @@ header {
 	width: 100%;
 	display: block;
 	position: absolute;
-	top: 25px;
+	bottom: 0;
 	z-index: 2;
 	text-align: center;
+	transition: all .3s ease;
+	&.hide{
+		bottom: -50px;
+	}
 	nav {
 		display: inline-block;
 		vertical-align: top;
-		margin: 0px;
 		width: auto;
-		margin-left: 18px;
-		line-height: 55px;
 		text-align: left;
 		overflow: hidden;
-		transition: all .3s ease;
-		&.closed {
-			// position: absolute;
-			// left: 160px;
-			// width: 30px;
-			// height: 50px;
-			// background-color: #fafafa;
-			&:hover {
-				width: 100%;
-			}
-		}
+		transition: all .3s ease .1s;
 		a {
 			display: inline-block;
 			padding: 0 5px;
@@ -51,7 +42,7 @@ header {
 			&.active {
 				padding-bottom: 4px;
 
-				color: #000;
+				color: rgba(0, 0, 0, 0.8);
 				font-size: 14px;
 				text-decoration: none;
 
@@ -61,7 +52,7 @@ header {
 				background-size: 22px 6px;
 			}
 			&:hover {
-				color: #000;
+				color: rgba(0, 0, 0, 0.8);
 				font-size: 14px;
 				background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $green 50%);
 				background-position: 50% 40%;

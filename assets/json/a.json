@@ -1,99 +1,178 @@
-{
-    "artist": [
-        {
-            "name": "Albert",
-            "id": 111,
-            "followers": 10,
-            "age": 3,
-            "url": [
-                "lol.com"
-            ],
-            "presentation": "coucou",
-            "quote": "lol",
-            "works": [
-                {
-                    "url": "coucou.jpg",
-                    "year": 200,
-                    "name": "coucou",
-                    "description": "caca"
-                },
-                {
-                    "url": "kiki.jpg",
-                    "year": 200,
-                    "name": "kiki",
-                    "description": "LOL"
-                },
-                {
-                    "url": "cucu.jpg",
-                    "year": 200,
-                    "name": "cucu",
-                    "description": "cucu"
-                }
-            ]
-        },
-        {
-            "name": "Amadou",
-            "id": 161,
-            "followers": 50,
-            "age": 38,
-            "url": [
-                "lol.com"
-            ],
-            "presentation": "Hello world my description",
-            "quote": "lol",
-            "works": [
-                {
-                    "url": "coucou.jpg",
-                    "year": 200,
-                    "name": "coucou",
-                    "description": "caca"
-                },
-                {
-                    "url": "kiki.jpg",
-                    "year": 200,
-                    "name": "kiki",
-                    "description": "LOL"
-                },
-                {
-                    "url": "cucu.jpg",
-                    "year": 200,
-                    "name": "cucu",
-                    "description": "cucu"
-                }
-            ]
-        },
-        {
-            "name": "Allouis",
-            "id": 31,
-            "followers": 1976780,
-            "age": 29,
-            "url": [
-                "mdr.com"
-            ],
-            "presentation": "Baloran description",
-            "quote": "lol",
-            "works": [
-                {
-                    "url": "coucou.jpg",
-                    "year": 200,
-                    "name": "coucou",
-                    "description": "caca"
-                },
-                {
-                    "url": "kiki.jpg",
-                    "year": 200,
-                    "name": "kiki",
-                    "description": "LOL"
-                },
-                {
-                    "url": "cucu.jpg",
-                    "year": 200,
-                    "name": "cucu",
-                    "description": "cucu"
-                }
-            ]
-        }
-
-    ]
-
+ {
+    "Ingrid Aspöck": {
+        "id": 1,
+        "worksCount": 1,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "ingrid-aspoeck.at",
+            "i-doodles.blogspot.com"
+        ],
+        "presentation": "Diplômée des Arts Appliqués de Vienne, en Autriche, où elle réside, Ingrid Aspöck est une illustratrice et graphiste freelance. Fortement ispirée par la culture populaire des années 1980 et par les heures passées devant son ordinateur, elle rend hommage à cette époque avec les cartes de voeux de fin d'année destinées à ses clients.",
+        "quote": "Les passions de notre enfance finissent par ressurgir à l'âge adulte",
+        "works": [
+            {
+                "url": "ingridaspock/christmas01.jpg",
+                "year": 2010,
+                "name": "Christmas Peace"
+            },
+            {
+                "url": "ingridaspock/christmas02.jpg",
+                "year": 2010,
+                "name": "Christmas Peace"
+            },
+            {
+                "url": "ingridaspock/christmas03.jpg",
+                "year": 2010,
+                "name": "Christmas Peace"
+            },
+            {
+                "url": "ingridaspock/christmas04.jpg",
+                "year": 2010,
+                "name": "Christmas Peace"
+            },
+            {
+                "url": "ingridaspock/christmas05.jpg",
+                "year": 2010,
+                "name": "Christmas Peace"
+            }
+        ]
+    },
+    "Avanaut": {
+        "id": 2,
+        "worksCount": 1,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "flickr.com/photos/avanaut"
+        ],
+        "presentation": "Avanaut nous vient d'Helsinki, en Finlande, et c'est naturellement qu'il s'est intéréssé à la planète Hoth. Graphiste freelance depuis quelques années, passionné de photographie et de l'univers de Star Wars, son travail sur la gamme LEGO dédiée à la saga de Georges Lucas est devenu un incontournable du Geek-Art. Son secret pour rendre l'atmosphère de cette planète ? Photographier ses sujets dans un aquarium !",
+        "quote": "J'ai récemment retrouvé une photo vieille de trente ans : celle d'un Y-Wing que j'avais construit moi-même avec des LEGO, étant enfant. J'imagine que je suis Geek depuis cette époque...",
+        "works": [
+            {
+                "url": "avanaut/breakinginthetauntaun.jpg",
+                "year": 2010,
+                "name": "Breaking in the Tauntaun"
+            },
+            {
+                "url": "avanaut/briefingonhoth.jpg",
+                "year": 2009,
+                "name": "Briefing on Hoth"
+            },
+            {
+                "url": "avanaut/damnit.jpg",
+                "year": 2009,
+                "name": "Damn it, Marcus ! This ain't the map of Nepal"
+            },
+            {
+                "url": "avanaut/guyswearelost.jpg",
+                "year": 2009,
+                "name": "Guys, I think we took a wrong turn somewhere"
+            },
+            {
+                "url": "avanaut/stormstrooperperpetualwinter.jpg",
+                "year": 2009,
+                "name": "Stormtroopers' Perpetual Winter"
+            },
+            {
+                "url": "avanaut/thearrivalofastardestroyer.jpg",
+                "year": 2011,
+                "name": "The Arrival of a Star Destroyer"
+            },
+            {
+                "url": "avanaut/thederelict.jpg",
+                "year": 2011,
+                "name": "The Derelict"
+            },
+            {
+                "url": "avanaut/theinconvenientflaw.jpg",
+                "year": 2009,
+                "name": "The inconvenient flaw of a Y-Wing"
+            },
+            {
+                "url": "avanaut/thelongandwindingdays.jpg",
+                "year": 2009,
+                "name": "The long and winding days on echo station 3-T-8"
+            }
+        ]
+    },
+    "Andy Awesome": {
+        "id": 3,
+        "worksCount": 1,
+        "age": 30,
+        "theme": "series",
+        "url": [
+            "andyawesome.com",
+            "3x9.org"
+        ],
+        "presentation": "Andy Awesome, de son véitable nom Jan Schlösser, vit à Munich, en Allemagne. Il partage son enfance entre les Tortues Ninja et sa Game Boy, et multiplie les séjours artistiques organiséspar sa mère à Paris et en Italie. Il prend aujourd'hui un malin plaisir à mettre son style graphique au service des héros de son enfance.",
+        "quote": "J'aime à penser que mon travail fait remonter nos souvenirs d'enfance à la surface",
+        "works": [
+            {
+                "url": "awesomeandy/seriesid01.jpg",
+                "year": 2009,
+                "name": "Series 01-ID01"
+            },
+            {
+                "url": "awesomeandy/seriesid02.jpg",
+                "year": 2009,
+                "name": "Series 01-ID02"
+            },
+            {
+                "url": "awesomeandy/seriesid03.jpg",
+                "year": 2009,
+                "name": "Series 01-ID03"
+            },
+            {
+                "url": "awesomeandy/seriesid04.jpg",
+                "year": 2009,
+                "name": "Series 01-ID04"
+            },
+            {
+                "url": "awesomeandy/seriesid05.jpg",
+                "year": 2009,
+                "name": "Series 01-ID05"
+            },
+            {
+                "url": "awesomeandy/seriesid06.jpg",
+                "year": 2009,
+                "name": "Series 01-ID06"
+            },
+            {
+                "url": "awesomeandy/seriesid07.jpg",
+                "year": 2009,
+                "name": "Series 01-ID07"
+            },
+            {
+                "url": "awesomeandy/seriesid08.jpg",
+                "year": 2009,
+                "name": "Series 01-ID13"
+            },
+            {
+                "url": "awesomeandy/seriesid09.jpg",
+                "year": 2009,
+                "name": "Series 01-ID16"
+            },
+            {
+                "url": "awesomeandy/seriesid10.jpg",
+                "year": 2009,
+                "name": "Series 01-ID18"
+            },
+            {
+                "url": "awesomeandy/seriesid11.jpg",
+                "year": 2009,
+                "name": "Series 01-ID19"
+            },
+            {
+                "url": "awesomeandy/seriesid12.jpg",
+                "year": 2009,
+                "name": "Series 02-ID09"
+            },
+            {
+                "url": "awesomeandy/seriesid12.jpg",
+                "year": 2009,
+                "name": "Series 02-ID10"
+            }
+        ]
+    },
 }
