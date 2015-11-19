@@ -1,0 +1,715 @@
+ {
+    "Robert Ball": {
+        "id": 4,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "robertmball.com"
+        ],
+        "presentation": "Graphiste le jour et supergeek la nuit, Robert Ball vit et travaille à Londres. Passionné dès son plus jeune âge par Star Wars ainsi que par les comics de Marvel et de 2000 AD, il met depuis son style graphique géométrique au service de ses héros favoris.",
+        "quote": "J'ai vu Star Wars pour la première fois au cinéma à l'âge de 5 ans. À partir de ce moment je suis devenu geek.",
+        "works": [
+            {
+                "url": "robertball/batbloke.jpg",
+                "year": 2008,
+                "name": "Batbloke"
+            },
+            {
+                "url": "robertball/captainamerica.jpg",
+                "year": 2011,
+                "name": "Captain America"
+            },
+            {
+                "url": "robertball/dalek.jpg",
+                "year": 2012,
+                "name": "Dalek"
+            },
+            {
+                "url": "robertball/superbloke.jpg",
+                "year": 2011,
+                "name": "Superbloke"
+            },
+            {
+                "url": "robertball/fiftybaddies.jpg",
+                "year": 2011,
+                "name": "Fifty Baddies"
+            },
+            {
+                "url": "robertball/fiftygoodies.jpg",
+                "year": 2011,
+                "name": "Fifty Goodies"
+            }
+        ]
+    },
+    "Nicky Barkla": {
+        "id": 5,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "nickybarkla.deviantart.com"
+        ],
+        "presentation": "Jeune artiste autralienne de vingt ans, Nicky Barkla est fachée avec le noir et le blanc. Elle apprécie particulièrement les personnages méchants et bizarre du Geekdom, car elle peut, à sa manière, les rendre un peu moins sombres...\" Pour moi, utiliser ces personnages iconiques n'a rien à voir avec le plagiat ; il s'agit de rendre hommage et de faire évoluer de manière créative des icônes qui vivront pour toujours.",
+        "quote": "C'est comme poser un chapeau de clown sur la tête de Dark Vador et lui demander de s'amuser un peu.",
+        "works": [
+            {
+                "url": "nickybarkla/aclownmess.jpg",
+                "year": 2011,
+                "name": "A clown mess"
+            },
+            {
+                "url": "nickybarkla/darthmaul.jpg",
+                "year": 2012,
+                "name": "Darth Maul"
+            },
+            {
+                "url": "nickybarkla/edwardscissorhands.jpg",
+                "year": 2011,
+                "name": "Edwars Scissorhands"
+            },
+            {
+                "url": "nickybarkla/emmettdocbrown.jpg",
+                "year": 2011,
+                "name": "Superbloke"
+            },
+            {
+                "url": "nickybarkla/gollum.jpg",
+                "year": 2011,
+                "name": "Gollum"
+            },
+            {
+                "url": "nickybarkla/incrediblehulk.jpg",
+                "year": 2011,
+                "name": "Fifty Goodies"
+            },
+            {
+                "url": "nickybarkla/thejoker.jpg",
+                "year": 2012,
+                "name": "The Joker"
+            },
+            {
+                "url": "nickybarkla/voldemort.jpg",
+                "year": 2012,
+                "name": "Voldemort"
+            }
+        ]
+    },
+    "Beyx": {
+        "id": 6,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "videogames",
+        "url": [
+            "beyx.tumblr.com"
+        ],
+        "presentation": "Beyx a grandi dans le Connecticut où son amour pour les jeux vidéos et le cinéma a définitivement forgé son caractère geek. Il réside aujourd'hui à New York.",
+        "quote": "En grandissant, je me suis rendu compte qu'il n'y avait rien de mieux qu'une histoire bien écrite, accompagnée d'un univers et de personnages complexes et profonds. La marque de fabrique des univers geek.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Batman"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "TMNT"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Wallmaster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Pika surf"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Boo!"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Mario Suits"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Bubble Bobble"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Sonic Dudes"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Luchadores"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Clown Car"
+            },
+        ]
+    },
+    "Steve Bialik": {
+        "id": 7,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "stevapalooza.blogspot.com"
+        ],
+        "presentation": "Résidant à New York, Steve Bialik a deux passions: Star Wars et l'art asiatique. Quand on sait que Georges Lucas a été influencé visiblement et narrativement par les films de samurais des années 1950-1960, l'art de Steve prend tout son sens...",
+        "quote": "Comics, jeux vidéo, fantasy, SF... Maintenant que ces univers ont cessé d'être considérés comme enfantins, nous sommes enfin libres de les apprécier à leur juste valeur.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Gangster"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Invasion of the Death Palace"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Admiral"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Emperor"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Smuggler"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Robots"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "SpaceWalker"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Master"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Akuma"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Hermit"
+            },
+        ]
+    },
+    "Barrett Biggers": {
+        "id": 8,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "videogames",
+        "url": [
+            "barrettbiggers.com"
+        ],
+        "presentation": "Barrett Biggers est un artiste autodidacte diplômé de Biologie. Très influencé par les animes japonais et les jeux 8-bits, il cite comme proncipales influences H.R Giger, Yoshitaka Amano et Hayao Miyazaki. Il travaille et réside en Floride aux États-Unis.",
+        "quote": "Quelque part en chacun de nous se cache un geek.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Proud Link Geek"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Here Lies Mario"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Lupus Hylian"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Samus Aran and the Metroid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Triforce"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Hylian Shields"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Pride of the Forest"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Red Potion"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Tingle's The Rupees of Hyrule Kingdom"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Save Zebes! Metroid Propaganda."
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Midna"
+            }
+        ]
+    },
+    "Boneface": {
+        "id": 9,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "bone-face.blogspot.com",
+            "boneface.co.uk"
+        ],
+        "presentation": "Boneface raconte qu'il vient d'une autre dimension, et que son repaire secret se trouve quelque part sous les terres désolées de Liverpool. Son travail a fait le tour du monde, de San Francisco à Sydney, et s'inspire des schémas",
+        "quote": "Ne demandez pas ce qui se cache sous les masques.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Crack"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Zing"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Smack!"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Soc!"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Thudd!"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Whump!"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Over my Dead Body"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "I have the power"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Ghostbusters 2"
+            },
+        ]
+    },
+    "Franco Brambilla": {
+        "id": 10,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "francobrambilla.com"
+        ],
+        "presentation": "Illustrateur italien vivant à Milan, Franco Brambilla produit chaque année des dizaines d'illustrations centrées sur la science-fiction. Passionné par la SF sous toutes ses formes, son travail le plus remarqué sur le net est sa série \"Invading the Vintage\", dans lequel des héros et des icônes de cet univers envahissent de vieilles cartes postales.",
+        "quote": "J'ai grandi dans les années 1970-1980...La science-fiction était partout.",
+        "works": [
+            {
+                "url": "",
+                "year": 2008,
+                "name": "Our Lord of Darkness"
+            },
+            {
+                "url": "",
+                "year": 2008,
+                "name": "Imperial Rodeo"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "AT-AT Lido Cup!"
+            },
+            {
+                "url": "",
+                "year": 2008,
+                "name": "We sell Used Cars and Droids"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Dagobaths au Printemps"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Changing of the guard"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Millennium Honeymoon Florence"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Millennium Honeymoon Benevento"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Imperial Minigolf Final Exam"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "I hate summer"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The galactic Tea of love"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Hoth Pleasures... Last ski run"
+            }
+        ]
+    },
+    "Brazer Liam": {
+        "id": 11,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "liambrazier.com"
+        ],
+        "presentation": "Dessinateur depuis son plus jeune âge, Liam Brazier est ravi que tous ses gribouillis d'enfants lui permettent aujourd'hui de vivre de son art. Inspiré par ses souvenirs et la culture populaire, il espère pouvoir continuer ainsi très longtemps. Liam Brazier vit à Londres.",
+        "quote": "Je dessine ce que j'aime : c'est plus simple, plus amusant, et basé sur plus de trente ans de souvenirs et de bonheur.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Guard"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Cave Man"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Dark Lord"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Man Up"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Man made"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "R & R"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Bounty Hunter"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Mad Man"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Golden One"
+            }
+        ]
+    },
+    "Brogan Glen": {
+        "id": 12,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "videogames",
+        "url": [
+            "albinoraven.com"
+        ],
+        "presentation": "Glen Brogan est un illustrateur américain vivant à Huntington, en Virginie-Occidentale. Son travail tourne essentiellement autour des icônes de la culture populaire, qu'il aime retravailler avec son propre style inspiré des cartoons. Il est régulièrement exposé dans des galeries du monde entier.",
+        "quote": "La plupart des gens finissent par se dire qu'ils sont trop vieux pour les cartoons. Je n'en suis pas encore là.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "As days go by"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Are you getting enough oxygen?"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Bottle Fairy"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Daylight Come"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The great shelled dragon"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Super Hellboy Bros"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "KFC Mario"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Blue Door"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Big Apple, 3am"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The legend of Zelda"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "A True Peace in Space"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "April Fools"
+            }
+        ]
+    },
+    "Brunet Jérémie": {
+        "id": 13,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "behance.net/imerj"
+        ],
+        "presentation": "Citant comme source d'inspiration le design Nordique, le graphisme des années 1960 et le mouvement minimaliste, Jérémy Brunet est un directeur artistique français vivant à PAris. Créatif dans la publicité, il profite de son temps libre pour mêler sa passion pour le graphisme et les univers du Geekdom.",
+        "quote": "Le Geek-Art est pour moi le moyen de continuer à m'amuser avec les personnages qui m'ont accompagné toute mon enfance.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Dardevil"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Iron Man"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Superman"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Batman"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Cyclops"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Venom"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Human Torch"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Mister Fantastic"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - The Thing"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "FLAT HEROES - Invisible Woman"
+            },
+        ]
+    },
+    "James Burlinson": {
+        "id": 14,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "videogames",
+        "url": [
+            "burlisaurus.co.uk",
+            "burlisaurus.trumblr.com"
+        ],
+        "presentation": "James Burlinson est un illustrateur et graphiste britannique vivant à Brighton. Aussi loin que remontent ses souvenirs, il a toujours eu un crayon à la main, dessinant très jeune ses héros préférés, ou recopiant les personnages de boîtes de céréales. Aujourd'hui, son style reconnaissable entre mille lui permet d'assouvir ses pulsions de fanboy tout en continuant à vivre de son art...",
+        "quote": "Un geek, c'est quelqu'un qui est passionné par quelque chose... Sauf qu'il s'agit souvent d'une chose que peu de gens connaissent !",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "MOgwai (Gremlins)"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Pug Fuel (Men in Black)"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Workplace Rivalry"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Mario Machine (Super Mario)"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Z (Legend of Zelda)"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Dance, Magic, Dance (Labyrinth)"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Time for Adventure (Adventure TIme)"
+            }
+        ]
+    },
+    "Emma Butler": {
+        "id": 15,
+        "worksCount": 136,
+        "age": 30,
+        "theme": "film",
+        "url": [
+            "emma-butler.com"
+        ],
+        "presentation": "Née en Nouvelle-Zélande, Emma Butler, designer et graphiste, vit au Canada. Attirée par la typographie et notamment par le travail de Jessica Hirsche, Jay Roeder et l'incontournable Saul BAss, Emma décide de se lançer : après avoir observé en spectatrice la mode des posters minimalistes sur le net, elle apporte sa propre contribution à l'édifice avec des posters à la gloire de ses films préférés.",
+        "quote": "Après avoir trouvé le style graphique de la série, il m'a fallu trouver les objets cultes et propres à chaque film sur lequel je voulais travailler, ce qui s'est avéré la partie la plus amusante !",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Back to the Future Movie Parts Poster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Forest Gump Movie Parts Poster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Jurassic Park Movie Parts Poster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Mighty Ducks Movie Parts Poster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Anchorman Movie Parts Poster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Juno Movie Parts Poster"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Top Gun Movie Parts Poster"
+            }
+        ]
+    }
+}

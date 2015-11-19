@@ -1,0 +1,112 @@
+#page{
+	overflow-y: scroll;
+}
+
+#page .close{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+	padding-bottom: 6px;
+	z-index: 10;
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 2px;
+		height: 12px;
+		background-color: #323232;
+		left: -15px;
+		top: 4px;
+	}
+	&::before {
+		transform: rotate(45deg);
+	}
+	&::after {
+		transform: rotate(-45deg);
+	}
+}
+
+#demarche,
+#credits,
+#mentions,
+#contact {
+	display: none;
+}
+
+.page-container {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-bottom: 30px;
+	width: 880px; // Change this pls :/
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	.content {
+		width: 82%;
+		min-width: 740px;
+		display: inline-block;
+		.page-meta {
+			h2 {
+				font-size: 24px;
+				text-transform: uppercase;
+				padding: 7px 0 2px;
+				margin-bottom: 15px;
+				border-top: 4px solid rgba(0, 0, 0, 0.8);
+				border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+			}
+		}
+		.page-content {
+			margin-top: 35px;
+			font-size: 13px;
+			.website {
+				span{
+					text-transform: uppercase;
+					font-family: $bold;
+				}
+				a{
+					font-family: $book;
+					font-size: 12px;
+				}
+			}
+			.quote {
+				position: relative;
+				margin: 60px 0;
+				padding-left: 20px;
+				font-size: 14px;
+				&::before,
+				&::after {
+					position: absolute;
+					content: '“';
+					font-family: $bebas;
+					font-size: 100px;
+					height: 40px;
+				}
+				&::before {
+					top: -40px;
+					left: 0;
+				}
+				&::after {
+					transform: rotate(180deg);
+					bottom: -40px;
+					right: 0;
+				}
+			}
+			.page-work {
+				text-align: center;
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+				.legend{
+					display: block;
+					text-align: center;
+					margin-top: 10px;
+					strong{
+						font-family: $bold;
+					}
+				}
+			}
+		}
+	}
+}

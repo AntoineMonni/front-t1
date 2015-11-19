@@ -23,6 +23,18 @@ App.prototype.init = function() {
 	// On crée une instance de la classe Artist
 	this.pages.artist = new Artist();
 
+	// On crée une instance de la classe Demarche
+	this.pages.demarche = new Demarche();
+
+	// On crée une instance de la classe Mentions
+	this.pages.mentions = new Mentions();
+
+	// On crée une instance de la classe Credits
+	this.pages.credits = new Credits();
+
+	// On crée une instance de la classe Contact
+	this.pages.contact = new Contact();
+
 };
 
 // On attend que le DOM soit prêt
@@ -53,6 +65,15 @@ $(document).ready(function(){
 		app.currentPage = app.pages.galaxy;
 	});
 
+	crossroads.addRoute('/{param}', function(param){
+  	
+		if ( app.currentPage != null ) app.currentPage.hide();
+
+		app.pages.param.show();
+
+		app.currentPage = app.pages.param;
+	});
+
 	// Bind URL change
 	History.Adapter.bind(window, "statechange", function(e){
 	  // URL has changed
@@ -66,18 +87,67 @@ $(document).ready(function(){
 
 	});
 
-	$('header nav a').on('click', function(e){
+	var header = $('header');
+	var footer = $('footer');
 
+	function menuRoads(menu) {
+		menu.find('nav a').on('click', function(e){
+			e.preventDefault();
+
+			var url = $(this).attr('href');
+
+			History.pushState(null, null, url);
+
+		});
+	}
+
+	menuRoads(header);
+	menuRoads(footer);
+
+	// On click on menu button
+	clickMenu($('#burger'));
+
+	function clickMenu(elem) {
+		elem.on('click', function(e) {
+			e.preventDefault();
+
+			// Active state on the button
+			$(this).toggleClass('active');
+
+			// Show the footer / menu
+			footer.toggleClass('show');
+			// Hide header if not / reverse
+			if(!header.hasClass('hide')) {
+				header.addClass('hide');
+			}else {
+				header.removeClass('hide');
+			}
+		});
+	}
+
+	mouseOver(footer);
+	mouseLeave(footer);
+
+	// Set green cursor beside the right menu item
+	function mouseOver(elem) {
+		elem.find('a').on('mouseover', function() {
+			var distanceLeft = $(this)[0].offsetLeft;
+			elem.find('span').css('left', distanceLeft-10);
+		});
+	}
+	
+	function mouseLeave(elem) {
+		elem.on('mouseleave', function() {
+			elem.find('span').css('left', -10);
+		});
+	}
+
+	footer.find('nav a').on('click', function(e) {
 		e.preventDefault();
 
-		var url = $(this).attr('href');
-
-		History.pushState(null, null, url);
-
-		console.log(url);
-
+		$(this).parent().find('a').removeClass('active');
+		$(this).addClass('active');
 	});
-
 
 	// Parse URL for the first time
 	crossroads.parse( History.getState().hash );

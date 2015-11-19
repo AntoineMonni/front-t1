@@ -22,25 +22,13 @@ Artist.prototype.bind = function() {
 	// Equivalent de la fonction super() dans d'autres languages
 	View.prototype.bind.call(this);
 
-	this.closeButton.on('click', $.proxy(this.closeArtist, this));
+	app.currentPage = app.pages.artist;
 
 	// On bind KeyEvent pour que les évènements du clavier soient écoutés dès que la vue est chargée
 	this.keyEvent();
 
 	// Bind scroll listening
 	this.listenScroll();
-};
-
-Artist.prototype.closeArtist = function(e) {
-
-	// On intercepte le click
-	e.preventDefault();
-
-	// On exécute la fonction pour cacher la vue
-	this.hide();
-
-	// On dit à la vue Galaxy de s'afficher
-	app.pages.galaxy.show();
 };
 
 Artist.prototype.keyEvent = function() {

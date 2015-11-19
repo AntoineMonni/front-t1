@@ -10,6 +10,10 @@ var View = function(){
 	this.artistButton = this.domElem.find('.artist');
 	this.closeButton = this.domElem.find('.close');
 
+	this.menu = this.domElem.find('#burger');
+
+	this.footerItem = $(document).find('.footer-item');
+
 };
 
 // Afficher la vue
@@ -50,6 +54,12 @@ View.prototype.hide = function() {
 // Fonction bind
 View.prototype.bind = function() {
 
+	// Bind footer menu items to display right views
+	this.footerItem.on('click', $.proxy(this.onFooterClick, this));
+
+	// Bind close button for all views
+	this.closeButton.on('click', $.proxy(this.onCloseView, this));
+
 };
 
 // Fonction unbind
@@ -59,5 +69,47 @@ View.prototype.unbind = function() {
 
 // Fonction onAnimateIn
 View.prototype.onAnimateIn = function() {
+
+};
+
+View.prototype.onCloseView = function(e) {
+	
+	// On intercepte le click
+	e.preventDefault();
+
+	// On exécute la fonction pour cacher la vue
+	this.hide();
+
+	// On dit à la vue Galaxy de s'afficher
+	app.pages.galaxy.show();
+};
+
+View.prototype.onFooterClick = function(e) {
+
+	e.preventDefault();
+
+	var target = e.target,
+		value  = $(target).attr('href');
+
+	this.hide();
+
+	switch(value) {
+		case '/demarche':
+			app.pages.demarche.show();
+			break;
+		case '/mentions':
+			app.pages.mentions.show();
+			break;
+		case '/credits':
+			app.pages.credits.show();
+			break;
+		case '/contact':
+			app.pages.contact.show();
+			break;
+
+		default: 
+			app.pages.galaxy.show();
+		break;
+	}
 
 };

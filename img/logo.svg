@@ -5,19 +5,19 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="ZOOM-ARTIST" sketch:type="MSArtboardGroup" transform="translate(-25.000000, -25.000000)">
-            <g id="LOGO" sketch:type="MSLayerGroup" transform="translate(24.000000, 25.000000)">
-                <text id="GEEK-ART" sketch:type="MSTextLayer" font-family="Gotham Medium" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#58B171">
-                    <tspan x="0.484" y="48">GEEK-ART</tspan>
+        <g id="CRÉDITS" sketch:type="MSArtboardGroup" transform="translate(-25.000000, -25.000000)">
+            <g id="LOGO" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)">
+                <text id="GEEK-ART" sketch:type="MSTextLayer" font-family="Gotham" font-size="24" font-weight="bold" sketch:alignment="middle" fill="#58B171">
+                    <tspan x="0.024" y="49">GEEK-ART</tspan>
                 </text>
-                <text id="ALPHABET" sketch:type="MSTextLayer" font-family="Gotham Medium" font-size="18" font-weight="normal" fill="#000000">
-                    <tspan x="2" y="26">ALPHABET</tspan>
+                <text id="ALPHABET" sketch:type="MSTextLayer" font-family="Gotham" font-size="18" font-weight="260" fill="#000000">
+                    <tspan x="1" y="27">ALPHABET</tspan>
                 </text>
-                <text id="du" sketch:type="MSTextLayer" font-family="Gotham Medium" font-size="14" font-weight="normal" fill="#000000">
-                    <tspan x="112" y="26">du</tspan>
+                <text id="du" sketch:type="MSTextLayer" font-family="Gotham" font-size="14" font-weight="260" fill="#000000">
+                    <tspan x="111" y="27">du</tspan>
                 </text>
-                <rect id="Rectangle-5" fill-opacity="0.897814764" fill="#000000" sketch:type="MSShapeGroup" x="2" y="0" width="128" height="6"></rect>
-                <rect id="Rectangle-5-Copy" fill-opacity="0.897814764" fill="#000000" sketch:type="MSShapeGroup" x="1" y="57" width="128" height="6"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.897814764" fill="#000000" sketch:type="MSShapeGroup" x="1" y="0" width="128" height="6"></rect>
+                <rect id="Rectangle-5-Copy" fill-opacity="0.897814764" fill="#000000" sketch:type="MSShapeGroup" x="0" y="57" width="128" height="6"></rect>
             </g>
         </g>
     </g>
