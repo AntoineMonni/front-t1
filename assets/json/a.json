@@ -2,7 +2,6 @@
     "Ingrid Aspöck": {
         "id": 1,
         "worksCount": 1,
-        "age": 30,
         "theme": "film",
         "url": [
             "ingrid-aspoeck.at",
@@ -41,7 +40,6 @@
     "Avanaut": {
         "id": 2,
         "worksCount": 1,
-        "age": 30,
         "theme": "film",
         "url": [
             "flickr.com/photos/avanaut"
@@ -99,7 +97,6 @@
     "Andy Awesome": {
         "id": 3,
         "worksCount": 1,
-        "age": 30,
         "theme": "series",
         "url": [
             "andyawesome.com",
