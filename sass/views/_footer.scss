@@ -3,11 +3,13 @@ footer {
 	bottom: -50px;
 	opacity: 0;
 	width: 100%;
+	padding-top: 10px;
 	text-align: center;
 	z-index: 2;
+	background-color: #fafafa;
 	transition: all .3s ease;
 	&.show {
-		bottom: 5px;
+		bottom: 0px;
 		opacity: 1;
 	}
 	nav{
@@ -35,7 +37,7 @@ footer {
 			line-height: 22px;
 			transition: all .3s ease;
 			&.active{
-				color: rgba(0, 0, 0, 0.8);
+				color: $black;
 				&::before {
 					position: absolute;
 					content: '';
@@ -47,8 +49,9 @@ footer {
 				}
 			}
 			&:hover {
-				color: rgba(0, 0, 0, 0.8);
+				color: $black;
 			}
 		}
 	}
 }
+

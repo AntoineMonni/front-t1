@@ -10,6 +10,8 @@ var View = function(){
 	this.artistButton = this.domElem.find('.artist');
 	this.closeButton = this.domElem.find('.close');
 
+	this.help = $('#help');
+
 	this.menu = this.domElem.find('#burger');
 
 	this.footerItem = $(document).find('.footer-item');
@@ -93,6 +95,8 @@ View.prototype.onFooterClick = function(e) {
 
 	this.hide();
 
+	app.currentView = app.pages.galaxy;
+
 	switch(value) {
 		case '/demarche':
 			app.pages.demarche.show();
@@ -111,5 +115,14 @@ View.prototype.onFooterClick = function(e) {
 			app.pages.galaxy.show();
 		break;
 	}
+};
 
+View.prototype.help = function(e) {
+	
+	e.preventDefault();
+
+
+
+
+	
 };

@@ -22,7 +22,8 @@ Demarche.prototype.bind = function() {
 	// Equivalent de la fonction super() dans d'autres languages
 	View.prototype.bind.call(this);
 
-	app.currentPage = app.pages.demarches;
+	app.currentPage = app.pages.demarche;
+
 };
 
 // Méthode onAnimateIn spécifique à Demarche

@@ -1,0 +1,203 @@
+/*	Artist */
+	@media screen and (max-width: 980px) {
+
+		#artist .close{
+			margin-bottom: 10px;
+			&::before,
+			&::after {
+				position: absolute;
+				content: '';
+				width: 2px;
+				height: 12px;
+				background-color: #323232;
+				left: -15px;
+				top: 4px;
+			}
+		}
+		
+		.artist-container {
+			width: 80%;
+			.content {
+				width: 100%;
+				min-width: auto;
+			}
+		}
+	}
+
+	@media screen and (max-width: 780px) {
+
+		.artist-container {
+			top: 80px;
+		}
+	}
+
+
+/*	Footer */
+	@media screen and (max-width: 580px) {
+
+		footer {
+			background-color: #fafafa;
+			padding-top: 10px;
+			nav {
+				margin-left: 10px;
+				width: 90%;
+				text-align: center;
+				a{
+					margin-right: 5%;
+					height: 35px;
+					
+				}
+			}
+			&.show {
+				bottom: 0;
+			}
+		}
+	}
+
+
+/*	Galaxy */
+
+
+
+/*	Header */
+
+	@media screen and (max-width: 1150px) {
+
+		header {
+			nav{
+				a{
+					padding: 0;
+				}
+			}
+			
+		}
+	}
+
+
+	@media screen and (max-width: 900px) {
+
+		.logo {
+			width: 15%;
+		}
+	}
+
+	@media screen and (max-width: 780px) {
+
+		header {
+			nav {
+				text-align: center;
+				margin-top: -8px;
+				margin-left: 0;
+				a{
+					margin: 0 2px;
+				}
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 620px) {
+
+		header {
+			nav {
+				
+				a{
+					margin: 0 2px;
+					height: 45px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 580px) {
+
+		header {
+			nav {
+				width: 100%;
+				background-color: #fafafa;
+				padding-top: 10px;
+				a{
+					margin: 0;
+					padding: 0 2px;
+				    height: 20px;
+				    line-height: 20px;
+				    &.active,
+				    &:hover {
+				    	background-position: 50% 85%;
+				    }
+				}
+			}
+		}
+	}
+
+
+/*	Menu */
+
+	@media screen and (max-width: 900px) {
+
+		#burger {
+			width: 40px;
+			height: 40px;
+			min-width: 40px;
+			min-height: 40px;
+			background-color: #fafafa;
+			span {
+				width: 12px;
+				&::before,
+				&::after {
+					width: 12px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 580px) {
+
+		#burger {
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 50px;
+		}
+	}
+
+
+/* Page */
+
+	@media screen and (max-width: 980px) {
+		
+		.page-container {
+			width: 80%;
+			.close{
+				margin-bottom: 10px;
+				&::before,
+				&::after {
+					position: absolute;
+					content: '';
+					width: 2px;
+					height: 12px;
+					background-color: #323232;
+					left: -15px;
+					top: 4px;
+				}
+			}
+			.content {
+				width: 100%;
+				min-width: auto;
+			}
+		}
+	}
+
+	@media screen and (max-width: 780px) {
+
+		.page-container {
+			top: 80px;
+		}
+	}
+
+
+
+
+
+
+
+

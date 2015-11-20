@@ -4,6 +4,10 @@
 /*********** VARS **************/
 
 $green: #58B171;
+$black: rgba(0, 0, 0, 0.8);
+$red: #C3575A;
+$blue: #6888C0;
+$yellow: #FFB767;
 $futura : 'Futura';
 $bebas: 'Bebas Neue';
 $medium: 'Gotham Medium';
@@ -34,7 +38,7 @@ body{
 		position: absolute;
 		top: 0px;
 		left: 0px;	
-		color: rgba(0, 0, 0, 0.8);
+		color: $black;
 	}
 
 /* Common elements */
@@ -57,14 +61,55 @@ body{
 		font-size: 24px;
 	}
 
-
 	.underline {
 		text-decoration: none;
 		background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $green 50%);
 		background-position: 0 95%;
 		background-repeat: no-repeat;
 		background-size: 100% 6px;
-		padding-bottom: 4px;
+		padding-bottom: 6px;
+	}
+
+	.crossed {
+		text-decoration: none;
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $green 50%);
+		background-position: 0 25%;
+		background-repeat: no-repeat;
+		background-size: 100% 6px;
+	}
+
+	.red {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $red 50%);}
+	.yellow {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $yellow 50%);}
+	.blue {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $blue 50%);}
+	.black {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $black 50%);}
+
+	.tag {
+		display: block;
+		margin-bottom: 10px;
+		font-family: $futura;
+		font-size: 14px;
+		a{
+			background-size: 100% 8px;
+			padding-bottom: 5px;
+		}
+	}
+
+	.filter {
+		display: inline-block;
+		margin-bottom: 10px;
+		a.underline{
+			background-size: 100% 8px;
+			padding-bottom: 5px;
+		}
+	}
+
+	.puce{
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		margin: 0 15px;
+		background-color: $black;
+		border-radius: 50%;
 	}
 
 /* Scrollbar */
@@ -109,3 +154,4 @@ body{
 @import "views/artist";
 @import "views/page";
 @import "views/footer";
+@import "views/responsive";

@@ -48,8 +48,8 @@
 				text-transform: uppercase;
 				padding: 10px 0;
 				margin-bottom: 15px;
-				border-top: 4px solid rgba(0, 0, 0, 0.8);
-				border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+				border-top: 4px solid $black;
+				border-bottom: 4px solid $black;
 			}
 			.website {
 				span{
@@ -106,41 +106,5 @@
 		}
 	}
 }
-
-
-@media screen and (max-width: 980px) {
-
-	#artist .close{
-		margin-bottom: 10px;
-		&::before,
-		&::after {
-			position: absolute;
-			content: '';
-			width: 2px;
-			height: 12px;
-			background-color: #323232;
-			left: -15px;
-			top: 4px;
-		}
-	}
-	
-	.artist-container {
-		width: 80%;
-		.content {
-			width: 100%;
-			min-width: auto;
-		}
-	}
-}
-
-@media screen and (max-width: 780px) {
-
-	.artist-container {
-		top: 130px;
-	}
-}
-
-
-
 
 

@@ -2,31 +2,6 @@
 	overflow-y: scroll;
 }
 
-#page .close{
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 40px;
-	padding-bottom: 6px;
-	z-index: 10;
-	&::before,
-	&::after {
-		position: absolute;
-		content: '';
-		width: 2px;
-		height: 12px;
-		background-color: #323232;
-		left: -15px;
-		top: 4px;
-	}
-	&::before {
-		transform: rotate(45deg);
-	}
-	&::after {
-		transform: rotate(-45deg);
-	}
-}
-
 #demarche,
 #credits,
 #mentions,
@@ -39,9 +14,35 @@
 	top: 100px;
 	left: 50%;
 	margin-bottom: 30px;
-	width: 880px; // Change this pls :/
+	width: 880px; // Change this pls :/;
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
+	.close{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 40px;
+		padding-bottom: 6px;
+		z-index: 10;
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+			width: 2px;
+			height: 12px;
+			background-color: #323232;
+			left: -15px;
+			top: 4px;
+		}
+		&::before {
+			-webkit-transform: rotate(45deg);
+			        transform: rotate(45deg);
+		}
+		&::after {
+			-webkit-transform: rotate(-45deg);
+			        transform: rotate(-45deg);
+		}
+	}
 	.content {
 		width: 82%;
 		min-width: 740px;
@@ -52,14 +53,15 @@
 				text-transform: uppercase;
 				padding: 7px 0 2px;
 				margin-bottom: 15px;
-				border-top: 4px solid rgba(0, 0, 0, 0.8);
-				border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+				border-top: 4px solid $black;
+				border-bottom: 4px solid $black;
 			}
 		}
 		.page-content {
 			margin-top: 35px;
 			font-size: 13px;
 			.website {
+				margin-bottom: 20px;
 				span{
 					text-transform: uppercase;
 					font-family: $bold;
@@ -67,6 +69,31 @@
 				a{
 					font-family: $book;
 					font-size: 12px;
+				}
+				p{
+					display: inline-block;
+				}
+			}
+			p{
+				margin-bottom: 20px;
+			}
+			h5{
+				font-size: 16px;
+				font-family: $book;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			.books{
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				margin-bottom: 20px;
+				img{
+					margin-right: 10px;
+				}
+				p{
+					display: inline-block;
+					margin-right: 10px;
 				}
 			}
 			.quote {
@@ -87,7 +114,8 @@
 					left: 0;
 				}
 				&::after {
-					transform: rotate(180deg);
+					-webkit-transform: rotate(180deg);
+					        transform: rotate(180deg);
 					bottom: -40px;
 					right: 0;
 				}
@@ -110,3 +138,4 @@
 		}
 	}
 }
+

@@ -4,17 +4,21 @@
 	top: 25px;
 	left: 25px;
 	z-index: 3;
+	width: 130px;
+	height: auto;
 }
 header {
 	width: 100%;
 	display: block;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
+	padding-top: 10px;
 	z-index: 2;
 	text-align: center;
+	background-color: #fafafa;
 	transition: all .3s ease;
 	&.hide{
-		bottom: -50px;
+		bottom: -50%;
 	}
 	nav {
 		display: inline-block;
@@ -39,10 +43,11 @@ header {
 			text-transform: uppercase;
 
 			transition: color 0.3s ease-out;
-			&.active {
+			&.active,
+			&:hover {
 				padding-bottom: 4px;
 
-				color: rgba(0, 0, 0, 0.8);
+				color: $black;
 				font-size: 14px;
 				text-decoration: none;
 
@@ -51,65 +56,11 @@ header {
 				background-repeat: no-repeat;
 				background-size: 22px 6px;
 			}
-			&:hover {
-				color: rgba(0, 0, 0, 0.8);
-				font-size: 14px;
-				background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $green 50%);
-				background-position: 50% 40%;
-				background-repeat: no-repeat;
-				background-size: 22px 6px;
+			&:active {
+				text-decoration: none;
 			}
 		}
 	}
 }
-
-@media screen and (max-width: 1150px) {
-
-	header {
-		nav{
-			a{
-				padding: 0;
-			}
-		}
-		
-	}
-}
-
-
-@media screen and (max-width: 900px) {
-
-	.logo {
-		width: 10%;
-	}
-}
-
-@media screen and (max-width: 780px) {
-
-	header {
-		nav {
-			width: 100%;
-			text-align: center;
-			margin-top: -8px;
-			margin-left: 0;
-			a{
-				margin: 0 2px;
-			}
-		}
-	}
-}
-
-
-@media screen and (max-width: 620px) {
-
-	header {
-		nav {
-			margin-top: 40px;
-			a{
-				margin: 0 2px;
-			}
-		}
-	}
-}
-
 
 
