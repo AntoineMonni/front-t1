@@ -1,0 +1,92 @@
+{
+    "Jason Edmiston": {
+        "id": 21,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "jasonedmiston.com",
+            "jasonedmiston.deviantart.com"
+        ],
+        "presentation": "Jason Edmiston peint depuis plus de quinze ans. Résident actuellement à Toronto au Canada, il travaille essentiellement pour des agences de publicités et des maisons d'édition dans le monde entier. Si sa passion pour la pop culture transparaît clairement dans son oeuvre, il utilise une technique des plus classiques: toile, pinceau, peinture.",
+        "quote": "Parce que j'ai grandi au milieu  des comics, des films de SF, du glam rock, de Mad Magazine et des jouets des années 1980, mon travail a tendance à être assez voyant, vif et surtout teinté d'humour.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "What a doll"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Hibernation"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Mr Soaky"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Source of 5 essential nutrient"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Monster Mash"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The fly"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Cobra wants you"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Planet of the apes: trophies"
+            }
+        ]
+    },
+    "Tamer Elsawi": {
+        "id": 22,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "tamerelsawi.tumblr.com"
+        ],
+        "presentation": "Tamer Elsawi est directeur artistique spécialisé dans la publicité à Dubaï. Passionné par son métier mais aussi par Star Wars, il a décidé de prendre de son temps personnel pour travailler sur l'univers de Georges Lucas. Toujours à la recherche d'un prisme nouveau sous lequel observer ses héros préférés, Tamer apprécie particulièrement mes mélanges atypiques.",
+        "quote": "J'aime déplacer les personnages que j'aime hors de leur contexte, pour arriver parfois à des mélanges complètement dingues et improbables. Mais au moins, je suis sûr que ça ne s'est jamais vu !",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Dark Knight"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Vader Sama"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Pharaoh Vader"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Vaderus Maximus"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Lieutenant Vader"
+            }
+        ]
+    }
+}
