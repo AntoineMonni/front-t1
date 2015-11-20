@@ -1,0 +1,60 @@
+{
+    "Beto Garza": {
+        "id": 26,
+        "worksCount": 1,
+        "theme": "series",
+        "url": [
+            "behance.net/helbetico",
+            "helbetico.deviantart.com"
+        ],
+        "presentation": "Beto Garza \"Helbetico\" est un graphiste et illustrateur mexicain. Passionné par les comics et le cinéma, il passe la plupart de son temps libre à dessiner des personnages iconiques de la culture geek. C'est sa façon de rendre hommage à ces héros qui ont bercé son enfance.",
+        "quote": "Keep on drawing, amigos !",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Rafael"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Picoro"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Chewie"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Hellboy"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Usagi Yojimbo"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Totoro"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Patricio"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Bob Esponja"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Calamardo"
+            }
+        ]
+    },
+}

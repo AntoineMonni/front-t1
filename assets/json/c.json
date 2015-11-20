@@ -1,0 +1,169 @@
+{
+    "Horacio Cassinelli": {
+        "id": 16,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "horaciocassinelli.com"
+        ],
+        "presentation": "Né à Montevideo, cet artiste Uruguayen a choisi de psoer ses valises en France il y a plus de vingt ans. D'exposition en exposition, il continue de définir un univers toujours plus personnel et intense, tout en repoussant sans cesse les limites de son art.",
+        "quote": "Je considère ces images comme des trousseaux de clés de maison qu'on a habitées. On y retourne de temps en temps car on a sûrement oublié quelque chose.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Manga Eyes"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Superman dog"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Carré"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Bleu Clark"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Souvenir 2"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Alien"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Souvenir 1"
+            }
+        ]
+    },
+    "Stanley Chow": {
+        "id": 17,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "stanleychowillustration.com"
+        ],
+        "presentation": "Passionné depuis toujours par les stickers Panini, Stanley Chow en a fait sa principale source d'inspiration. Ce graphiste britannique très apprécié par le New Yorker, pour lequel il travaille régulièrement, a grandi, comme beaucoup, au milieu de la geek culture et se défoule donc sur ses héros favoris... En 2008, son travail sur les White Stripes lui a valu une nomination aux Grammy Award.",
+        "quote": "J'ai toujours aimé les superhéros. J'avais une chambre superman, des rideaux superman, du papier peint superman. Je crois même que j'avais des sous-vêtements superman.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Ripley"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Travis  Bickle"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "He-Man/Made in Hong Kong"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Walter White"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Honey Ryder"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Bill Murray / Suntory Times"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Leeloo"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Clark Kent"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Uhura"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "What happened to Mr Blue"
+            }
+        ]
+    },
+    "Fabian Ciraolo": {
+        "id": 18,
+        "worksCount": 1,
+        "theme": "series",
+        "url": [
+            "fabciraolo.com",
+            "fabianciraolo.blogspot.com"
+        ],
+        "presentation": "Fabian Ciraolo est un artiste née au Chili. Ses oeuvres combinent culture populaire, fantastique et science-fiction, le tout baigné dans des atmosphères spatiales. Incorporant des personnages d'anciens cartoons ou de contes de fées, il nous livre tout à la fois une ode au passé et un rêve futuriste. Il vit et travaille à Santiago.",
+        "quote": "Je suis une éponge, mon esprit erst rempli à ras bord d'icônes et d'images. J'aime mixer le neuf et l'ancien puis insuffler un air frais à tous ces personnages.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Skeletor"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Birdman"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Thundergirls"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Edward Scissordhands"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Jem"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Sorceress"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "He-Man & Man at arms"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Care Bears"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Battle of the Planets"
+            }
+        ]
+    }
+}

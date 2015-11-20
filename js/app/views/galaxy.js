@@ -42,9 +42,9 @@ Galaxy.prototype.onAnimateIn = function() {
 	setTimeout(function(){
 
 		// On affiche le CTA
-		self.artistButton.fadeIn();
+		self.help.addClass('show');
 
-	}, 1000);
+	}, 200);
 
 };
 

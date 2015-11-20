@@ -1,0 +1,142 @@
+{
+    "Andre De Freitas": {
+        "id": 19,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "andredefreitas.com",
+            "andredefreitas.tumblr.com"
+        ],
+        "presentation": "Photographe et Illustrateur vivant et travaillant à Lima au Pérou, Andre de Freitas a étudié l'animation par ordinateur à l'université de Full Sail. Mais paradoxalement sa passion pour la photo l'a orienté vers de sujets figés.",
+        "quote": "Quand je dessine, je m'imagine prendre en photo les sujets que je vois dans ma tête.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Zombie Batman"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Zombie Raph"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Anung Un Rama"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Diana"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Ororo"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Victor"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Barbara"
+            }
+        ]
+    },
+    "Greg De Stephano": {
+        "id": 20,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "GregDeStephano.com"
+        ],
+        "presentation": "Photographe travaillant notamment pour les nouveaux médias basés à Los Angeles, Greg De Stephano a la chance de multiplier les clichés de son univers de prédilection: le geekdom. Expositions, cosplay, conventions... Se désignant lui-même comme \"geek de coeur\", il apprécie particulièrement mixer art et technologie.",
+        "quote": "J'ai grandi avec les jeux vidéos et les ordinateurs. J'ai eu la chance de rencontrer un formidable groupe de cosplayers passionnés à L.A avec qui j'ai créé la série Brawl, et que je tiens à remercier tout particulièrement.",
+        "works": [
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Luigi"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Wario"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Star Fox"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "End of Days"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Rosalina"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Mario"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Peach"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Saria"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Police Chief Link"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Ganon"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Pauline & Donkey Kong"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Ice Climbers"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Princess Zelda"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Malon"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Zero suit samus aran"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Lakiru"
+            }
+        ]
+    }
+}

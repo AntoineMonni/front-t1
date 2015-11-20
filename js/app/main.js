@@ -100,7 +100,7 @@ $(document).ready(function(){
   	
 		if ( app.currentPage != null ) app.currentPage.hide();
 
-		app.pages.param.show();
+		console.log(param)
 
 		app.currentPage = app.pages.param;
 	});
@@ -114,7 +114,6 @@ $(document).ready(function(){
 		var newUrl = History.getState().hash;
 
 		console.log('new url is', newUrl);
-		console.log(app.currentPage);
 
 		crossroads.parse( newUrl );
 
@@ -186,5 +185,21 @@ $(document).ready(function(){
 	crossroads.parse( History.getState().hash );
 
 	console.log(app_templates);
+
+
+	// Display Help panel
+	$('#help-button').on('click', function(e) {
+		e.preventDefault();
+
+		$('#help').toggleClass('show');
+	});
+	// Hide on click
+	$('#help').on('click', function(e) {
+		e.preventDefault();
+
+		if($(this).hasClass('show')) {
+			$(this).removeClass('show');
+		}
+	});
 
 });

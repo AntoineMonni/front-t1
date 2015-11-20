@@ -1,0 +1,154 @@
+{
+    "Andy Fairhust": {
+        "id": 23,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "andyfairhurstart.com"
+        ],
+        "presentation": "Peintre digital gallois, Andrew Fairhust s'est spécialisé dans le character design, les couvertures de livres et l'illustration. Il n'a pas oublié ses premières amours des années 1980 que sont les Goonies et Retour Vers le Futur, et cite Spielberg comme une grande source d'inspiration.",
+        "quote": "Je me suis rendu compte qu'en grandissant, j'ai accepté et accueilli à bras ouverts le geek qui était en moi et que, plus jeune, j'essayais de mettre de côté...",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Wolverine Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Bane Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "When I grow up, I wanna be Batman"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Harley Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Magneto Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Punisher Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Iron kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Spider Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Storm kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Thor Kid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Joker Kid"
+            }
+        ]
+    },
+    "Matt Ferguson": {
+        "id": 24,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "cakesandcomics.com",
+            "alternativeimpawards.com"
+        ],
+        "presentation": "Matt Ferguson est un graphiste vivant et travaillant en Grande Bretagne. Son inspiration lui vient des anime Japonais, de Saul Bass, des affiches de films des années 1980 et des comics. Il a choisi de mettre son style artistique au service de sa passion pour le geekdom.",
+        "quote": "Je mets mon style au service des comics et de la SF, qui forment les bases de la culture populaire.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Battle in the Mutura Nebula"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Angry Stay Puft"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The Empire strickes back"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Return of the Jedi"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Star Wars"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Iron Man MK2"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Supes"
+            }
+        ]
+    },
+    "Alex Fuentes": {
+        "id": 25,
+        "worksCount": 1,
+        "theme": "series",
+        "url": [
+            "alejandrofuentes.blogspot.com.es"
+        ],
+        "presentation": "Très tôt inspiré par Will Eisner, Jeff Smith, Goscinny et Uderzo, Alex Fuentes est un illustrateur espagnol vivant à Barcelone. Il a travaillé pour l'édition et le cinéma, et est particulèrement fier d'être un enfant des années 1980.",
+        "quote": "Ce qui m'a inspiré ? Sans hésitation les Looney Tunes de la Warner !",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Howard Wolowitz from The Big Bang Theory"
+            },
+            {
+                "url": "",
+                "year": 2007,
+                "name": "Captain Marvel"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Bill Adama from battlestar galactica"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Moss of The IT Crowd"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Jon Snow and Sam from Game of Thrones"
+            }
+        ]
+    }
+}
