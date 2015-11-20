@@ -7,6 +7,7 @@
 #mentions,
 #contact {
 	display: none;
+	overflow-y: scroll;
 }
 
 .page-container {
@@ -76,10 +77,13 @@
 			}
 			p{
 				margin-bottom: 20px;
+				&.book-author {
+					font-family: $bold;
+				}
 			}
 			h5{
 				font-size: 16px;
-				font-family: $book;
+				font-family: $bold;
 				text-transform: uppercase;
 				margin-bottom: 10px;
 			}

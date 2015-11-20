@@ -38,8 +38,6 @@ Galaxy.prototype.onAnimateIn = function() {
 	// On stocke le contexte de la classe pour l'utiliser plus tard
 	var self = this;
 
-	console.log('couc je suis chargé')
-
 	// On attend 1s
 	setTimeout(function(){
 
