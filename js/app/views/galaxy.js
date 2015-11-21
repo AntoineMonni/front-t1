@@ -3,7 +3,7 @@ var Galaxy = function(){
 	
 	// On définit ici l'id de la vue
 	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
-	this.id = 'galaxy';
+	this.id = 'A';
 	
 	// Appelle le constructeur de View
 	// Et ajoute les propriétés de View à Home
@@ -22,6 +22,7 @@ Galaxy.prototype.bind = function() {
 	// Equivalent de la fonction super() dans d'autres languages
 	View.prototype.bind.call(this);
 
+	console.log('bind');
 	app.currentPage = app.pages.galaxy;
 
 	this.artistButton.on('click', $.proxy(this.onCtaClick, this));

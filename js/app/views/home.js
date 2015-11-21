@@ -35,6 +35,7 @@ Home.prototype.bind = function() {
 	// On stocke le contexte
 	var self = this;
 
+	app.currentPage = app.pages.home;
 	// On bind le click sur le CtaButton
 	// Avec $.proxy on dit qu'au click sur le boutton :
 	// Exécute moi la fonction onCtaButtonClick

@@ -57,7 +57,7 @@ View.prototype.hide = function() {
 View.prototype.bind = function() {
 
 	// Bind footer menu items to display right views
-	this.footerItem.on('click', $.proxy(this.onFooterClick, this));
+	// this.footerItem.on('click', $.proxy(this.onFooterClick, this));
 
 	// Bind close button for all views
 	this.closeButton.on('click', $.proxy(this.onCloseView, this));
@@ -78,6 +78,7 @@ View.prototype.onCloseView = function(e) {
 	
 	// On intercepte le click
 	e.preventDefault();
+	console.log('view');
 
 	// On exécute la fonction pour cacher la vue
 	this.hide();
@@ -86,43 +87,9 @@ View.prototype.onCloseView = function(e) {
 	app.pages.galaxy.show();
 };
 
-View.prototype.onFooterClick = function(e) {
-
-	e.preventDefault();
-
-	var target = e.target,
-		value  = $(target).attr('href');
-
-	this.hide();
-
-	app.currentView = app.pages.galaxy;
-
-	switch(value) {
-		case '/demarche':
-			app.pages.demarche.show();
-			break;
-		case '/mentions':
-			app.pages.mentions.show();
-			break;
-		case '/credits':
-			app.pages.credits.show();
-			break;
-		case '/contact':
-			app.pages.contact.show();
-			break;
-
-		default: 
-			app.pages.galaxy.show();
-		break;
-	}
-};
-
 View.prototype.help = function(e) {
 	
 	e.preventDefault();
 
-
-
-
-	
 };
+
