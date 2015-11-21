@@ -106,13 +106,15 @@ App.prototype.toggleActive = function(e){
 
 App.prototype.showHelp = function(e){
 	e.preventDefault();
-	$(e.target).toggleClass('active');
+
+	this.helpButton.toggleClass('active');
 	this.help.toggleClass('show');
 }
 
 App.prototype.toggleHelp = function(e){
 	e.preventDefault();
-	$(e.target).removeClass('active');
+	console.log(e.target);
+	this.helpButton.removeClass('active');
 	if($(e.target).hasClass('show')) {
 		$(e.target).removeClass('show');
 	}
