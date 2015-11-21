@@ -70,36 +70,53 @@ body{
 		padding-bottom: 6px;
 	}
 
-	.crossed {
-		text-decoration: none;
-		background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $green 50%);
-		background-position: 0 25%;
-		background-repeat: no-repeat;
-		background-size: 100% 6px;
-	}
-
 	.red {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $red 50%);}
 	.yellow {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $yellow 50%);}
 	.blue {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $blue 50%);}
 	.black {background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $black 50%);}
 
 	.tag {
+		position: relative;
 		display: block;
 		margin-bottom: 10px;
 		font-family: $futura;
 		font-size: 14px;
-		a{
+		a {
 			background-size: 100% 8px;
 			padding-bottom: 5px;
+			background-position: 100% 95%;
+			transition: all .5s ease;
+		}
+		&:hover a {
+			-webkit-animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
+			        animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
 		}
 	}
 
 	.filter {
 		display: inline-block;
 		margin-bottom: 10px;
-		a.underline{
-			background-size: 100% 8px;
-			padding-bottom: 5px;
+		&:hover {
+			a {
+				-webkit-animation: swipeOutCenter .3s ease forwards, mooveLeftCenter 0s ease .3s forwards, swipeInCenter .3s ease .3s forwards;
+				        animation: swipeOutCenter .3s ease forwards, mooveLeftCenter 0s ease .3s forwards, swipeInCenter .3s ease .3s forwards;
+				&.active {
+					-webkit-animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
+					        animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
+				}
+			}
+		}
+		a{
+			text-decoration: none;
+			background-position: 100% 25%;
+			background-repeat: no-repeat;
+			background-size: 100% 6px;
+			&.active {
+				background-size: 100% 8px;
+				padding-bottom: 5px;
+				background-position: 100% 95%;
+				transition: all .5s ease;
+			}
 		}
 	}
 
@@ -111,6 +128,68 @@ body{
 		background-color: $black;
 		border-radius: 50%;
 	}
+
+	/* Keyframes global */
+
+		@-webkit-keyframes swipeOut {
+			0%{background-size: 100% 8px;}
+			100%{background-size: 0% 8px;}
+		}
+
+			@keyframes swipeOut {
+				0%{background-size: 100% 8px;}
+				100%{background-size: 0% 8px;}
+			}
+
+		@-webkit-keyframes swipeOutCenter {
+			0%{background-size: 100% 6px;}
+			100%{background-size: 0% 6px;}
+		}
+
+			@keyframes swipeOutCenter {
+				0%{background-size: 100% 6px;}
+				100%{background-size: 0% 6px;}
+			}
+
+		@-webkit-keyframes mooveLeft {
+			0%{background-position: 100% 95%;}
+			100%{background-position: 0% 95%;}
+		}
+
+			@keyframes mooveLeft {
+				0%{background-position: 100% 95%;}
+				100%{background-position: 0% 95%;}
+			}
+
+		@-webkit-keyframes mooveLeftCenter {
+			0%{background-position: 100% 25%;}
+			100%{background-position: 0% 25%;}
+		}
+
+			@keyframes mooveLeftCenter {
+				0%{background-position: 100% 25%;}
+				100%{background-position: 0% 25%;}
+			}
+
+		@-webkit-keyframes swipeIn {
+			0%{background-size: 0% 8px;}
+			100%{background-size: 100% 8px;}
+		}
+
+			@keyframes swipeIn {
+				0%{background-size: 0% 8px;}
+				100%{background-size: 100% 8px;}
+			}
+
+		@-webkit-keyframes swipeInCenter {
+			0%{background-size: 0% 6px;}
+			100%{background-size: 100% 6px;}
+		}
+
+			@keyframes swipeInCenter {
+				0%{background-size: 0% 6px;}
+				100%{background-size: 100% 6px;}
+			}
 
 /* Scrollbar */
 	::-webkit-scrollbar{
