@@ -10,11 +10,13 @@ var View = function(){
 	this.artistButton = this.domElem.find('.artist');
 	this.closeButton = this.domElem.find('.close');
 
-	this.help = $('#help');
+	this.help = $('#help');	
 
-	this.menu = this.domElem.find('#burger');
+	this.menu = $('#burger');
+	this.header = $('header');
+	this.footer = $('footer');
 
-	this.footerItem = $(document).find('.footer-item');
+	this.footerItem = this.footer.find('.footer-item');
 
 };
 
@@ -92,4 +94,3 @@ View.prototype.help = function(e) {
 	e.preventDefault();
 
 };
-

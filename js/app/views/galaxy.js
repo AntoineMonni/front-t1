@@ -3,7 +3,7 @@ var Galaxy = function(){
 	
 	// On définit ici l'id de la vue
 	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
-	this.id = 'A';
+	this.id = 'galaxy';
 	
 	// Appelle le constructeur de View
 	// Et ajoute les propriétés de View à Home
