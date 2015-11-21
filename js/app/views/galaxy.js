@@ -25,6 +25,10 @@ Galaxy.prototype.bind = function() {
 	app.currentPage = app.pages.galaxy;
 
 	this.artistButton.on('click', $.proxy(this.onCtaClick, this));
+
+	// this.hash = (History.getState().hash).replace('/','');
+
+	// this.loadJson(this.hash);
 };
 
 // Méthode onAnimateIn spécifique à Galaxy
@@ -42,7 +46,7 @@ Galaxy.prototype.onAnimateIn = function() {
 	setTimeout(function(){
 
 		// On affiche le CTA
-		self.help.addClass('show');
+		//self.help.addClass('show');
 
 	}, 200);
 
@@ -62,3 +66,39 @@ Galaxy.prototype.onCtaClick = function(e) {
 	app.pages.artist.show();
 
 };
+
+// Galaxy.prototype.loadJson = function(letter) {
+
+// 	console.log(letter)
+	
+//     if(letter != '') {
+
+//     	var letterMin = letter.toLowerCase();
+
+//     	var json = $.ajax({
+//     	    dataType: "json",
+//     	    url: "../assets/json/"+letterMin+".json",
+//     	});
+
+//     	console.log(json);
+
+// 	    // load your external HTML template
+// 	    var homePartial = $.ajax({
+// 	        url:"templates/artist.hbs"
+// 	    });
+
+// 	    console.log(homePartial);
+
+// 	    homePartial.done(function (html){
+// 			var template = Handlebars.compile(html);        	
+
+// 			json.done(function (data) {
+// 				$("#galaxy .content").append(template(data));
+// 			});
+
+// 	    });
+
+//     } else {
+//     	console.log('Url letter can not be find');
+//     }
+// };
