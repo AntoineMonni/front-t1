@@ -57,4 +57,396 @@
             }
         ]
     },
+    "Chris Gerringer": {
+        "id": 27,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "paperbeatsscissors.com",
+            "paperbeatsscissors.tumblr.com"
+        ],
+        "presentation": "Né en 1985, résidant aux États-Unis, Chris Gerringer a toujours été influencé par la pop culture et par les univers geek. Lecteur invétéré et amateur de jeux vidéo, il travaille beaucoup à l'encre et au crayon.",
+        "quote": "Jeux vidéo, comics et cartoons font partie de mon enfance. Je pouvais essayer de lutter contre leur influence sur mon travail, où l'accueillir à bras ouverts...J'ai choisi la seconde option.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Expendable Minions"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Genetic Experiments"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Wearing a Visor"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Orphan Heroes"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Clone of a bro"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Being green"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Robot boys"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Exaggerated Antiheroes"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Overbearing Fairies"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Just a parasite"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Princess problems"
+            }
+        ]
+    },
+    "Jerod Gibson": {
+        "id": 28,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "jerodgibson.com"
+        ],
+        "presentation": "Jerod Gibson est un directeur de création ainsi qu'un graphsite freelance travaillant dans le Wisconsin, aux États-Unis. Il a oeuvré pour Urban Outfitters, Threadless, Cartoon Network ou Society 6. Passionné de typographie, il a voulu, à sa manière, rendre hommage aux héros de la geek culture en utilisant de nombreuses citations relatives à leurs univers.",
+        "quote": "J'aime la pop culture. Elle permet d'établir des liens, et ce quelle que soit votre origine, votre religion ou vos différences sociales.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Fear & Loathing in Las Vegas"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Goonies"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Star Wars"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Clerks"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Ghostbusters"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Fight Club"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Simpson"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Labyrinth"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "The Hangover"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Pulp Fiction"
+            }
+        ]
+    },
+    "David Gilson": {
+        "id": 29,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "davidgilson.com"
+        ],
+        "presentation": "David Gilson est un dessinateur-illustrateur parisien de 39 ans. Il a principalement travaillé pour des studios d'animation, notamment Walt Disney Feature Animation, Ellipsanime, Marathon, SIP Animation et Xilam... Depuis quelques années, il illustre également des livres pour Disney Publishing (Raiponce, Rebelle...). Aujourd'hui, David Gilson est l'auteur de Bichon, sa première bande-dessinée: scénario, dessin et mise en couleur.",
+        "quote": "J'avais quatre ans quand je suis allé au cinéma pour la première fois où j'ai vu Bernard et Bianca. Depuis, je suis tombé dedans et devenu amoureux des dessins animés mêlant fantaisie, féérie, humour et tendresse. J'aime parfois croquer ces personnages qui m'ont ému et dont je suis nostalgique, ou ceux qui me font rêver et que je continue de suivre ou de voir naître...",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Wonder Woman"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Maleficient"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Nightmare before Xmas"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Hulk"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Lilo & Stich"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Little Mermaid"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Bambi"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Fox and the Hound"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Monsters Inc. Doodles"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Maya"
+            }
+        ]
+    },
+    "Godmachine": {
+        "id": 30,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "godmachine.co.uk"
+        ],
+        "presentation": "Godmachine est illustrateur gallois élevé aux comics de 2000 AD et aux skateboards Santa Cruz. Inspiré par Simon Bisley, le célèbre illustrateur britannique de Slaine et Judge Dredd, ainsi que par l'artiste incontournable de la skate culture Jim Philips, Godmachine collectionne les crânes d'animaux et les vieilles photos en noir et blanc ; des influences que l'on retrouve dans travail.",
+        "quote": "Mon style est né de la rencontre entre Jim Philips, Simon Bisley, ainsi que de mes films, romans et musiques préférés...",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Odin"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Blade Runner"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Nuke em High"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Predator"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Cthulhu"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Cthulhu"
+            }
+        ]
+    },
+    "Alex Gross": {
+        "id": 31,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "alexgross.com"
+        ],
+        "presentation": "Artiste américain vivant à Los Angeles, Alex Gross a grandi en lisant les aventures des X-Men, de Spiderman ainsi que le Dark Knight de Frank Miller. Il avait pour habitude de collectionner les vieilles photographies, aussi appellées cabinet cards. Souhaitant les intégrer à son travail, il a fini par les peindre et les transformer en s'inspirant de ses héros préférés. Au total, il a travaillé sur plus de cent de ces visuels particuliers.",
+        "quote": "Travailler sur ces héros de comics et de films a été le projet le plus excitant sur lequel j'ai jamais oeuvré.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Torch"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Golden Age Flash"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Giant-Man and Wasp"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Mole Man"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Reed Richards"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Scarlet Witch"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Sandman"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Vindicator"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Clark"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Iron Fist"
+            }
+        ]
+    },
+    "Grégoire Guillemin": {
+        "id": 32,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "greg-guillemin.com",
+            "behance.net/leon",
+            "greg-leon.tumblr"
+        ],
+        "presentation": "Vivant en Île de France, l'oeuvre de Grégoire Guillemin fait le bonheur d'Internet depuis quelque temps. Du poster minimaliste de film à ses exercices de style inspirés par les plus grands illustrateurs publicitaires des années 1930 en passant par ses famous capsules, son travail est de plus en plus connu. Largement inspiré par les géants de la BD européen et anglo saxonne(Jean Giraud, Franquin, Loisel, Guardino, Miller, Mignola...), Grégoire Guillemin trouve avant tout son plaisir en jouant avec les figures emblématiques de son enfance.",
+        "quote": "Le Geek-Art est un terrain de jeu formidable.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Hellboy Gropius Spirit"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Iron Man - Cassandre Spirit"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Batman - Cassandre Spirit"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Superman - Soviet Art"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Thor - Cassandre Spirit"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Silver Surfer - Metropolis"
+            }
+        ]
+    },
+    "Grégoire Guillemin": {
+        "id": 33,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "funbeard.blogspot.com",
+        ],
+        "presentation": "Né en Grande-Bretagne, Ben Guy vit aujourd'hui à Melbourne, en Australie. Ses toiles mettent en avant de jeunes enfants portant les casques des personnages les plus cultes de la culture geek, de la science-fiction, aux comics de 2000 AD et de Marvel en passant par Games Workshop, G.I Joe et les méchants Japonais.",
+        "quote": "Tout est parti de Star Wars.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Brad"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Ben"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Juliet"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Jake"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Lucy"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Katie & Grace"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Saturn"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Jacob"
+            }
+        ]
+    }
 }
