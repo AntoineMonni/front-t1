@@ -55,6 +55,6 @@ Home.prototype.onCtaButtonClick = function(e) {
 	this.hide();
 
 	// On dit à la vue Galaxy de s'afficher
-	History.pushState(null, null, app.pages.galaxy.param);
+	History.pushState(null, null, app.pages.galaxy.url);
 
 };

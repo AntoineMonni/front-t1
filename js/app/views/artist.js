@@ -23,6 +23,7 @@ Artist.prototype.bind = function() {
 	View.prototype.bind.call(this);
 
 	app.currentPage = app.pages.artist;
+	app.currentArtist = app.pages.artist;
 
 	// On bind KeyEvent pour que les évènements du clavier soient écoutés dès que la vue est chargée
 	this.keyEvent();
@@ -47,8 +48,8 @@ Artist.prototype.keyEvent = function() {
 				
 				// On exécute la fonction pour cacher la vue
 				self.hide();
-				// On dit à la vue Galaxy de s'afficher
-				app.pages.galaxy.show();
+				// // On dit à la vue Galaxy de s'afficher
+				// app.pages.galaxy.show();
 			}
 
 		}

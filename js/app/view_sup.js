@@ -41,10 +41,7 @@ View_sup.prototype.onCloseView = function(e) {
 
 	$(app.footer).find('a').removeClass('active');
 
-	if ( app.currentPage.id != "home" )
-		History.pushState(null, null, app.currentPage.param);
-	else 
-		History.pushState(null, null, " ");
+	View.prototype.goToCurrentGalaxy.call(this);
 
 };
 

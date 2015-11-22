@@ -50,6 +50,8 @@ App.prototype.init = function() {
 	// On crée une instance de la classe Contact
 	this.pages.contact = new Contact();
 
+	this.currentGalaxy = this.pages.galaxy;
+
 };
 
 App.prototype.bind = function(){

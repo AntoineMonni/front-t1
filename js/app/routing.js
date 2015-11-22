@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	crossroads.addRoute('/', function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
-
+		console.log('proc');
 		app.pages.home.show();
 
 		app.currentPage = app.pages.home;
@@ -30,19 +30,19 @@ $(document).ready(function(){
 
 		app.pages.artist.show();
 
-		app.currentPage = app.pages.artist;
+		app.currentArtist = app.pages.artist;
 	});
 
 
 	crossroads.addRoute(/mentions|credits|demarche|contact/, function(){
   		if ( app.currentPage != null ) app.currentPage.hide();
-  		if ( app.currentSupport != null ) app.currentSupport.hide();
   		var url = History.getState().hash;
   		var param = url.substring(1);
   		console.log(param);
 
 		app.pages[param].show();
 
+		app.currentPage = app.pages[param];
 		app.currentSupport = app.pages[param];
 
 	});
