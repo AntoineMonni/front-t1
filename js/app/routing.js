@@ -59,6 +59,7 @@ $(document).ready(function(){
 
 		crossroads.parse( newUrl );
 
+
 	});
 
 	// Parse URL for the first time

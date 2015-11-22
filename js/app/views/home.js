@@ -50,10 +50,11 @@ Home.prototype.onCtaButtonClick = function(e) {
 	// On intercepte le click
 	e.preventDefault();
 
+
 	// On exécute la fonction pour cacher la vue
 	this.hide();
 
 	// On dit à la vue Galaxy de s'afficher
-	app.pages.galaxy.show();
+	History.pushState(null, null, app.pages.galaxy.param);
 
 };

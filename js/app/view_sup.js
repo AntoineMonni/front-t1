@@ -41,7 +41,10 @@ View_sup.prototype.onCloseView = function(e) {
 
 	$(app.footer).find('a').removeClass('active');
 
-	History.pushState(null, null, app.currentPage.id);
+	if ( app.currentPage.id != "home" )
+		History.pushState(null, null, app.currentPage.param);
+	else 
+		History.pushState(null, null, " ");
 
 };
 

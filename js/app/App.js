@@ -113,7 +113,7 @@ App.prototype.showHelp = function(e){
 
 App.prototype.toggleHelp = function(e){
 	e.preventDefault();
-	console.log(e.target);
+	
 	this.helpButton.removeClass('active');
 	if($(e.target).hasClass('show')) {
 		$(e.target).removeClass('show');
