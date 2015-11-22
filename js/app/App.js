@@ -50,6 +50,8 @@ App.prototype.init = function() {
 	// On crée une instance de la classe Contact
 	this.pages.contact = new Contact();
 
+	this.currentGalaxy = this.pages.galaxy;
+
 };
 
 App.prototype.bind = function(){
@@ -113,7 +115,7 @@ App.prototype.showHelp = function(e){
 
 App.prototype.toggleHelp = function(e){
 	e.preventDefault();
-	console.log(e.target);
+	
 	this.helpButton.removeClass('active');
 	if($(e.target).hasClass('show')) {
 		$(e.target).removeClass('show');

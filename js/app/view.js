@@ -84,10 +84,22 @@ View.prototype.onCloseView = function(e) {
 
 	// On exécute la fonction pour cacher la vue
 	this.hide();
-
-	// On dit à la vue Galaxy de s'afficher
-	app.pages.galaxy.show();
+	this.goToCurrentGalaxy();
+	
 };
+
+View.prototype.goToCurrentGalaxy = function(){
+	if ( app.currentPage.id != "home" )
+	{
+		console.log('home_test')
+		History.pushState(null, null, '/'+app.currentGalaxy.url);
+	}
+	else
+	{
+		console.log('proc')
+		History.pushState(null, null, "/");
+	}
+}
 
 View.prototype.help = function(e) {
 	

@@ -1,0 +1,55 @@
+{
+    "Infinite Continues": {
+        "id": 41,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "infinitecontinues.net",
+            "ashbrowning.wordpress.com"
+        ],
+        "presentation": "Derrière le pseudo Infinite Continues se cache Ashley Browning, une graphiste britannique obsédée par les jeux vidéos depuis a tendre enfance, qui est passée par quasiment toutes les plateformes de jeu depuis son Commodore 64.",
+        "quote": "Je me demandais si MArio, Luigi, Mega Man, Master Chief et les autres étaient identifiables sous la forme de simples formes géométriques. La réponse est un vibrant OUI !",
+        "works": [
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Luigi"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Mario"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Toad"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Pikachu"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Sagat"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Vega"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Bison"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "E-Honda"
+            }
+        ]
+    }
+}

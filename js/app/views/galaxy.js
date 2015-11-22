@@ -5,6 +5,7 @@ var Galaxy = function(){
 	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
 	this.id = 'galaxy';
 	
+	this.url = "/A";
 	// Appelle le constructeur de View
 	// Et ajoute les propriétés de View à Home
 	View.apply(this, arguments);
@@ -23,7 +24,15 @@ Galaxy.prototype.bind = function() {
 	View.prototype.bind.call(this);
 
 	console.log('bind');
-	app.currentPage = app.pages.galaxy;
+
+	var url = History.getState().hash;
+	if ( url != "" )
+		this.url = url;
+	console.log(url);
+
+
+	console.log(this.url);
+	app.currentGalaxy = app.pages.galaxy;
 
 	this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 
@@ -64,7 +73,7 @@ Galaxy.prototype.onCtaClick = function(e) {
 
 	// On affiche le trailer
 	// A remplacer par app.pages.trailer.show() une fois la classe Trailer créé
-	app.pages.artist.show();
+	History.pushState(null, null, '/'+app.pages.galaxy.url+'/olly-moss');
 
 };
 
