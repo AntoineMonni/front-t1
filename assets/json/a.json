@@ -1,7 +1,8 @@
-{
+ {
     "Ingrid Aspöck": {
         "id": 1,
-        "worksCount": 1,
+        "worksCount": 38,
+        "age": 30,
         "theme": "film",
         "url": [
             "ingrid-aspoeck.at",
@@ -11,27 +12,27 @@
         "quote": "Les passions de notre enfance finissent par ressurgir à l'âge adulte",
         "works": [
             {
-                "url": "ingridaspock/christmas01.jpg",
+                "url": "AspockIngrid/christmas01.jpg",
                 "year": 2010,
                 "name": "Christmas Peace"
             },
             {
-                "url": "ingridaspock/christmas02.jpg",
+                "url": "AspockIngrid/christmas02.jpg",
                 "year": 2010,
                 "name": "Christmas Peace"
             },
             {
-                "url": "ingridaspock/christmas03.jpg",
+                "url": "AspockIngrid/christmas03.jpg",
                 "year": 2010,
                 "name": "Christmas Peace"
             },
             {
-                "url": "ingridaspock/christmas04.jpg",
+                "url": "AspockIngrid/christmas04.jpg",
                 "year": 2010,
                 "name": "Christmas Peace"
             },
             {
-                "url": "ingridaspock/christmas05.jpg",
+                "url": "AspockIngrid/christmas05.jpg",
                 "year": 2010,
                 "name": "Christmas Peace"
             }
@@ -39,7 +40,8 @@
     },
     "Avanaut": {
         "id": 2,
-        "worksCount": 1,
+        "worksCount": 490,
+        "age": 30,
         "theme": "film",
         "url": [
             "flickr.com/photos/avanaut"
@@ -96,7 +98,8 @@
     },
     "Andy Awesome": {
         "id": 3,
-        "worksCount": 1,
+        "worksCount": 42,
+        "age": 30,
         "theme": "series",
         "url": [
             "andyawesome.com",
@@ -171,5 +174,5 @@
                 "name": "Series 02-ID10"
             }
         ]
-    }
+    },
 }

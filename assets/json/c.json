@@ -1,7 +1,7 @@
 {
     "Horacio Cassinelli": {
         "id": 16,
-        "worksCount": 1,
+        "worksCount": 53,
         "theme": "film",
         "url": [
             "horaciocassinelli.com"
@@ -10,7 +10,7 @@
         "quote": "Je considère ces images comme des trousseaux de clés de maison qu'on a habitées. On y retourne de temps en temps car on a sûrement oublié quelque chose.",
         "works": [
             {
-                "url": "",
+                "url": "CassinelliHoracio/mangaeyes.jpg",
                 "year": 2011,
                 "name": "Manga Eyes"
             },
@@ -48,7 +48,7 @@
     },
     "Stanley Chow": {
         "id": 17,
-        "worksCount": 1,
+        "worksCount": 132,
         "theme": "film",
         "url": [
             "stanleychowillustration.com"
@@ -57,52 +57,52 @@
         "quote": "J'ai toujours aimé les superhéros. J'avais une chambre superman, des rideaux superman, du papier peint superman. Je crois même que j'avais des sous-vêtements superman.",
         "works": [
             {
-                "url": "",
+                "url": "ChowStanley/ripley.jpg",
                 "year": 2012,
                 "name": "Ripley"
             },
             {
-                "url": "",
+                "url": "ChowStanley/travisbickle.jpg",
                 "year": 2011,
-                "name": "Travis  Bickle"
+                "name": "Travis Bickle"
             },
             {
-                "url": "",
+                "url": "ChowStanley/heman.jpg",
                 "year": 2010,
                 "name": "He-Man/Made in Hong Kong"
             },
             {
-                "url": "",
+                "url": "ChowStanley/walterwhite.jpg",
                 "year": 2011,
                 "name": "Walter White"
             },
             {
-                "url": "",
+                "url": "ChowStanley/honeyrider.jpg",
                 "year": 2011,
                 "name": "Honey Ryder"
             },
             {
-                "url": "",
+                "url": "ChowStanley/billmurray.jpg",
                 "year": 2010,
                 "name": "Bill Murray / Suntory Times"
             },
             {
-                "url": "",
+                "url": "ChowStanley/leeloo.png",
                 "year": 2010,
                 "name": "Leeloo"
             },
             {
-                "url": "",
+                "url": "ChowStanley/clarkkent.jpg",
                 "year": 2011,
                 "name": "Clark Kent"
             },
             {
-                "url": "",
+                "url": "ChowStanley/uhura.jpg",
                 "year": 2011,
                 "name": "Uhura"
             },
             {
-                "url": "",
+                "url": "ChowStanley/mrblue.png",
                 "year": 2010,
                 "name": "What happened to Mr Blue"
             }
@@ -110,7 +110,7 @@
     },
     "Fabian Ciraolo": {
         "id": 18,
-        "worksCount": 1,
+        "worksCount": 64,
         "theme": "series",
         "url": [
             "fabciraolo.com",
@@ -120,47 +120,47 @@
         "quote": "Je suis une éponge, mon esprit erst rempli à ras bord d'icônes et d'images. J'aime mixer le neuf et l'ancien puis insuffler un air frais à tous ces personnages.",
         "works": [
             {
-                "url": "",
+                "url": "CiraoloFabian/skeletor.jpg",
                 "year": 2012,
                 "name": "Skeletor"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/birdman.jpg",
                 "year": 2012,
                 "name": "Birdman"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/thundergirls.jpg",
                 "year": 2012,
                 "name": "Thundergirls"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/edward.jpg",
                 "year": 2012,
                 "name": "Edward Scissordhands"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/jem.jpg",
                 "year": 2012,
                 "name": "Jem"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/sorceress.jpg",
                 "year": 2012,
                 "name": "Sorceress"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/heman.jpg",
                 "year": 2012,
                 "name": "He-Man & Man at arms"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/carebears.jpg",
                 "year": 2012,
                 "name": "Care Bears"
             },
             {
-                "url": "",
+                "url": "CiraoloFabian/masteruniverse.jpg",
                 "year": 2012,
                 "name": "Battle of the Planets"
             }
