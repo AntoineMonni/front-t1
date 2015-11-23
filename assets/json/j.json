@@ -1,0 +1,29 @@
+{
+    "Aaron Jasinski": {
+        "id": 42,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "aaronjasinski.com"
+        ],
+        "presentation": "Issu d'une famille de musiciens, Aaron a conçu de nombreuses couvertures d'album. Avec plusieurs cordes à son arc, il illustre des livres pour enfants, et compose des musiques électroniques. Fortement inspiré par la culture geek, Aaron Jasinski vit et travaille près de Seattle.",
+        "quote": "Je pense que ma peinture est la première pièce d'un puzzle en deux parties, qui ne devient complet qu'avec l'expérience et la perspective propre à chaque personne.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Octamegatron"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Octanator"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Octacylon"
+            }
+        ]
+    }
+}
