@@ -26,7 +26,7 @@ Mentions.prototype.bind = function() {
 
 	app.currentSupport = app.pages.mentions;
 
-	View_sup.prototype.handleMenu.call(this.id);
+	View_sup.prototype.handleMenu.call(this);
 };
 
 // Méthode onAnimateIn spécifique à Mentions

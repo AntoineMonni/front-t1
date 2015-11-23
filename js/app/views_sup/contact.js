@@ -25,8 +25,8 @@ Contact.prototype.bind = function() {
 	View_sup.prototype.bind.call(this);
 
 	app.currentSupport = app.pages.contact;
-
-	View_sup.prototype.handleMenu.call(this.id);
+	console.log(this.btn);
+	View_sup.prototype.handleMenu.call(this);
 };
 
 // Méthode onAnimateIn spécifique à Contact

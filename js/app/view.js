@@ -50,8 +50,13 @@ View.prototype.hide = function() {
 	// Lorsqu'on affichera à nouveau la vue par la suite
 	this.unbind();
 
+	// On stocke le contexte dans une variable pour pouvoir y accéder plus bas
+	var self = this;
+
 	// Cache la vue
-	this.domElem.fadeOut();
+	this.domElem.fadeOut(function(){
+		self.onAnimateOut();
+	});
 
 };
 
@@ -76,11 +81,14 @@ View.prototype.onAnimateIn = function() {
 
 };
 
+View.prototype.onAnimateOut = function() {
+
+};
+
 View.prototype.onCloseView = function(e) {
 	
 	// On intercepte le click
 	e.preventDefault();
-	console.log('view');
 
 	// On exécute la fonction pour cacher la vue
 	this.hide();
@@ -91,12 +99,10 @@ View.prototype.onCloseView = function(e) {
 View.prototype.goToCurrentGalaxy = function(){
 	if ( app.currentPage.id != "home" )
 	{
-		console.log('home_test')
 		History.pushState(null, null, '/'+app.currentGalaxy.letter);
 	}
 	else
 	{
-		console.log('proc')
 		History.pushState(null, null, "/");
 	}
 }
