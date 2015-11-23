@@ -10,16 +10,17 @@ var App = function(){
 	this.currentGalaxy = null;
 	this.currentSupport = null;
 
+	this.window = $(window);
 	this.menu = $('#burger');
 	this.header = $('header');
 	this.footer = $('footer');
 	this.helpButton = $('#help-button');
 	this.help = $('#help');
+	this.letterSection = $('#letter');
 
 	this.allMenuItem = $('nav a');
 	this.headerMenuItem = this.header.find('nav a');
 	this.footerMenuItem = this.footer.find('nav a');
-
 
 	this.bind();
 	// On éxécute la fonction init de la classe
@@ -29,6 +30,8 @@ var App = function(){
 
 // Init
 App.prototype.init = function() {
+
+	var self = this;
 	
 	// On crée une instance de la classe Home
 	this.pages.home = new Home();
@@ -51,6 +54,15 @@ App.prototype.init = function() {
 	// On crée une instance de la classe Contact
 	this.pages.contact = new Contact();
 
+	// On initialise la navigation
+	this.pages.navigation = new Navigation();
+
+	this.window.on('keyup', function(e) {
+		e.preventDefault();
+		
+		self.pages.navigation.bind(e.which);
+	});
+
 	this.currentGalaxy = this.pages.galaxy;
 
 };
@@ -66,7 +78,6 @@ App.prototype.bind = function(){
 
 	this.helpButton.on('click', $.proxy(this.showHelp, this));
 	this.help.on('click', $.proxy(this.toggleHelp, this));
-
 };
 
 App.prototype.menuRoads = function(e) {
@@ -122,3 +133,7 @@ App.prototype.toggleHelp = function(e){
 		$(e.target).removeClass('show');
 	}
 }
+
+App.prototype.navigation = function() {
+	// body...
+};
