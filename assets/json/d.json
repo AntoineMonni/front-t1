@@ -1,7 +1,7 @@
 {
     "Andre De Freitas": {
         "id": 19,
-        "worksCount": 1,
+        "worksCount": 123,
         "theme": "film",
         "url": [
             "andredefreitas.com",
@@ -11,37 +11,37 @@
         "quote": "Quand je dessine, je m'imagine prendre en photo les sujets que je vois dans ma tête.",
         "works": [
             {
-                "url": "",
+                "url": "DefreitasAndre/zombiebatman.jpg",
                 "year": 2010,
                 "name": "Zombie Batman"
             },
             {
-                "url": "",
+                "url": "DefreitasAndre/zombieraph.jpg",
                 "year": 2010,
                 "name": "Zombie Raph"
             },
             {
-                "url": "",
+                "url": "DefreitasAndre/anungunrama.jpg",
                 "year": 2012,
                 "name": "Anung Un Rama"
             },
             {
-                "url": "",
+                "url": "DefreitasAndre/diana.jpg",
                 "year": 2012,
                 "name": "Diana"
             },
             {
-                "url": "",
+                "url": "DefreitasAndre/ororo.jpg",
                 "year": 2012,
                 "name": "Ororo"
             },
             {
-                "url": "",
+                "url": "DefreitasAndre/victor.jpg",
                 "year": 2012,
                 "name": "Victor"
             },
             {
-                "url": "",
+                "url": "DefreitasAndre/barbara.jpg",
                 "year": 2011,
                 "name": "Barbara"
             }
@@ -49,93 +49,68 @@
     },
     "Greg De Stephano": {
         "id": 20,
-        "worksCount": 1,
+        "worksCount": 59,
         "theme": "videogames",
         "url": [
-            "GregDeStephano.com"
+            "www.gregdestefano.com"
         ],
         "presentation": "Photographe travaillant notamment pour les nouveaux médias basés à Los Angeles, Greg De Stephano a la chance de multiplier les clichés de son univers de prédilection: le geekdom. Expositions, cosplay, conventions... Se désignant lui-même comme \"geek de coeur\", il apprécie particulièrement mixer art et technologie.",
         "quote": "J'ai grandi avec les jeux vidéos et les ordinateurs. J'ai eu la chance de rencontrer un formidable groupe de cosplayers passionnés à L.A avec qui j'ai créé la série Brawl, et que je tiens à remercier tout particulièrement.",
         "works": [
             {
-                "url": "",
+                "url": "DestephanoGreg/luigi.jpg",
                 "year": 2009,
                 "name": "Luigi"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/wario.jpg",
                 "year": 2009,
                 "name": "Wario"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/fox.jpg",
                 "year": 2009,
                 "name": "Star Fox"
             },
             {
-                "url": "",
-                "year": 2009,
-                "name": "End of Days"
-            },
-            {
-                "url": "",
-                "year": 2009,
-                "name": "Rosalina"
-            },
-            {
-                "url": "",
+                "url": "DestephanoGreg/mario.jpg",
                 "year": 2009,
                 "name": "Mario"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/peach.jpg",
                 "year": 2009,
                 "name": "Peach"
             },
             {
-                "url": "",
-                "year": 2009,
-                "name": "Saria"
-            },
-            {
-                "url": "",
-                "year": 2009,
-                "name": "Police Chief Link"
-            },
-            {
-                "url": "",
+                "url": "DestephanoGreg/ganon.jpg",
                 "year": 2009,
                 "name": "Ganon"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/dk.jpg",
                 "year": 2009,
                 "name": "Pauline & Donkey Kong"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/iceclimbers.jpg",
                 "year": 2009,
                 "name": "Ice Climbers"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/zelda.jpg",
                 "year": 2009,
                 "name": "Princess Zelda"
             },
             {
-                "url": "",
-                "year": 2009,
-                "name": "Malon"
-            },
-            {
-                "url": "",
+                "url": "DestephanoGreg/samus.jpg",
                 "year": 2009,
                 "name": "Zero suit samus aran"
             },
             {
-                "url": "",
+                "url": "DestephanoGreg/lakitu.jpg",
                 "year": 2009,
-                "name": "Lakiru"
+                "name": "Lakitu"
             }
         ]
     }

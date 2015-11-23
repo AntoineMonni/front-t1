@@ -1,7 +1,7 @@
 {
     "Beto Garza": {
         "id": 26,
-        "worksCount": 1,
+        "worksCount": 95,
         "theme": "series",
         "url": [
             "behance.net/helbetico",
@@ -11,47 +11,42 @@
         "quote": "Keep on drawing, amigos !",
         "works": [
             {
-                "url": "",
+                "url": "GarzaBeto/rafael.png",
                 "year": 2012,
                 "name": "Rafael"
             },
             {
-                "url": "",
+                "url": "GarzaBeto/picoro.png",
                 "year": 2012,
                 "name": "Picoro"
             },
             {
-                "url": "",
-                "year": 2012,
-                "name": "Chewie"
-            },
-            {
-                "url": "",
+                "url": "GarzaBeto/hellboy.png",
                 "year": 2012,
                 "name": "Hellboy"
             },
             {
-                "url": "",
+                "url": "GarzaBeto/usagi.png",
                 "year": 2012,
                 "name": "Usagi Yojimbo"
             },
             {
-                "url": "",
+                "url": "GarzaBeto/totoro.png",
                 "year": 2012,
                 "name": "Totoro"
             },
             {
-                "url": "",
+                "url": "GarzaBeto/patricio.png",
                 "year": 2012,
                 "name": "Patricio"
             },
             {
-                "url": "",
+                "url": "GarzaBeto/bob.png",
                 "year": 2012,
                 "name": "Bob Esponja"
             },
             {
-                "url": "",
+                "url": "GarzaBeto/carlos.png",
                 "year": 2012,
                 "name": "Calamardo"
             }

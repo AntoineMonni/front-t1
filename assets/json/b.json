@@ -1,7 +1,8 @@
-{
+ {
     "Robert Ball": {
         "id": 4,
-        "worksCount": 136,
+        "worksCount": 27,
+        "age": 30,
         "theme": "film",
         "url": [
             "robertmball.com"
@@ -10,32 +11,32 @@
         "quote": "J'ai vu Star Wars pour la première fois au cinéma à l'âge de 5 ans. À partir de ce moment je suis devenu geek.",
         "works": [
             {
-                "url": "robertball/batbloke.jpg",
+                "url": "BallRobert/batbloke.jpg",
                 "year": 2008,
                 "name": "Batbloke"
             },
             {
-                "url": "robertball/captainamerica.jpg",
+                "url": "BallRobert/captainamerica.jpg",
                 "year": 2011,
                 "name": "Captain America"
             },
             {
-                "url": "robertball/dalek.jpg",
+                "url": "BallRobert/dalek.jpg",
                 "year": 2012,
                 "name": "Dalek"
             },
             {
-                "url": "robertball/superbloke.jpg",
+                "url": "BallRobert/superbloke.jpg",
                 "year": 2011,
                 "name": "Superbloke"
             },
             {
-                "url": "robertball/fiftybaddies.jpg",
+                "url": "BallRobert/fiftybaddies.jpg",
                 "year": 2011,
                 "name": "Fifty Baddies"
             },
             {
-                "url": "robertball/fiftygoodies.jpg",
+                "url": "BallRobert/fiftygoodies.jpg",
                 "year": 2011,
                 "name": "Fifty Goodies"
             }
@@ -43,7 +44,8 @@
     },
     "Nicky Barkla": {
         "id": 5,
-        "worksCount": 136,
+        "worksCount": 49,
+        "age": 30,
         "theme": "film",
         "url": [
             "nickybarkla.deviantart.com"
@@ -52,42 +54,42 @@
         "quote": "C'est comme poser un chapeau de clown sur la tête de Dark Vador et lui demander de s'amuser un peu.",
         "works": [
             {
-                "url": "nickybarkla/aclownmess.jpg",
+                "url": "BarklaNicky/aclownmess.jpg",
                 "year": 2011,
                 "name": "A clown mess"
             },
             {
-                "url": "nickybarkla/darthmaul.jpg",
+                "url": "BarklaNicky/darthmaul.jpg",
                 "year": 2012,
                 "name": "Darth Maul"
             },
             {
-                "url": "nickybarkla/edwardscissorhands.jpg",
+                "url": "BarklaNicky/edwardscissorhands.jpg",
                 "year": 2011,
                 "name": "Edwars Scissorhands"
             },
             {
-                "url": "nickybarkla/emmettdocbrown.jpg",
+                "url": "BarklaNicky/emmettdocbrown.jpg",
                 "year": 2011,
                 "name": "Superbloke"
             },
             {
-                "url": "nickybarkla/gollum.jpg",
+                "url": "BarklaNicky/gollum.jpg",
                 "year": 2011,
                 "name": "Gollum"
             },
             {
-                "url": "nickybarkla/incrediblehulk.jpg",
+                "url": "BarklaNicky/incrediblehulk.jpg",
                 "year": 2011,
                 "name": "Fifty Goodies"
             },
             {
-                "url": "nickybarkla/thejoker.jpg",
+                "url": "BarklaNicky/thejoker.jpg",
                 "year": 2012,
                 "name": "The Joker"
             },
             {
-                "url": "nickybarkla/voldemort.jpg",
+                "url": "BarklaNicky/voldemort.jpg",
                 "year": 2012,
                 "name": "Voldemort"
             }
@@ -95,7 +97,8 @@
     },
     "Beyx": {
         "id": 6,
-        "worksCount": 136,
+        "worksCount": 335,
+        "age": 30,
         "theme": "videogames",
         "url": [
             "beyx.tumblr.com"
@@ -104,52 +107,47 @@
         "quote": "En grandissant, je me suis rendu compte qu'il n'y avait rien de mieux qu'une histoire bien écrite, accompagnée d'un univers et de personnages complexes et profonds. La marque de fabrique des univers geek.",
         "works": [
             {
-                "url": "",
+                "url": "Beyx/batman.png",
                 "year": 2011,
                 "name": "Batman"
             },
             {
-                "url": "",
+                "url": "Beyx/TMNT.png",
                 "year": 2011,
                 "name": "TMNT"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Wallmaster"
-            },
-            {
-                "url": "",
+                "url": "Beyx/pikasurf.png",
                 "year": 2011,
                 "name": "Pika surf"
             },
             {
-                "url": "",
+                "url": "Beyx/boo!.png",
                 "year": 2011,
                 "name": "Boo!"
             },
             {
-                "url": "",
+                "url": "Beyx/mariosuits.png",
                 "year": 2011,
                 "name": "Mario Suits"
             },
             {
-                "url": "",
+                "url": "Beyx/bubblebobble.png",
                 "year": 2011,
                 "name": "Bubble Bobble"
             },
             {
-                "url": "",
+                "url": "Beyx/sonicdudes.png",
                 "year": 2011,
                 "name": "Sonic Dudes"
             },
             {
-                "url": "",
+                "url": "Beyx/luchadores.png",
                 "year": 2011,
                 "name": "Luchadores"
             },
             {
-                "url": "",
+                "url": "Beyx/clowncar.png",
                 "year": 2011,
                 "name": "Clown Car"
             },
@@ -157,7 +155,8 @@
     },
     "Steve Bialik": {
         "id": 7,
-        "worksCount": 136,
+        "worksCount": 33,
+        "age": 30,
         "theme": "film",
         "url": [
             "stevapalooza.blogspot.com"
@@ -166,52 +165,52 @@
         "quote": "Comics, jeux vidéo, fantasy, SF... Maintenant que ces univers ont cessé d'être considérés comme enfantins, nous sommes enfin libres de les apprécier à leur juste valeur.",
         "works": [
             {
-                "url": "",
+                "url": "BialikSteve/thegangster.jpg",
                 "year": 2010,
                 "name": "The Gangster"
             },
             {
-                "url": "",
+                "url": "BialikSteve/deathpalace.jpg",
                 "year": 2010,
                 "name": "Invasion of the Death Palace"
             },
             {
-                "url": "",
+                "url": "BialikSteve/theadmiral.jpg",
                 "year": 2010,
                 "name": "The Admiral"
             },
             {
-                "url": "",
+                "url": "BialikSteve/theemperor.jpg",
                 "year": 2010,
                 "name": "The Emperor"
             },
             {
-                "url": "",
+                "url": "BialikSteve/thesmuggler.jpg",
                 "year": 2010,
                 "name": "The Smuggler"
             },
             {
-                "url": "",
+                "url": "BialikSteve/robots.jpg",
                 "year": 2010,
                 "name": "Robots"
             },
             {
-                "url": "",
+                "url": "BialikSteve/spacewalker.jpg",
                 "year": 2011,
                 "name": "SpaceWalker"
             },
             {
-                "url": "",
+                "url": "BialikSteve/themaster.jpg",
                 "year": 2010,
                 "name": "The Master"
             },
             {
-                "url": "",
+                "url": "BialikSteve/akuma.jpg",
                 "year": 2010,
                 "name": "Akuma"
             },
             {
-                "url": "",
+                "url": "BialikSteve/thehermit.jpg",
                 "year": 2010,
                 "name": "The Hermit"
             },
@@ -219,7 +218,8 @@
     },
     "Barrett Biggers": {
         "id": 8,
-        "worksCount": 136,
+        "worksCount": 111,
+        "age": 30,
         "theme": "videogames",
         "url": [
             "barrettbiggers.com"
@@ -228,57 +228,52 @@
         "quote": "Quelque part en chacun de nous se cache un geek.",
         "works": [
             {
-                "url": "",
+                "url": "BiggersBarrett/proudlinkgeek.jpg",
                 "year": 2012,
                 "name": "Proud Link Geek"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/hereliesmario.jpg",
                 "year": 2012,
                 "name": "Here Lies Mario"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/lupushylian.jpg",
                 "year": 2012,
                 "name": "Lupus Hylian"
             },
             {
-                "url": "",
-                "year": 2012,
-                "name": "Samus Aran and the Metroid"
-            },
-            {
-                "url": "",
+                "url": "BiggersBarrett/triforce.jpg",
                 "year": 2012,
                 "name": "Triforce"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/hylianshield.jpg",
                 "year": 2012,
                 "name": "Hylian Shields"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/prideoftheforest.jpg",
                 "year": 2012,
                 "name": "Pride of the Forest"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/redpotion.jpg",
                 "year": 2012,
                 "name": "Red Potion"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/rupeesofhyrule.jpg",
                 "year": 2012,
                 "name": "Tingle's The Rupees of Hyrule Kingdom"
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/savezebes.jpg",
                 "year": 2012,
                 "name": "Save Zebes! Metroid Propaganda."
             },
             {
-                "url": "",
+                "url": "BiggersBarrett/midna.jpg",
                 "year": 2012,
                 "name": "Midna"
             }
@@ -286,7 +281,8 @@
     },
     "Boneface": {
         "id": 9,
-        "worksCount": 136,
+        "worksCount": 183,
+        "age": 30,
         "theme": "film",
         "url": [
             "bone-face.blogspot.com",
@@ -296,47 +292,47 @@
         "quote": "Ne demandez pas ce qui se cache sous les masques.",
         "works": [
             {
-                "url": "",
+                "url": "Boneface/crack!.jpg",
                 "year": 2011,
                 "name": "Crack"
             },
             {
-                "url": "",
+                "url": "Boneface/zing!.jpg",
                 "year": 2011,
                 "name": "Zing"
             },
             {
-                "url": "",
+                "url": "Boneface/smack!.jpg",
                 "year": 2011,
                 "name": "Smack!"
             },
             {
-                "url": "",
+                "url": "Boneface/soc!.jpg",
                 "year": 2011,
                 "name": "Soc!"
             },
             {
-                "url": "",
+                "url": "Boneface/thudd!.jpg",
                 "year": 2011,
                 "name": "Thudd!"
             },
             {
-                "url": "",
+                "url": "Boneface/whump!.jpg",
                 "year": 2011,
                 "name": "Whump!"
             },
             {
-                "url": "",
+                "url": "Boneface/overmydeadbody.jpg",
                 "year": 2011,
                 "name": "Over my Dead Body"
             },
             {
-                "url": "",
+                "url": "Boneface/ihavethepower.jpg",
                 "year": 2011,
                 "name": "I have the power"
             },
             {
-                "url": "",
+                "url": "Boneface/ghostbusters2.jpg",
                 "year": 2011,
                 "name": "Ghostbusters 2"
             },
@@ -344,7 +340,8 @@
     },
     "Franco Brambilla": {
         "id": 10,
-        "worksCount": 136,
+        "worksCount": 750,
+        "age": 30,
         "theme": "film",
         "url": [
             "francobrambilla.com"
@@ -353,70 +350,71 @@
         "quote": "J'ai grandi dans les années 1970-1980...La science-fiction était partout.",
         "works": [
             {
-                "url": "",
+                "url": "BrambillaFranco/ourlordofdarkness.jpg",
                 "year": 2008,
                 "name": "Our Lord of Darkness"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/imperialrodeo.jpg",
                 "year": 2008,
                 "name": "Imperial Rodeo"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/lidocup.jpg",
                 "year": 2009,
                 "name": "AT-AT Lido Cup!"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/usedcarsanddroids.jpg",
                 "year": 2008,
                 "name": "We sell Used Cars and Droids"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/dagobaths.jpg",
                 "year": 2009,
                 "name": "Dagobaths au Printemps"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/changingoftheguard.jpg",
                 "year": 2011,
                 "name": "Changing of the guard"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/honeymoonflorence.jpg",
                 "year": 2010,
                 "name": "Millennium Honeymoon Florence"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/honeymoonbenevento.jpg",
                 "year": 2010,
                 "name": "Millennium Honeymoon Benevento"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/minigolfexam.jpg",
                 "year": 2010,
                 "name": "Imperial Minigolf Final Exam"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/ihatesummer.jpg",
                 "year": 2011,
                 "name": "I hate summer"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/teaoflove.jpg",
                 "year": 2010,
                 "name": "The galactic Tea of love"
             },
             {
-                "url": "",
+                "url": "BrambillaFranco/lestskirun.jpg",
                 "year": 2012,
                 "name": "Hoth Pleasures... Last ski run"
             }
         ]
     },
-    "Brazer Liam": {
+    "Brazier Liam": {
         "id": 11,
-        "worksCount": 136,
+        "worksCount": 58,
+        "age": 30,
         "theme": "film",
         "url": [
             "liambrazier.com"
@@ -425,47 +423,47 @@
         "quote": "Je dessine ce que j'aime : c'est plus simple, plus amusant, et basé sur plus de trente ans de souvenirs et de bonheur.",
         "works": [
             {
-                "url": "",
+                "url": "BrazierLiam/guard.jpg",
                 "year": 2011,
                 "name": "Guard"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/caveman.jpg",
                 "year": 2011,
                 "name": "Cave Man"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/darklord.jpg",
                 "year": 2011,
                 "name": "Dark Lord"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/manup.jpg",
                 "year": 2011,
                 "name": "Man Up"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/manmade.jpg",
                 "year": 2012,
                 "name": "Man made"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/r&r.jpg",
                 "year": 2012,
                 "name": "R & R"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/bountyhunter.jpg",
                 "year": 2011,
                 "name": "Bounty Hunter"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/madman.jpg",
                 "year": 2011,
                 "name": "Mad Man"
             },
             {
-                "url": "",
+                "url": "BrazierLiam/goldenone.jpg",
                 "year": 2011,
                 "name": "Golden One"
             }
@@ -473,7 +471,8 @@
     },
     "Brogan Glen": {
         "id": 12,
-        "worksCount": 136,
+        "worksCount": 375,
+        "age": 30,
         "theme": "videogames",
         "url": [
             "albinoraven.com"
@@ -482,62 +481,47 @@
         "quote": "La plupart des gens finissent par se dire qu'ils sont trop vieux pour les cartoons. Je n'en suis pas encore là.",
         "works": [
             {
-                "url": "",
-                "year": 2010,
-                "name": "As days go by"
-            },
-            {
-                "url": "",
+                "url": "BroganGlen/oxygen.jpg",
                 "year": 2011,
                 "name": "Are you getting enough oxygen?"
             },
             {
-                "url": "",
+                "url": "BroganGlen/bottlefairy.jpg",
                 "year": 2011,
                 "name": "Bottle Fairy"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Daylight Come"
-            },
-            {
-                "url": "",
+                "url": "BroganGlen/shelleddragon.jpg",
                 "year": 2011,
                 "name": "The great shelled dragon"
             },
             {
-                "url": "",
+                "url": "BroganGlen/hellboybros.jpg",
                 "year": 2010,
                 "name": "Super Hellboy Bros"
             },
             {
-                "url": "",
+                "url": "BroganGlen/kfcmario.jpg",
                 "year": 2010,
                 "name": "KFC Mario"
             },
             {
-                "url": "",
-                "year": 2010,
-                "name": "The Blue Door"
-            },
-            {
-                "url": "",
+                "url": "BroganGlen/bigapple.jpg",
                 "year": 2011,
                 "name": "Big Apple, 3am"
             },
             {
-                "url": "",
+                "url": "BroganGlen/legendofzelda.jpg",
                 "year": 2011,
                 "name": "The legend of Zelda"
             },
             {
-                "url": "",
+                "url": "BroganGlen/truepeace.jpg",
                 "year": 2010,
                 "name": "A True Peace in Space"
             },
             {
-                "url": "",
+                "url": "BroganGlen/aprilfools.jpg",
                 "year": 2011,
                 "name": "April Fools"
             }
@@ -545,7 +529,8 @@
     },
     "Brunet Jérémie": {
         "id": 13,
-        "worksCount": 136,
+        "worksCount": 92,
+        "age": 30,
         "theme": "film",
         "url": [
             "behance.net/imerj"
@@ -554,52 +539,52 @@
         "quote": "Le Geek-Art est pour moi le moyen de continuer à m'amuser avec les personnages qui m'ont accompagné toute mon enfance.",
         "works": [
             {
-                "url": "",
+                "url": "BrunetJérémie/dardevil.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Dardevil"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/ironman.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Iron Man"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/superman.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Superman"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/batman.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Batman"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/cyclops.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Cyclops"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/venom.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Venom"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/humantorch.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Human Torch"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/misterfantastic.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Mister Fantastic"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/thing.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - The Thing"
             },
             {
-                "url": "",
+                "url": "BrunetJérémie/invisiblewoman.jpg",
                 "year": 2011,
                 "name": "FLAT HEROES - Invisible Woman"
             },
@@ -607,47 +592,48 @@
     },
     "James Burlinson": {
         "id": 14,
-        "worksCount": 136,
+        "worksCount": 59,
+        "age": 30,
         "theme": "videogames",
         "url": [
             "burlisaurus.co.uk",
-            "burlisaurus.trumblr.com"
+            "burlisaurus.tumblr.com"
         ],
         "presentation": "James Burlinson est un illustrateur et graphiste britannique vivant à Brighton. Aussi loin que remontent ses souvenirs, il a toujours eu un crayon à la main, dessinant très jeune ses héros préférés, ou recopiant les personnages de boîtes de céréales. Aujourd'hui, son style reconnaissable entre mille lui permet d'assouvir ses pulsions de fanboy tout en continuant à vivre de son art...",
         "quote": "Un geek, c'est quelqu'un qui est passionné par quelque chose... Sauf qu'il s'agit souvent d'une chose que peu de gens connaissent !",
         "works": [
             {
-                "url": "",
+                "url": "BurlinsonJames/mogwai.jpg",
                 "year": 2011,
                 "name": "MOgwai (Gremlins)"
             },
             {
-                "url": "",
+                "url": "BurlinsonJames/pugfuel.jpg",
                 "year": 2011,
                 "name": "Pug Fuel (Men in Black)"
             },
             {
-                "url": "",
+                "url": "BurlinsonJames/workplacerivalry.jpg",
                 "year": 2011,
                 "name": "Workplace Rivalry"
             },
             {
-                "url": "",
+                "url": "BurlinsonJames/mariomachine.jpg",
                 "year": 2011,
                 "name": "Mario Machine (Super Mario)"
             },
             {
-                "url": "",
+                "url": "BurlinsonJames/zelda.jpg",
                 "year": 2011,
                 "name": "Z (Legend of Zelda)"
             },
             {
-                "url": "",
+                "url": "BurlinsonJames/dancemagic.jpg",
                 "year": 2011,
                 "name": "Dance, Magic, Dance (Labyrinth)"
             },
             {
-                "url": "",
+                "url": "BurlinsonJames/adventuretime.jpg",
                 "year": 2011,
                 "name": "Time for Adventure (Adventure TIme)"
             }
@@ -655,7 +641,8 @@
     },
     "Emma Butler": {
         "id": 15,
-        "worksCount": 136,
+        "worksCount": 41,
+        "age": 30,
         "theme": "film",
         "url": [
             "emma-butler.com"
@@ -664,37 +651,37 @@
         "quote": "Après avoir trouvé le style graphique de la série, il m'a fallu trouver les objets cultes et propres à chaque film sur lequel je voulais travailler, ce qui s'est avéré la partie la plus amusante !",
         "works": [
             {
-                "url": "",
+                "url": "ButlerEmma/bttf.jpg",
                 "year": 2011,
                 "name": "Back to the Future Movie Parts Poster"
             },
             {
-                "url": "",
+                "url": "ButlerEmma/fg.jpg",
                 "year": 2011,
                 "name": "Forest Gump Movie Parts Poster"
             },
             {
-                "url": "",
+                "url": "ButlerEmma/jp.jpg",
                 "year": 2011,
                 "name": "Jurassic Park Movie Parts Poster"
             },
             {
-                "url": "",
+                "url": "ButlerEmma/md.jpg",
                 "year": 2011,
                 "name": "Mighty Ducks Movie Parts Poster"
             },
             {
-                "url": "",
+                "url": "ButlerEmma/am.jpg",
                 "year": 2011,
                 "name": "Anchorman Movie Parts Poster"
             },
             {
-                "url": "",
+                "url": "ButlerEmma/jm.jpg",
                 "year": 2011,
                 "name": "Juno Movie Parts Poster"
             },
             {
-                "url": "",
+                "url": "ButlerEmma/tg.jpg",
                 "year": 2011,
                 "name": "Top Gun Movie Parts Poster"
             }

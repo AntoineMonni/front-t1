@@ -1,7 +1,7 @@
 {
     "Andy Fairhust": {
         "id": 23,
-        "worksCount": 1,
+        "worksCount": 84,
         "theme": "film",
         "url": [
             "andyfairhurstart.com"
@@ -10,57 +10,57 @@
         "quote": "Je me suis rendu compte qu'en grandissant, j'ai accepté et accueilli à bras ouverts le geek qui était en moi et que, plus jeune, j'essayais de mettre de côté...",
         "works": [
             {
-                "url": "",
+                "url": "FairhustAndy/wolverine.jpg",
                 "year": 2012,
                 "name": "Wolverine Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/wolverine.jpg",
                 "year": 2012,
                 "name": "Bane Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/bane.jpg",
                 "year": 2012,
                 "name": "When I grow up, I wanna be Batman"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/harley.jpg",
                 "year": 2012,
                 "name": "Harley Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/magneto.jpg",
                 "year": 2012,
                 "name": "Magneto Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/punisher.jpg",
                 "year": 2012,
                 "name": "Punisher Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/iron.jpg",
                 "year": 2012,
                 "name": "Iron kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/spider.jpg",
                 "year": 2012,
                 "name": "Spider Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/storm.jpg",
                 "year": 2012,
                 "name": "Storm kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/thor.jpg",
                 "year": 2012,
                 "name": "Thor Kid"
             },
             {
-                "url": "",
+                "url": "FairhustAndy/joker.jpg",
                 "year": 2012,
                 "name": "Joker Kid"
             }
@@ -68,7 +68,7 @@
     },
     "Matt Ferguson": {
         "id": 24,
-        "worksCount": 1,
+        "worksCount": 620,
         "theme": "film",
         "url": [
             "cakesandcomics.com",
@@ -78,37 +78,37 @@
         "quote": "Je mets mon style au service des comics et de la SF, qui forment les bases de la culture populaire.",
         "works": [
             {
-                "url": "",
+                "url": "FergusonMatt/muturanebula.jpg",
                 "year": 2011,
                 "name": "Battle in the Mutura Nebula"
             },
             {
-                "url": "",
+                "url": "FergusonMatt/angrypuft.jpg",
                 "year": 2012,
                 "name": "Angry Stay Puft"
             },
             {
-                "url": "",
+                "url": "FergusonMatt/empirestrikes.jpg",
                 "year": 2011,
-                "name": "The Empire strickes back"
+                "name": "The Empire strikes back"
             },
             {
-                "url": "",
+                "url": "FergusonMatt/jedi.jpg",
                 "year": 2011,
                 "name": "Return of the Jedi"
             },
             {
-                "url": "",
+                "url": "FergusonMatt/starwars.jpg",
                 "year": 2011,
                 "name": "Star Wars"
             },
             {
-                "url": "",
+                "url": "FergusonMatt/ironman.jpg",
                 "year": 2012,
                 "name": "Iron Man MK2"
             },
             {
-                "url": "",
+                "url": "FergusonMatt/supes.jpg",
                 "year": 2012,
                 "name": "Supes"
             }
@@ -116,7 +116,7 @@
     },
     "Alex Fuentes": {
         "id": 25,
-        "worksCount": 1,
+        "worksCount": 59,
         "theme": "series",
         "url": [
             "alejandrofuentes.blogspot.com.es"
@@ -125,27 +125,22 @@
         "quote": "Ce qui m'a inspiré ? Sans hésitation les Looney Tunes de la Warner !",
         "works": [
             {
-                "url": "",
+                "url": "FuentesAlex/howard.jpg",
                 "year": 2010,
                 "name": "Howard Wolowitz from The Big Bang Theory"
             },
             {
-                "url": "",
-                "year": 2007,
-                "name": "Captain Marvel"
-            },
-            {
-                "url": "",
+                "url": "FuentesAlex/adama.jpg",
                 "year": 2010,
-                "name": "Bill Adama from battlestar galactica"
+                "name": "Will Adama from battlestar galactica"
             },
             {
-                "url": "",
+                "url": "FuentesAlex/moss.jpg",
                 "year": 2010,
                 "name": "Moss of The IT Crowd"
             },
             {
-                "url": "",
+                "url": "FuentesAlex/jonsnow.jpg",
                 "year": 2011,
                 "name": "Jon Snow and Sam from Game of Thrones"
             }

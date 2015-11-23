@@ -1,7 +1,7 @@
 {
     "Jason Edmiston": {
         "id": 21,
-        "worksCount": 1,
+        "worksCount": 79,
         "theme": "film",
         "url": [
             "jasonedmiston.com",
@@ -11,42 +11,42 @@
         "quote": "Parce que j'ai grandi au milieu  des comics, des films de SF, du glam rock, de Mad Magazine et des jouets des années 1980, mon travail a tendance à être assez voyant, vif et surtout teinté d'humour.",
         "works": [
             {
-                "url": "",
+                "url": "EdmistonJason/doll.png",
                 "year": 2011,
                 "name": "What a doll"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/hibernation.png",
                 "year": 2009,
                 "name": "Hibernation"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/mrsoaky.jpg",
                 "year": 2009,
                 "name": "Mr Soaky"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/sourceof.jpg",
                 "year": 2009,
                 "name": "Source of 5 essential nutrient"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/monstermash.jpg",
                 "year": 2010,
                 "name": "Monster Mash"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/thefly.jpg",
                 "year": 2011,
                 "name": "The fly"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/cobrawantsyou.jpg",
                 "year": 2010,
                 "name": "Cobra wants you"
             },
             {
-                "url": "",
+                "url": "EdmistonJason/trophies.png",
                 "year": 2010,
                 "name": "Planet of the apes: trophies"
             }
@@ -54,36 +54,36 @@
     },
     "Tamer Elsawi": {
         "id": 22,
-        "worksCount": 1,
+        "worksCount": 43,
         "theme": "film",
         "url": [
-            "tamerelsawi.tumblr.com"
+            "tamerelsawi.blogspot.fr"
         ],
         "presentation": "Tamer Elsawi est directeur artistique spécialisé dans la publicité à Dubaï. Passionné par son métier mais aussi par Star Wars, il a décidé de prendre de son temps personnel pour travailler sur l'univers de Georges Lucas. Toujours à la recherche d'un prisme nouveau sous lequel observer ses héros préférés, Tamer apprécie particulièrement mes mélanges atypiques.",
         "quote": "J'aime déplacer les personnages que j'aime hors de leur contexte, pour arriver parfois à des mélanges complètement dingues et improbables. Mais au moins, je suis sûr que ça ne s'est jamais vu !",
         "works": [
             {
-                "url": "",
+                "url": "ElsawiTamer/darkknight.jpg",
                 "year": 2011,
                 "name": "Dark Knight"
             },
             {
-                "url": "",
+                "url": "ElsawiTamer/sama.jpg",
                 "year": 2011,
                 "name": "Vader Sama"
             },
             {
-                "url": "",
+                "url": "ElsawiTamer/pharaoh.jpg",
                 "year": 2011,
                 "name": "Pharaoh Vader"
             },
             {
-                "url": "",
+                "url": "ElsawiTamer/maximus.jpg",
                 "year": 2011,
                 "name": "Vaderus Maximus"
             },
             {
-                "url": "",
+                "url": "ElsawiTamer/lieutnant.jpg",
                 "year": 2011,
                 "name": "Lieutenant Vader"
             }
