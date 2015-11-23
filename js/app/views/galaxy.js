@@ -4,8 +4,9 @@ var Galaxy = function(){
 	// On définit ici l'id de la vue
 	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
 	this.id = 'galaxy';
-	
-	this.url = "/A";
+	this.letter = "A";
+
+	this.tpl = app_templates.galaxy;
 	// Appelle le constructeur de View
 	// Et ajoute les propriétés de View à Home
 	View.apply(this, arguments);
@@ -26,15 +27,15 @@ Galaxy.prototype.bind = function() {
 	console.log('bind');
 
 	var url = History.getState().hash;
-	if ( url != "" )
-		this.url = url;
-	console.log(url);
+	var letter = url.substring(1);
+	if ( letter != "" )
+		this.letter = letter;
 
-
-	console.log(this.url);
 	app.currentGalaxy = app.pages.galaxy;
 
-	this.artistButton.on('click', $.proxy(this.onCtaClick, this));
+	this.getJson(this.letter);
+
+	// this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 
 	// this.hash = (History.getState().hash).replace('/','');
 
@@ -73,9 +74,22 @@ Galaxy.prototype.onCtaClick = function(e) {
 
 	// On affiche le trailer
 	// A remplacer par app.pages.trailer.show() une fois la classe Trailer créé
-	History.pushState(null, null, '/'+app.pages.galaxy.url+'/olly-moss');
+	History.pushState(null, null, '/'+app.pages.galaxy.letter+'/olly-moss');
 
 };
+
+Galaxy.prototype.getJson = function(param){
+	var that = this;
+	letter = param.toLowerCase();
+	$.getJSON( "/assets/json/"+letter+".json", function(response) {
+ 		that.initArtists(response);
+	});
+}
+
+Galaxy.prototype.initArtists = function(param){
+	console.log('param');
+	console.log(param);
+}
 
 // Galaxy.prototype.loadJson = function(letter) {
 

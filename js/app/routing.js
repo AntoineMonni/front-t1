@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 	var self = this;
 
+	// home
 	crossroads.addRoute('/', function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
 		console.log('proc');
@@ -15,6 +16,7 @@ $(document).ready(function(){
 
 	});
 
+	// galaxy
 	crossroads.addRoute(/^\/[A-Z]{1}$/, function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
 
@@ -24,7 +26,7 @@ $(document).ready(function(){
 
 	});
 
-
+	// artist
 	crossroads.addRoute(/^\/[A-Z]{1}\/\w+.?\w*/, function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
 
@@ -33,7 +35,7 @@ $(document).ready(function(){
 		app.currentArtist = app.pages.artist;
 	});
 
-
+	// support
 	crossroads.addRoute(/mentions|credits|demarche|contact/, function(){
   		if ( app.currentPage != null ) app.currentPage.hide();
   		var url = History.getState().hash;
@@ -65,5 +67,5 @@ $(document).ready(function(){
 	// Parse URL for the first time
 	crossroads.parse( History.getState().hash );
 	
-	// console.log(app_templates);
+	console.log(app_templates);
 });

@@ -3,6 +3,7 @@ var App = function(){
 
 	// On crée un objet vide qui nous servira à stocker nos vues / pages
 	this.pages = {};
+	this.tpl = app_templates;
 
 	this.currentPage = null;
 	this.currentArtist = null;

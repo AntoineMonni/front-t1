@@ -92,7 +92,7 @@ View.prototype.goToCurrentGalaxy = function(){
 	if ( app.currentPage.id != "home" )
 	{
 		console.log('home_test')
-		History.pushState(null, null, '/'+app.currentGalaxy.url);
+		History.pushState(null, null, '/'+app.currentGalaxy.letter);
 	}
 	else
 	{
