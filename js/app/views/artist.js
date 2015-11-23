@@ -27,9 +27,6 @@ Artist.prototype.bind = function() {
 
 	// On bind KeyEvent pour que les évènements du clavier soient écoutés dès que la vue est chargée
 	this.keyEvent();
-
-	// Bind scroll listening
-	this.listenScroll();
 };
 
 Artist.prototype.keyEvent = function() {
@@ -55,10 +52,3 @@ Artist.prototype.keyEvent = function() {
 		}
 	});
 };
-
-Artist.prototype.listenScroll = function() {
-
-	console.log('scrolling');
-	
-};
-

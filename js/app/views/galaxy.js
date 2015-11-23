@@ -72,8 +72,6 @@ Galaxy.prototype.onCtaClick = function(e) {
 	// On cache la vue
 	this.hide();
 
-	// On affiche le trailer
-	// A remplacer par app.pages.trailer.show() une fois la classe Trailer créé
 	History.pushState(null, null, '/'+app.pages.galaxy.letter+'/olly-moss');
 
 };
