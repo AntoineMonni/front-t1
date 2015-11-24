@@ -1,6 +1,7 @@
 #letter {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 20;
 	.single-letter {
 		position: relative;
 		line-height: 100vh;
