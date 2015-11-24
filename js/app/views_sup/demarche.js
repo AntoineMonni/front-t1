@@ -26,7 +26,7 @@ Demarche.prototype.bind = function() {
 
 	app.currentSupport = app.pages.demarche;
 
-	View_sup.prototype.handleMenu.call(this.id);
+	View_sup.prototype.handleMenu.call(this);
 };
 
 // Méthode onAnimateIn spécifique à Demarche

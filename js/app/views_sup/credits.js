@@ -26,7 +26,7 @@ Credits.prototype.bind = function() {
 
 	app.currentSupport = app.pages.credits;
 
-	View_sup.prototype.handleMenu.call(this.id);
+	View_sup.prototype.handleMenu.call(this);
 };
 
 // Méthode onAnimateIn spécifique à Credits

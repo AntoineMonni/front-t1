@@ -57,8 +57,6 @@ $(document).ready(function(){
 	  // Value of History hash
 		var newUrl = History.getState().hash;
 
-		console.log('new url is', newUrl);
-
 		crossroads.parse( newUrl );
 
 
@@ -66,6 +64,4 @@ $(document).ready(function(){
 
 	// Parse URL for the first time
 	crossroads.parse( History.getState().hash );
-	
-	console.log(app_templates);
 });

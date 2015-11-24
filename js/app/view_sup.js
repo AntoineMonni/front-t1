@@ -30,8 +30,6 @@ View_sup.prototype.onCloseView = function(e) {
 	e.preventDefault();
 	View.prototype.hide.call(this);
 
-	console.log('view sup');
-
 	if ( app.footer.hasClass('show'))
 		app.footer.removeClass('show');
 	if ( app.header.hasClass('hide'))
@@ -45,12 +43,10 @@ View_sup.prototype.onCloseView = function(e) {
 
 };
 
-View_sup.prototype.handleMenu = function(param) {
+View_sup.prototype.handleMenu = function() {
 
 	if ( !app.footer.hasClass('show') )
 	{
-		$('.'+param+'-btn').addClass('active');
-
 		// Show the app.footer / menu
 		app.footer.toggleClass('show');
 		// Hide app.header if not / reverse
@@ -65,7 +61,7 @@ View_sup.prototype.handleMenu = function(param) {
 		app.menu.addClass('active');
 	}
 	$(app.footer).find('a').removeClass('active');
-	$(app.footer).find('.'+param+'-btn').addClass('active');
+	$(app.footer).find(this.btn).addClass('active');
 };
 
 // Méthode onAnimateIn spécifique à View_sup
