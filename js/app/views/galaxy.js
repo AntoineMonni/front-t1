@@ -45,6 +45,7 @@ Galaxy.prototype.bind = function() {
 		this.letter = letter;
 
 	app.currentGalaxy = app.pages.galaxy;
+	app.pages.artist.artist = null;
 
 	$(app.header).find('a').removeClass('active');
 	$(app.header).find('#'+this.letter).addClass('active');
@@ -102,7 +103,7 @@ Galaxy.prototype.getJson = function(param){
 Galaxy.prototype.initArtists = function(param){
 	var self = this;
 	$.each(param, function( index, value ) {
-		parseName = index.replace(/ /g, "-")
+		parseName = index.replace(/ /g, "-");
 		data = {name:index, parseName:parseName, letter:self.letter, details:value};
   		self.tplContent.append(self.tpl(data));
   		self.bindLinkArtist();

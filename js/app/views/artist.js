@@ -112,7 +112,7 @@ Artist.prototype.matchArtist = function(data){
 	console.log(data);
 
 	var self = this;
-	var parseName = this.artist.replace(/-/g, " ")
+	var parseName = this.artist.replace(/-/g, " ");
 	$.each(data, function( index, value ) {
 		if ( index == parseName ){
 			data = {name:index, details:value};

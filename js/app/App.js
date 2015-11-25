@@ -16,7 +16,9 @@ var App = function(){
 	this.footer = $('footer');
 	this.helpButton = $('#help-button');
 	this.help = $('#help');
-	this.letterSection = $('#letter');
+	this.keyboardNav = $('#keyboardNav');
+	this.letterSection = this.keyboardNav.find('single-letter');
+	this.artistSelection = this.keyboardNav.find('single-artist');
 
 	this.allMenuItem = $('nav a');
 	this.headerMenuItem = this.header.find('nav a');
@@ -56,7 +58,7 @@ App.prototype.init = function() {
 	this.pages.contact = new Contact();
 
 	// On initialise la navigation
-	this.pages.navigation = new Navigation();
+	this.pages.navigation = new Navigation(this);
 
 	this.window.on('keyup', function(e) {
 		e.preventDefault();
