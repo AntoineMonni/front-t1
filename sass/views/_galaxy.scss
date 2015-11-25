@@ -75,5 +75,10 @@
 			transition: all .7s ease;
 		}
 	}
+	.planet {
+		$:hover {
+			cursor: pointer;
+		}
+	}
 }
 

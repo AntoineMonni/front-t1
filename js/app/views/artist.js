@@ -85,17 +85,20 @@ Artist.prototype.superTpl = function(){
 
 	var self = this;
 
+
 	if ( app.pages.galaxy.letter != this.letter )
 	{
 		app.pages.galaxy.letter = this.letter;
 		$.when(app.pages.galaxy.getJson(this.letter)).done(function(){
-			self.matchArtist(app.pages.galaxy.data);
+
+			self.matchArtist(app.pages.galaxy.dataForArtist);
+
 		});
 
 	}
 	else
 	{
-		this.matchArtist(app.pages.galaxy.data);
+		this.matchArtist(app.pages.galaxy.dataForArtist);
 	}
 };
 
@@ -105,6 +108,9 @@ Artist.prototype.printTpl = function(data){
 };
 
 Artist.prototype.matchArtist = function(data){
+
+	console.log(data);
+
 	var self = this;
 	var parseName = this.artist.replace(/-/g, " ")
 	$.each(data, function( index, value ) {
