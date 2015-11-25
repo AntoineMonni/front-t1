@@ -1,4 +1,4 @@
-#letter {
+#keyboardNav {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.9);
 	z-index: 20;
@@ -8,5 +8,20 @@
 		font-family: $futura;
 		font-size: 180px;
 		text-transform: uppercase;
+		li {
+			float: left;
+			width: 200px;
+			box-sizing: border-box;
+		}
+	}
+	.single-artist {
+		position: relative;
+		line-height: 100vh;
+		font-family: $futura;
+		font-size: 100px;
+		text-transform: uppercase;
+		li {
+			height: 200px;
+		}
 	}
 }

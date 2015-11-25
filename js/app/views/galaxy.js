@@ -1,25 +1,36 @@
 // Class Galaxy
 var Galaxy = function(){
 	
-	// On définit ici l'id de la vue
-	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
-	this.id = 'galaxy';
-	this.letter = "A";
-	this.tpl = app_templates.galaxy;
-
-	// Handlebars.registerPartial("Galaxy", app_templates.galaxy);
-	// Et ajoute les propriétés de View à Home
-	View.apply(this, arguments);
-
-	this.tplContent = 	this.domElem.find('[tpl-content]');
-
-	console.log('galaxy');
+	this.init()
 
 };
 
 // Ici on dit que Galaxy hérite de la classe parente View
 // Galaxy va hériter de toutes les méthodes de View
 Galaxy.prototype = Object.create(View.prototype);
+
+Galaxy.prototype.init = function() {
+	this.id = 'galaxy';
+	this.letter = "A";
+	this.tpl = app_templates.galaxy;
+
+	this.width = 250;
+	this.height = 250;
+
+
+	this.centerPosition = {
+		'x': this.width/2,
+		'y': this.height/2
+	}
+
+	this.sortStatistic = "worksCount";
+
+	this.scale = {};
+
+	View.apply(this, arguments);
+
+	this.tplContent = this.domElem.find('[tpl-content]');
+}
 
 // Méthode bind spécifique à Galaxy
 Galaxy.prototype.bind = function() {
@@ -28,15 +39,13 @@ Galaxy.prototype.bind = function() {
 	// Equivalent de la fonction super() dans d'autres languages
 	View.prototype.bind.call(this);
 
-	console.log(this.letter);
-
 	var url = History.getState().hash;
 	var letter = url.substring(1);
 	if ( letter != "" )
 		this.letter = letter;
 
-	// console.log('galaxy');
 	app.currentGalaxy = app.pages.galaxy;
+	app.pages.artist.artist = null;
 
 	$(app.header).find('a').removeClass('active');
 	$(app.header).find('#'+this.letter).addClass('active');
@@ -44,20 +53,11 @@ Galaxy.prototype.bind = function() {
 	// this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 };
 
-// Méthode onAnimateIn spécifique à Galaxy
-// Cette fonction sera appellée une fois la vue affichée (cf. View)
 Galaxy.prototype.onAnimateIn = function() {
 	
-	// On appelle d'abord la fonction onAnimateIn de la classe parente View
-	// Equivalent de la fonction super() dans d'autres languages
-	// View.prototype.onAnimateIn.call(this);
-
 	this.getJson(this.letter);
 
-	// On stocke le contexte de la classe pour l'utiliser plus tard
 	var self = this;
-
-	// On attend 1s
 	setTimeout(function(){
 
 		// On affiche le CTA
@@ -67,32 +67,18 @@ Galaxy.prototype.onAnimateIn = function() {
 
 };
 
-// Méthode onAnimateOut spécifique à Galaxy
-// Cette fonction sera appellée une fois la vue affichée (cf. View)
+
 Galaxy.prototype.onAnimateOut = function() {
 	
-	// On appelle d'abord la fonction onAnimateOut de la classe parente View
-	// Equivalent de la fonction super() dans d'autres languages
-	// View.prototype.onAnimateOut.call(this);
-
-	// On stocke le contexte de la classe pour l'utiliser plus tard
 	var self = this;
-
 	this.tplContent.html("");
 
 };
 
-// Au click sur le CTA
 Galaxy.prototype.onCtaClick = function(e) {
 	
-	// On intercepte le click
 	e.preventDefault();
-
-	// On cache la vue
 	this.hide();
-
-	// On affiche le trailer
-	// A remplacer par app.pages.trailer.show() une fois la classe Trailer créé
 	History.pushState(null, null, '/'+app.pages.galaxy.letter+'/olly-moss');
 
 };
@@ -101,15 +87,23 @@ Galaxy.prototype.getJson = function(param){
 	var self = this;
 	letter = param.toLowerCase();
 	return $.getJSON( "/assets/json/"+letter+".json", function(response) {
-		self.data = response;
- 		self.initArtists(response);
+		self.data = self.formatData(response);
+		self.dataForArtist = response;
+	}).then(function() {
+		self.setScale(self.data);
+		self.svg = d3.select('.artist-section')
+			.append('svg')
+			.attr('width', self.width)
+			.attr('height', self.height);
+
+		self.drawGalaxy(self.data);
 	});
 };
 
 Galaxy.prototype.initArtists = function(param){
 	var self = this;
 	$.each(param, function( index, value ) {
-		parseName = index.replace(/ /g, "-")
+		parseName = index.replace(/ /g, "-");
 		data = {name:index, parseName:parseName, letter:self.letter, details:value};
   		self.tplContent.append(self.tpl(data));
   		self.bindLinkArtist();
@@ -120,10 +114,221 @@ Galaxy.prototype.bindLinkArtist = function(){
 	this.artist = this.domElem.find('[linkArtist]');
 
 	this.artist.on('click', $.proxy(this.clickArtist, this));
-}
+};
 
 Galaxy.prototype.clickArtist = function(e){
 	e.preventDefault();
 	var url = $(e.target).attr('href');
 	History.pushState(null, null, url);
+};
+
+Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
+
+	this.sortStatistic = sortStatistic;
+	this.setScale(this.data);
+	$('svg').empty();
+	this.drawGalaxy(this.data);
+
+};
+
+Galaxy.prototype.filter = function(filter) {
+
+	var filterData = []
+
+	for (var i = 0; i < this.data.length; i++) {
+		if (this.data[i].theme == filter) {
+			filterData.push(this.data[i])
+		}
+	}
+
+	this.filterData = filterData;
+
+	this.setScale(this.filterData);
+	$('svg').empty();
+	this.drawGalaxy(this.filterData)
 }
+
+Galaxy.prototype.updateData = function(data) {
+
+	this.data = this.formatData(data);
+	this.setScale(this.data);
+	$('svg').empty();
+	this.drawGalaxy(this.data)
+
+};
+
+Galaxy.prototype.formatData = function(data) {
+
+	var formattedData = []
+
+	for (var key in data) {
+		if (data.hasOwnProperty(key)){
+			formattedData.push({})
+			formattedData[formattedData.length - 1].name = key
+
+			for (var i = 0; i < data[key].works.length; i++) {
+				if (i > 0) {
+					if (data[key].works[i].year > lastWork) {
+						lastWork = data[key].works[i].year;
+					}
+				} else {
+					var lastWork = data[key].works[i].year;
+				}
+			}
+
+			formattedData[formattedData.length - 1].url = "/" + this.letter + "/" + key.replace(/ /g, "-");
+			formattedData[formattedData.length - 1].lastWork = lastWork;
+			formattedData[formattedData.length - 1].allWorksCount = data[key].worksCount;
+			formattedData[formattedData.length - 1].worksCount = data[key].works.length;
+			formattedData[formattedData.length - 1].theme = data[key].theme;
+		}
+	}
+	
+	for (var i = 0; i < formattedData.length; i++) {
+
+		if (i == 0) {
+
+			var yearMap = [];
+			yearMap[formattedData[i].lastWork] = 1;
+
+		} else {
+
+			if (yearMap[formattedData[i].lastWork]) {
+
+				yearMap[formattedData[i].lastWork]++
+
+			} else {
+
+				yearMap[formattedData[i].lastWork] = 1
+
+			}
+		}
+	}
+
+	for (var i = 0; i < formattedData.length; i++) {
+
+		if (i == 0) {
+
+			var angle = []
+			var count = []
+
+			angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+			formattedData[i].position = 0;
+			count[formattedData[i].lastWork] = 1;
+
+		} else {
+
+			if (!angle[formattedData[i].lastWork]) {
+
+				angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+				formattedData[i].position = 0;
+				count[formattedData[i].lastWork] = 1;
+
+			} else {
+
+				formattedData[i].position = count[formattedData[i].lastWork] * angle[formattedData[i].lastWork]
+				count[formattedData[i].lastWork]++
+
+			}
+
+		}
+	}
+
+	return formattedData
+}
+
+Galaxy.prototype.setScale = function(data) {
+
+	var self = this;
+
+	this.scale.planetRadius = d3.scale.linear()
+		.domain([0, this.getMax(data, this.sortStatistic)])
+		.range([2, (this.width/2)/15]);
+
+};
+
+Galaxy.prototype.drawGalaxy = function(data) {
+
+	var self = this;
+
+	this.drawOrbits();
+
+	this.svg
+		.append('circle')
+		.attr("r", 3)
+		.attr("cx", function(d) {return self.centerPosition.x})
+		.attr("cy", function(d) {return self.centerPosition.y})
+
+	this.svg
+		.selectAll(".planet")
+		.data(data)
+			.enter().append("circle")
+		.attr("class", "planet")
+		.attr("r", function(d) {return self.scale.planetRadius(d[self.sortStatistic])})
+		.attr("cx", function(d) {return self.centerPosition.x})
+		.attr("cy", function(d) {return self.centerPosition.y - (d.lastWork - 2007) * (self.width/2)/6})
+		.attr("fill", function(d) {
+			if (d.theme == "videogames") {
+				return "#C3575A";
+			} else if (d.theme == "film"){
+				return "#6888C0";
+			} else if (d.theme == "series"){
+				return "#FFB767";
+			}
+		})
+		.attr("stroke", "#FAFAFA")
+		.attr("stroke-width", 3)
+		.attr("transform", function(d) {return "rotate(" +d.position+ " " +self.centerPosition.x+ " " +self.centerPosition.y+ ")"})
+		.on("click", function(e) {
+
+			History.pushState(null, null, e.url);
+
+		})
+
+};
+
+Galaxy.prototype.drawOrbits = function() {
+
+	var self = this;
+	for (var i = 5; i >= 0; i--) {
+		this.svg
+			.append('circle')
+			.attr("fill", "#FAFAFA")
+			.attr("stroke", "black")
+			.attr("stroke-width", 1)			
+			.attr("r", i * (self.width/2)/6)
+			.attr("cx", self.centerPosition.x)
+			.attr("cy", self.centerPosition.y)
+	}
+	
+}
+
+Galaxy.prototype.getMax = function(obj, accessor) {
+
+	for (var i = 0; i < obj.length; i++) {
+		if (i > 0) {
+			if (obj[i][accessor] > currentMax) {
+				currentMax = obj[i][accessor];
+			}
+		} else {
+			var currentMax = obj[i][accessor];
+		}
+	};
+	return currentMax;
+
+};
+
+Galaxy.prototype.getMin = function(obj, accessor) {
+
+	for (var i = 0; i < obj.length; i++) {
+		if (i > 0) {
+			if (obj[i][accessor] < currentMin) {
+				currentMin = obj[i][accessor]
+			}
+		} else {
+			var currentMin = obj[i][accessor];
+		}
+	};
+	return currentMin;
+
+};
