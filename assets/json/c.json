@@ -1,4 +1,4 @@
-{
+m{
     "Horacio Cassinelli": {
         "id": 16,
         "worksCount": 53,
@@ -15,32 +15,17 @@
                 "name": "Manga Eyes"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Superman dog"
-            },
-            {
-                "url": "",
-                "year": 2010,
-                "name": "Carré"
-            },
-            {
-                "url": "",
+                "url": "CassinelliHoracio/bleu.jpg",
                 "year": 2010,
                 "name": "Bleu Clark"
             },
             {
-                "url": "",
+                "url": "CassinelliHoracio/shift.jpg",
                 "year": 2012,
-                "name": "Souvenir 2"
+                "name": "Shift"
             },
             {
-                "url": "",
-                "year": 2010,
-                "name": "Alien"
-            },
-            {
-                "url": "",
+                "url": "CassinelliHoracio/souvenirs.jpg",
                 "year": 2012,
                 "name": "Souvenir 1"
             }

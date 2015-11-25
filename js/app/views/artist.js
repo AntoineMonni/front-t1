@@ -39,9 +39,8 @@ Artist.prototype.bind = function() {
 
 	this.letter = letter;
 
-
-	// Bind scroll listening
-	// this.document.on('scroll', $.proxy(this.listenScroll, this));
+	// Bind Escape
+	this.document.on('keyup', $.proxy(this.keyEvent, this));
 };
 
 
@@ -103,7 +102,17 @@ Artist.prototype.superTpl = function(){
 };
 
 Artist.prototype.printTpl = function(data){
+
+	console.log(data);
+
+	var positionCounter = 1;
+    Handlebars.registerHelper('position', function() {
+        return positionCounter++;
+    });
+
 	this.tplContent.append(this.tpl(data));
+
+	$('.legend-container').on('click', $.proxy(this.onClickPicture, this));
 
 };
 
@@ -123,28 +132,72 @@ Artist.prototype.matchArtist = function(data){
 	});
 };
 
-// Artist.prototype.keyEvent = function(e) {
-// 		e.preventDefault();
+// Au click sur une image, récupère le lien et déclenche l'ouverture de la lightbox
+Artist.prototype.onClickPicture = function(e) {
+		e.preventDefault();
 
-// 		// Si on est sur la page artist
-// 		if ( $('#artist').is(':visible') ){
+		this.link = $(e.target),
+		this.url = this.link.attr('href'),
+		this.lightbox = $('#lightbox');
 
-// 			// Echap
-// 			if ( e.which == 27 ){
-				
-// 				// On exécute la fonction pour cacher la vue
-// 				self.hide();
-// 				// // On dit à la vue Galaxy de s'afficher
-// 				// app.pages.galaxy.show();
-// 			}
+		// La div legende
+		this.legend = this.link.parent().find('.legend');
 
-// 		}
-// 	});
-// };
+		// Le nom de l'oeuvre et la date
+		this.workName = this.legend.find('strong').html();
+		this.workDate = this.legend.find('p').html();
 
-// Artist.prototype.listenScroll = function() {
+		this.openLightbox(this.url);
+};
 
-// 	console.log('scrolling');
-	
-// };
+// Affiche la lightbox avec la bonne url
+Artist.prototype.openLightbox = function(url) {
+
+	// Création de la lightbox avec les informations de l'image cliquée
+	this.lightbox.find('.lightbox-container').append('<img src="/assets/images/'+this.url+'" alt="'+this.workName+'"><div class="legend-container"><span class="legend"><strong>'+this.workName+'</strong>&nbsp;-&nbsp;'+this.workDate+'</span></div>');
+	console.log(this.url);
+
+	// On l'affiche et on appelle la fonction pour écouter les évènement qui vont permettre de la fermer
+	this.lightbox.fadeIn();
+
+	// Au clic dans la lightbox on la ferme + Au clic sur le bouton close
+	this.lightbox.on('click', $.proxy(this.closeLightbox, this));
+	this.lightbox.find('.close').on('click', $.proxy(this.closeLightbox, this));
+	// Ici on ferme grace au bouton échap
+	this.document.on('keyup', $.proxy(this.closeLightbox, this));
+};
+
+Artist.prototype.closeLightbox = function(e) {
+	e.preventDefault();
+
+	// 27 pour échap et 1 pour le click
+	if(e.which == 27 || e.which == 1) {
+		this.lightbox.fadeOut();
+		this.lightbox.find('.lightbox-container').html('');
+	}
+
+};
+
+Artist.prototype.keyEvent = function(e) {
+	e.preventDefault();
+
+	var self = this;
+
+	// Si on est sur la page artist et qu'il n'y a pas de lightbox ouverte
+	if ( $('#artist').css('display') == 'block' && $('#lightbox').css('display') == 'none'){
+
+		// Echap
+		if ( e.which == 27 ){
+
+			console.log()
+			
+			// On exécute la fonction pour cacher la vue
+			self.hide();
+			// // On dit à la vue Galaxy de s'afficher
+			History.pushState(null, null, '/'+app.currentGalaxy.letter);
+		}
+
+	};
+};
+
 
