@@ -14,20 +14,44 @@
 				top: 4px;
 			}
 		}
-		
+
 		.artist-container {
 			width: 80%;
 			.content {
 				width: 100%;
 				min-width: auto;
+				.artist-content {
+					.artist-works {
+						.artist-work {
+							.legend-container {
+								.legend{
+									margin-top: 35%;
+								}
+							}
+						}
+						.artist-work:first-child {
+							height: 500px;
+							.legend-container {
+								.legend {
+									margin-top:25%;
+								}
+							}
+						}
+						.artist-work:nth-child(n+2) {
+							width: 49%;
+							height: 400px;
+						}
+					}
+				}
 			}
 		}
+
 	}
 
 	@media screen and (max-width: 780px) {
 
 		.artist-container {
-			top: 80px;
+			top: 100px;
 		}
 	}
 
