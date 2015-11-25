@@ -76,7 +76,7 @@
 		}
 	}
 	.planet {
-		$:hover {
+		&:hover {
 			cursor: pointer;
 		}
 	}
