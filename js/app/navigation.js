@@ -56,8 +56,6 @@ Navigation.prototype.bind = function(key) {
 
 // fonction qui gère l'appartion menu des lettres et le timer
 Navigation.prototype.letterNav = function() {
-	console.log(app.keyboardNav);
-
 	if ( this.status != 1 ){
 		clearInterval(this.interval);
 		this.timer();
@@ -171,19 +169,14 @@ Navigation.prototype.nextArtist = function() {
 
 	this.timeShow = this.timeMax;
 
-	console.log(this.artist);
 	IDArtist = this.tableArtistsByParseName[this.artist];
-	console.log(IDArtist);
+
 	if ( IDArtist < this.tableArtistsByNum.length - 1 )
 	{
-		console.log('proc');
 		IDArtist ++ ;
 		newArtist = this.tableArtistsByNum[IDArtist];
 		this.artist = newArtist;
 	}
-
-	console.log(this.tableArtistsByNum);
-	console.log(this.tableArtistsByName);
 
 	this.moveMenuArtist(IDArtist);
 
@@ -198,19 +191,13 @@ Navigation.prototype.previousArtist = function() {
 
 	this.timeShow = this.timeMax;
 
-	console.log(this.artist);
 	IDArtist = this.tableArtistsByParseName[this.artist];
-	console.log(IDArtist);
 	if ( IDArtist > 0 )
 	{
-		console.log('proc');
 		IDArtist -- ;
 		newArtist = this.tableArtistsByNum[IDArtist];
 		this.artist = newArtist;
 	}
-
-	console.log(this.tableArtistsByNum);
-	console.log(this.tableArtistsByName);
 
 	this.moveMenuArtist(IDArtist);
 
@@ -246,13 +233,12 @@ Navigation.prototype.setTableLetters = function(){
 
 Navigation.prototype.setArtistTable = function(){
 	var self = this;
-		console.log(app.currentGalaxy.data);
 		this.tableArtistsByName = [];
 		this.tableArtistsByParseName = [];
 		this.tableArtistsByNum = [];
 		this.tableArtistsByNumNoParse = [];
 		var i = 0;
-		$.each(app.currentGalaxy.data, function( index, value ) {
+		$.each(app.currentGalaxy.dataForArtist, function( index, value ) {
 			self.tableArtistsByNum[i] = index.replace(/ /g, "-");
 			self.tableArtistsByNumNoParse[i] = index;
 			self.tableArtistsByName[index] = i;
