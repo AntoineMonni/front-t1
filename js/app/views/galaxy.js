@@ -314,9 +314,18 @@ Galaxy.prototype.drawGalaxy = function(data) {
 	this.drawOrbits();
 
 	this.svg
+		.append("circle")
+		.attr("fill", "black")
+		.attr("stroke", "black")
+		.attr("r", 15)
+		.attr("cx", this.centerPosition.x)
+		.attr("cy", this.centerPosition.y)
+
+	this.svg
 		.append('text')
 		.html(this.letter)
-		.attr("fill", "black")
+		.attr("class", "sun")
+		.attr("fill", "white")
 		.attr("x", this.centerPosition.x - 5)		
 		.attr("y", this.centerPosition.y + 5)		
 
@@ -341,9 +350,7 @@ Galaxy.prototype.drawGalaxy = function(data) {
 		.attr("stroke-width", 3)
 		.attr("transform", function(d) {return "rotate(" +d.position+ " " +self.centerPosition.x+ " " +self.centerPosition.y+ ")"})
 		.on("click", function(e) {
-
 			History.pushState(null, null, e.url);
-
 		})
 		.on('mouseover',function(e) {
 			app.followAge.find('h4').html(e.name);
