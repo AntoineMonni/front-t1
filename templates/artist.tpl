@@ -16,8 +16,8 @@
     <div class="artist-works">
         {{#each details.works}}
             <div class="artist-work">
-                <span style="background-image: url('/assets/images/{{this.url}}');"></span>
-                <a href="{{this.url}}" class="legend-container">
+                <span class="work-image" style="background-image: url('/assets/images/{{this.url}}');"></span>
+                <a href="{{this.url}}" class="legend-container" index="{{@key}}">
                     <span class="legend"><strong>{{this.name}}</strong>&nbsp;-&nbsp;<p>{{this.year}}</p></span>
                 </a>
             </div>

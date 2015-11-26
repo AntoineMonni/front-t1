@@ -86,10 +86,20 @@ body{
 			padding-bottom: 5px;
 			background-position: 100% 95%;
 			transition: all .5s ease;
+			&.active {
+				background-size: 100% 8px;
+				padding-bottom: 5px;
+				background-position: 100% 5%;
+				transition: all .5s ease;
+			}
 		}
 		&:hover a {
-			-webkit-animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
-			        animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
+			-webkit-animation: swipeOutCenter .3s ease forwards, mooveLeftCenter 0s ease .3s forwards, swipeInCenter .3s ease .3s forwards;
+			        animation: swipeOutCenter .3s ease forwards, mooveLeftCenter 0s ease .3s forwards, swipeInCenter .3s ease .3s forwards;
+			&.active {
+				-webkit-animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
+				        animation: swipeOut .3s ease forwards, mooveLeft 0s ease .3s forwards, swipeIn .3s ease .3s forwards;
+			}
 		}
 	}
 
