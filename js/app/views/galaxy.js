@@ -42,8 +42,8 @@ Galaxy.prototype.createWidthAndHeight = function() {
 
 	var widthAndHeight = disponibleW > disponibleH ? disponibleH : disponibleW;
 
-	this.width = widthAndHeight
-	this.height = widthAndHeight
+	this.width = widthAndHeight;
+	this.height = widthAndHeight;
 }
 
 // Méthode bind spécifique à Galaxy
@@ -65,19 +65,17 @@ Galaxy.prototype.bind = function() {
 	$(app.header).find('a').removeClass('active');
 	$(app.header).find('#'+this.letter).addClass('active');
 
-	this.domElem.find('.tags').on('click', 'a', function (e) {
-		
-		e.preventDefault();
+	var self = this;
 
-		console.log($(this).attr('href'));
-	
-	})
-	// this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 };
+
 
 Galaxy.prototype.onAnimateIn = function() {
 	
 	this.getJson(this.letter);
+
+
+	this.filterData = []
 
 	var self = this;
 	setTimeout(function(){
@@ -126,6 +124,59 @@ Galaxy.prototype.getJson = function(param){
 			.attr('height', self.height);
 
 		self.drawGalaxy(self.data);
+
+		self.domElem.find('.tags').unbind().bind().on('click', 'a', function (e) {
+		
+			e.preventDefault();
+
+			if ($(this).hasClass("underline")) {
+
+				$(this).parent().siblings().children().each(function(e){
+
+					if ($(this).attr('href') == "film") {
+
+						$(this).addClass("underline").addClass("blue");
+						self.updateData(self.data);
+
+					} else if ($(this).attr('href') == "videogames") {
+
+						$(this).addClass("underline").addClass("red");
+						self.updateData(self.data);
+
+					} else if ($(this).attr('href') == "series") {
+
+						$(this).addClass("underline").addClass("yellow");
+						self.updateData(self.data);
+
+					}
+
+				})
+
+				$(this).removeClass();
+
+				self.filter($(this).attr('href'));
+				
+			} else {
+
+				if ($(this).attr('href') == "film") {
+
+					$(this).addClass("underline").addClass("blue");
+					self.updateData(self.data);
+
+				} else if ($(this).attr('href') == "videogames") {
+
+					$(this).addClass("underline").addClass("red");
+					self.updateData(self.data);
+
+				} else if ($(this).attr('href') == "series") {
+
+					$(this).addClass("underline").addClass("yellow");
+					self.updateData(self.data);
+
+				}
+
+			}				
+		})
 	
 	});
 };
@@ -159,7 +210,7 @@ Galaxy.prototype.filter = function(filter) {
 
 Galaxy.prototype.updateData = function(data) {
 
-	this.data = this.formatData(data);
+	this.data = data;
 	this.setScale(this.data);
 	$('svg').empty();
 	this.drawGalaxy(this.data)
@@ -292,6 +343,14 @@ Galaxy.prototype.drawGalaxy = function(data) {
 
 			History.pushState(null, null, e.url);
 
+		})
+		.on('mouseover',function(e) {
+			app.followAge.find('h4').html(e.name);
+			app.followAge.find('p span').html(e.worksCount);
+			app.followAge.addClass('active');
+		})
+		.on('mouseleave',function(e) {
+			app.followAge.removeClass('active');
 		})
 
 };
