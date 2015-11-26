@@ -314,10 +314,11 @@ Galaxy.prototype.drawGalaxy = function(data) {
 	this.drawOrbits();
 
 	this.svg
-		.append('circle')
-		.attr("r", 3)
-		.attr("cx", function(d) {return self.centerPosition.x})
-		.attr("cy", function(d) {return self.centerPosition.y})
+		.append('text')
+		.html(this.letter)
+		.attr("fill", "black")
+		.attr("x", this.centerPosition.x - 5)		
+		.attr("y", this.centerPosition.y + 5)		
 
 	this.svg
 		.selectAll(".planet")
