@@ -34,6 +34,7 @@ Artist.prototype.bind = function() {
 	if ( artist != "" )
 		this.artist = artist;
 
+	app.pages.navigation.letter = letter;
 	app.currentPage = app.pages.artist;
 	app.currentArtist = app.pages.artist;
 

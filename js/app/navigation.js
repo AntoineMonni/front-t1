@@ -6,7 +6,7 @@ var Navigation = function(target) {
 Navigation.prototype.init = function(target) {
 	app = target;
 	this.status = 0;
-	this.timeMax = 300;
+	this.timeMax = 200;
 	this.letter = app.pages.galaxy.letter;
 	this.beforeLetter = null;
 	this.artist = null;
@@ -102,8 +102,8 @@ Navigation.prototype.displaySingleLetter = function(key) {
 
 	this.letter = String.fromCharCode(key);
 	
-	// this.menuLetters.find('.single-letter').find('ul').removeClass();
-	// this.menuLetters.find('.single-letter').find('ul').addClass(this.letter+'-active');
+	this.allLetters.removeClass('active');
+	this.menuLetters.find('#'+this.letter).addClass('active');
 
 	var IDLetter = this.tableLettersByLetter[this.letter];
 
@@ -119,10 +119,6 @@ Navigation.prototype.nextLetter = function() {
 
 	this.timeShow = this.timeMax;
 
-	
-	// this.menuLetters.find('.single-letter').find('ul').removeClass();
-	// this.menuLetters.find('.single-letter').find('ul').addClass(this.letter+'-active');
-
 	var IDLetter = this.tableLettersByLetter[this.letter];
 	if ( IDLetter < $(this.allLetters).length - 1 )
 	{
@@ -130,6 +126,9 @@ Navigation.prototype.nextLetter = function() {
 	}
 
 	this.letter = this.tableLettersByNum[IDLetter];
+
+	this.allLetters.removeClass('active');
+	this.menuLetters.find('#'+this.letter).addClass('active');
 
 	this.moveMenuLetter(IDLetter);
 
@@ -144,10 +143,6 @@ Navigation.prototype.previousLetter = function() {
 
 	this.timeShow = this.timeMax;
 
-	
-	// this.menuLetters.find('.single-letter').find('ul').removeClass();
-	// this.menuLetters.find('.single-letter').find('ul').addClass(this.letter+'-active');
-
 	var IDLetter = this.tableLettersByLetter[this.letter];
 	if ( IDLetter > 0 )
 	{
@@ -155,6 +150,9 @@ Navigation.prototype.previousLetter = function() {
 	}
 
 	this.letter = this.tableLettersByNum[IDLetter];
+
+	this.allLetters.removeClass('active');
+	this.menuLetters.find('#'+this.letter).addClass('active');
 
 	this.moveMenuLetter(IDLetter);
 
@@ -178,6 +176,9 @@ Navigation.prototype.nextArtist = function() {
 		this.artist = newArtist;
 	}
 
+	this.menuArtist.find('li').removeClass('active');
+	this.menuArtist.find('#'+this.artist).addClass('active');
+
 	this.moveMenuArtist(IDArtist);
 
 	this.param = this.letter+'/'+this.artist;
@@ -198,6 +199,9 @@ Navigation.prototype.previousArtist = function() {
 		newArtist = this.tableArtistsByNum[IDArtist];
 		this.artist = newArtist;
 	}
+
+	this.menuArtist.find('li').removeClass('active');
+	this.menuArtist.find('#'+this.artist).addClass('active');
 
 	this.moveMenuArtist(IDArtist);
 
@@ -249,10 +253,12 @@ Navigation.prototype.setArtistTable = function(){
 };
 
 Navigation.prototype.loadArtistName = function(){
-	var self = this;
+	var self = this,
+		i = 0;
 		this.menuArtist.html(' ');
 		$.each(this.tableArtistsByNumNoParse, function( index, value ) {
-			self.menuArtist.append('<li id="'+value+'">'+value+'</li>');
+			self.menuArtist.append('<li id="'+self.tableArtistsByNum[i]+'">'+value+'</li>');
+			i ++;
 		});
 		this.allArtists = this.menuArtist.find('li');
 };
