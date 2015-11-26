@@ -156,19 +156,38 @@ Galaxy.prototype.addFilter = function(filter, e) {
 
 	this.filters.push(filter)
 
-	if (filter == "film") {
+	e.addClass("underline");
 
-		e.addClass("underline").addClass("blue");
+	var filterData = []
 
-	} else if (filter == "videogames") {
-
-		e.addClass("underline").addClass("red");
-
-	} else if (filter == "series") {
-
-		e.addClass("underline").addClass("yellow");
-
+	for (var i = 0; i < this.data.length; i++) {
+		for (var j = 0; j < this.filters.length; j++) {
+			if (this.data[i].theme == this.filters[j]) {
+				filterData.push(this.data[i])
+			}
+		}
 	}
+
+	this.filterData = filterData;
+
+	this.setScale(this.filterData);
+	$('svg').empty();
+	this.drawGalaxy(this.filterData)
+
+}
+
+Galaxy.prototype.removeFilter = function(filter, e) {
+
+	var newFilters = [];
+	for (var i = 0; i < this.filters.length; i++) {
+		if (this.filters[i] != filter) {
+			newFilters.push(this.filters[i]);
+		}
+	}
+
+	this.filters = newFilters;
+
+	e.addClass("active");
 
 	var filterData = []
 
