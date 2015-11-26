@@ -25,7 +25,7 @@ Galaxy.prototype.init = function() {
 	this.sortStatistic = "worksCount";
 
 	this.scale = {};
-	this.filters = [];
+	this.filters = ["videogames", "film", "series"];
 
 	View.apply(this, arguments);
 
@@ -156,7 +156,7 @@ Galaxy.prototype.addFilter = function(filter, e) {
 
 	this.filters.push(filter)
 
-	e.addClass("underline");
+	e.removeClass("active").addClass("underline");
 
 	var filterData = []
 
@@ -188,6 +188,8 @@ Galaxy.prototype.removeFilter = function(filter, e) {
 	this.filters = newFilters;
 
 	e.addClass("active");
+
+
 
 	var filterData = []
 
