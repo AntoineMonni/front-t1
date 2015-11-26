@@ -15,8 +15,7 @@ Galaxy.prototype.init = function() {
 	this.letter = "A";
 	this.tpl = app_templates.galaxy;
 
-	this.width = 250;
-	this.height = 250;
+	this.createWidthAndHeight()
 
 	this.centerPosition = {
 		'x': this.width/2,
@@ -31,6 +30,20 @@ Galaxy.prototype.init = function() {
 
 	this.tplContent = this.domElem.find('[tpl-content]');
 
+}
+
+Galaxy.prototype.createWidthAndHeight = function() {
+
+	var iw = window.innerHeight;
+	var ih = window.innerWidth;
+
+	var disponibleW = iw - (0.07 * iw) - 130;
+	var disponibleH = ih - 55 - 64;
+
+	var widthAndHeight = disponibleW > disponibleH ? disponibleH : disponibleW;
+
+	this.width = widthAndHeight
+	this.height = widthAndHeight
 }
 
 // Méthode bind spécifique à Galaxy
