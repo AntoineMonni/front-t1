@@ -72,7 +72,21 @@ Galaxy.prototype.bind = function() {
 		e.preventDefault();
 
 		if ($(this).hasClass("underline")) {
+			$(this).parent().siblings().children().each(function(e){
+				if ($(this).attr('href') == "film") {
+					$(this).addClass("underline").addClass("blue");
+					self.updateData(self.data);
+				} else if ($(this).attr('href') == "videogames") {
+					$(this).addClass("underline").addClass("red");
+					self.updateData(self.data);
+				} else if ($(this).attr('href') == "series") {
+					$(this).addClass("underline").addClass("yellow");
+					self.updateData(self.data);
+				}
+			})
+
 			$(this).removeClass()
+
 			self.filter($(this).attr('href'))
 		} else {
 			if ($(this).attr('href') == "film") {
