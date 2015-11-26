@@ -179,7 +179,7 @@ Navigation.prototype.nextArtist = function() {
 	}
 
 	this.menuArtist.find('li').removeClass('active');
-	this.menuArtist.find('#'+this.artist).addClass('active');
+	this.menuArtist.find("#"+this.artist).addClass('active');
 
 	this.moveMenuArtist(IDArtist);
 
@@ -194,7 +194,7 @@ Navigation.prototype.previousArtist = function() {
 
 	this.timeShow = this.timeMax;
 
-	IDArtist = this.tableArtistsByParseName[this.artist];
+	IDArtist = this.tableArtistsByParseName[this.artist.replace(/'/g, "_")];
 	if ( IDArtist > 0 )
 	{
 		IDArtist -- ;
@@ -203,7 +203,7 @@ Navigation.prototype.previousArtist = function() {
 	}
 
 	this.menuArtist.find('li').removeClass('active');
-	this.menuArtist.find('#'+this.artist).addClass('active');
+	this.menuArtist.find("#"+this.artist.replace(/'/g, "_")).addClass('active');
 
 	this.moveMenuArtist(IDArtist);
 
@@ -245,10 +245,10 @@ Navigation.prototype.setArtistTable = function(){
 		this.tableArtistsByNumNoParse = [];
 		var i = 0;
 		$.each(app.currentGalaxy.dataForArtist, function( index, value ) {
-			self.tableArtistsByNum[i] = index.replace(/ /g, "-");
+			self.tableArtistsByNum[i] = index.replace(/ /g, "-").replace(/'/g, "_");
 			self.tableArtistsByNumNoParse[i] = index;
 			self.tableArtistsByName[index] = i;
-			self.tableArtistsByParseName[index.replace(/ /g, "-")] = i;
+			self.tableArtistsByParseName[index.replace(/ /g, "-").replace(/'/g, "_")] = i;
 			i ++;
 		});
 		this.loadArtistName();
@@ -259,7 +259,7 @@ Navigation.prototype.loadArtistName = function(){
 		i = 0;
 		this.menuArtist.html(' ');
 		$.each(this.tableArtistsByNumNoParse, function( index, value ) {
-			self.menuArtist.append('<li id="'+self.tableArtistsByNum[i]+'">'+value+'</li>');
+			self.menuArtist.append('<li id="'+self.tableArtistsByNum[i].replace(/'/g, "_")+'">'+value+'</li>');
 			i ++;
 		});
 		this.allArtists = this.menuArtist.find('li');
