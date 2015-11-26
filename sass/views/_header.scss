@@ -6,6 +6,10 @@
 	z-index: 3;
 	width: 130px;
 	height: auto;
+	&.home-logo {
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 header {
 	width: 100%;
