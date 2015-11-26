@@ -66,15 +66,34 @@ Galaxy.prototype.bind = function() {
 	$(app.header).find('a').removeClass('active');
 	$(app.header).find('#'+this.letter).addClass('active');
 
+	var self = this;
+
 	this.domElem.find('.tags').on('click', 'a', function (e) {
 		
 		e.preventDefault();
 
-		console.log($(this).attr('href'));
+		if ($(this).hasClass("underline")) {
+			$(this).removeClass()
+			self.filter($(this).attr('href'))
+		} else {
+			if ($(this).attr('href') == "film") {
+				$(this).addClass("underline").addClass("blue");
+				self.updateData(self.data);
+			} else if ($(this).attr('href') == "videogames") {
+				$(this).addClass("underline").addClass("red");
+				self.updateData(self.data);
+			} else if ($(this).attr('href') == "series") {
+				$(this).addClass("underline").addClass("yellow");
+				self.updateData(self.data);
+			}
+		}
+
+				
 	
 	})
 	// this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 };
+
 
 Galaxy.prototype.onAnimateIn = function() {
 	
@@ -160,7 +179,7 @@ Galaxy.prototype.filter = function(filter) {
 
 Galaxy.prototype.updateData = function(data) {
 
-	this.data = this.formatData(data);
+	this.data = data;
 	this.setScale(this.data);
 	$('svg').empty();
 	this.drawGalaxy(this.data)
