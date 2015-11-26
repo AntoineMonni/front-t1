@@ -10,13 +10,12 @@ var Galaxy = function(){
 Galaxy.prototype = Object.create(View.prototype);
 
 Galaxy.prototype.init = function() {
+
 	this.id = 'galaxy';
 	this.letter = "A";
 	this.tpl = app_templates.galaxy;
 
-	this.width = 250;
-	this.height = 250;
-
+	this.createWidthAndHeight()
 
 	this.centerPosition = {
 		'x': this.width/2,
@@ -30,6 +29,21 @@ Galaxy.prototype.init = function() {
 	View.apply(this, arguments);
 
 	this.tplContent = this.domElem.find('[tpl-content]');
+
+}
+
+Galaxy.prototype.createWidthAndHeight = function() {
+
+	var iw = window.innerHeight;
+	var ih = window.innerWidth;
+
+	var disponibleW = iw - (0.07 * iw) - 130;
+	var disponibleH = ih - 55 - 64;
+
+	var widthAndHeight = disponibleW > disponibleH ? disponibleH : disponibleW;
+
+	this.width = widthAndHeight
+	this.height = widthAndHeight
 }
 
 // Méthode bind spécifique à Galaxy
@@ -41,7 +55,7 @@ Galaxy.prototype.bind = function() {
 
 	var url = History.getState().hash;
 	var letter = url.substring(1);
-	if ( letter != "" )
+	if ( letter != "" ) 
 		this.letter = letter;
 
 	app.pages.navigation.letter = this.letter;
@@ -51,6 +65,13 @@ Galaxy.prototype.bind = function() {
 	$(app.header).find('a').removeClass('active');
 	$(app.header).find('#'+this.letter).addClass('active');
 
+	this.domElem.find('.tags').on('click', 'a', function (e) {
+		
+		e.preventDefault();
+
+		console.log($(this).attr('href'));
+	
+	})
 	// this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 };
 
@@ -85,42 +106,28 @@ Galaxy.prototype.onCtaClick = function(e) {
 };
 
 Galaxy.prototype.getJson = function(param){
+
 	var self = this;
+	
 	letter = param.toLowerCase();
+	
 	return $.getJSON( "/assets/json/"+letter+".json", function(response) {
+	
 		self.data = self.formatData(response);
 		self.dataForArtist = response;
+	
 	}).then(function() {
+	
 		self.setScale(self.data);
+
 		self.svg = d3.select('.artist-section')
 			.append('svg')
 			.attr('width', self.width)
 			.attr('height', self.height);
 
 		self.drawGalaxy(self.data);
+	
 	});
-};
-
-Galaxy.prototype.initArtists = function(param){
-	var self = this;
-	$.each(param, function( index, value ) {
-		parseName = index.replace(/ /g, "-");
-		data = {name:index, parseName:parseName, letter:self.letter, details:value};
-  		self.tplContent.append(self.tpl(data));
-  		self.bindLinkArtist();
-	});
-};
-
-Galaxy.prototype.bindLinkArtist = function(){
-	this.artist = this.domElem.find('[linkArtist]');
-
-	this.artist.on('click', $.proxy(this.clickArtist, this));
-};
-
-Galaxy.prototype.clickArtist = function(e){
-	e.preventDefault();
-	var url = $(e.target).attr('href');
-	History.pushState(null, null, url);
 };
 
 Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
@@ -147,6 +154,7 @@ Galaxy.prototype.filter = function(filter) {
 	this.setScale(this.filterData);
 	$('svg').empty();
 	this.drawGalaxy(this.filterData)
+
 }
 
 Galaxy.prototype.updateData = function(data) {
@@ -213,15 +221,15 @@ Galaxy.prototype.formatData = function(data) {
 			var angle = []
 			var count = []
 
-			angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
-			formattedData[i].position = 0;
+			angle[formattedData[i].lastWork] = (Math.random() * 10 - 5) + 360 / yearMap[formattedData[i].lastWork];
+			formattedData[i].position = 0 + Math.random() * 10 - 5;
 			count[formattedData[i].lastWork] = 1;
 
 		} else {
 
 			if (!angle[formattedData[i].lastWork]) {
 
-				angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+				angle[formattedData[i].lastWork] = (Math.random() * 10 - 5) + 360 / yearMap[formattedData[i].lastWork];
 				formattedData[i].position = 0;
 				count[formattedData[i].lastWork] = 1;
 
