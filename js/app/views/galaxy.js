@@ -272,21 +272,21 @@ Galaxy.prototype.formatData = function(data) {
 			var angle = []
 			var count = []
 
-			angle[formattedData[i].lastWork] = (Math.random() * 10 - 5) + 360 / yearMap[formattedData[i].lastWork];
-			formattedData[i].position = 0 + Math.random() * 10 - 5;
+			angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+			formattedData[i].position = Math.random() * 40 - 20;
 			count[formattedData[i].lastWork] = 1;
 
 		} else {
 
 			if (!angle[formattedData[i].lastWork]) {
 
-				angle[formattedData[i].lastWork] = (Math.random() * 10 - 5) + 360 / yearMap[formattedData[i].lastWork];
-				formattedData[i].position = 0;
+				angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+				formattedData[i].position = Math.random() * 40 - 20;
 				count[formattedData[i].lastWork] = 1;
 
 			} else {
 
-				formattedData[i].position = count[formattedData[i].lastWork] * angle[formattedData[i].lastWork]
+				formattedData[i].position = (Math.random() * 40 - 20) + count[formattedData[i].lastWork] * angle[formattedData[i].lastWork]
 				count[formattedData[i].lastWork]++
 
 			}
@@ -314,10 +314,20 @@ Galaxy.prototype.drawGalaxy = function(data) {
 	this.drawOrbits();
 
 	this.svg
-		.append('circle')
-		.attr("r", 3)
-		.attr("cx", function(d) {return self.centerPosition.x})
-		.attr("cy", function(d) {return self.centerPosition.y})
+		.append("circle")
+		.attr("fill", "black")
+		.attr("stroke", "black")
+		.attr("r", 15)
+		.attr("cx", this.centerPosition.x)
+		.attr("cy", this.centerPosition.y)
+
+	this.svg
+		.append('text')
+		.html(this.letter)
+		.attr("class", "sun")
+		.attr("fill", "white")
+		.attr("x", this.centerPosition.x - 6)		
+		.attr("y", this.centerPosition.y + 6)		
 
 	this.svg
 		.selectAll(".planet")
@@ -340,9 +350,7 @@ Galaxy.prototype.drawGalaxy = function(data) {
 		.attr("stroke-width", 3)
 		.attr("transform", function(d) {return "rotate(" +d.position+ " " +self.centerPosition.x+ " " +self.centerPosition.y+ ")"})
 		.on("click", function(e) {
-
 			History.pushState(null, null, e.url);
-
 		})
 		.on('mouseover',function(e) {
 			app.followAge.find('h4').html(e.name);
