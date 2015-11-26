@@ -272,21 +272,21 @@ Galaxy.prototype.formatData = function(data) {
 			var angle = []
 			var count = []
 
-			angle[formattedData[i].lastWork] = (Math.random() * 10 - 5) + 360 / yearMap[formattedData[i].lastWork];
-			formattedData[i].position = 0 + Math.random() * 10 - 5;
+			angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+			formattedData[i].position = Math.random() * 40 - 20;
 			count[formattedData[i].lastWork] = 1;
 
 		} else {
 
 			if (!angle[formattedData[i].lastWork]) {
 
-				angle[formattedData[i].lastWork] = (Math.random() * 10 - 5) + 360 / yearMap[formattedData[i].lastWork];
-				formattedData[i].position = 0;
+				angle[formattedData[i].lastWork] = 360 / yearMap[formattedData[i].lastWork];
+				formattedData[i].position = Math.random() * 40 - 20;
 				count[formattedData[i].lastWork] = 1;
 
 			} else {
 
-				formattedData[i].position = count[formattedData[i].lastWork] * angle[formattedData[i].lastWork]
+				formattedData[i].position = (Math.random() * 40 - 20) + count[formattedData[i].lastWork] * angle[formattedData[i].lastWork]
 				count[formattedData[i].lastWork]++
 
 			}
@@ -326,8 +326,8 @@ Galaxy.prototype.drawGalaxy = function(data) {
 		.html(this.letter)
 		.attr("class", "sun")
 		.attr("fill", "white")
-		.attr("x", this.centerPosition.x - 5)		
-		.attr("y", this.centerPosition.y + 5)		
+		.attr("x", this.centerPosition.x - 6)		
+		.attr("y", this.centerPosition.y + 6)		
 
 	this.svg
 		.selectAll(".planet")
