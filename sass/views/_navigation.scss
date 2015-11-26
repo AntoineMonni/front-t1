@@ -8,10 +8,20 @@
 		font-family: $futura;
 		font-size: 180px;
 		text-transform: uppercase;
-		li {
-			float: left;
-			width: 200px;
-			box-sizing: border-box;
+		ul {
+			transition: all .4s ease-out;
+			li {
+				float: left;
+				width: 200px;
+				box-sizing: border-box;
+				color: rgba(0, 0, 0, 0.1);
+				transition: all .3s ease-out;
+				&.active {
+					-webkit-animation: nav-grow .3s ease-out .1s forwards;
+					        animation: nav-grow .3s ease-out .1s forwards;
+					color: $black;
+				}
+			}
 		}
 	}
 	.single-artist {
@@ -20,8 +30,40 @@
 		font-family: $futura;
 		font-size: 100px;
 		text-transform: uppercase;
-		li {
-			height: 200px;
+		ul {
+			transition: all .4s ease-out;
+			li {
+				height: 200px;
+				color: rgba(0, 0, 0, 0.1);
+				// -webkit-transform-origin: 50% 50%;
+				//         transform-origin: 50% 50%;
+				transition: all .3s ease-out;
+				&.active {
+					-webkit-animation: nav-grow-small .3s ease-out forwards;
+					        animation: nav-grow-small .3s ease-out forwards;
+					color: $black;
+				}
+			}
 		}
 	}
 }
+
+@-webkit-keyframes nav-grow {
+	0%{-webkit-transform: scale(1);transform: scale(1);}
+	100%{-webkit-transform: scale(1.2);transform: scale(1.2);}
+}
+
+	@keyframes nav-grow {
+		0%{-webkit-transform: scale(1);transform: scale(1);}
+		100%{-webkit-transform: scale(1.2);transform: scale(1.2);}
+	}
+
+@-webkit-keyframes nav-grow-small {
+	0%{-webkit-transform: scale(1);transform: scale(1);}
+	100%{-webkit-transform: scale(1.05);transform: scale(1.05);}
+}
+
+	@keyframes nav-grow-small {
+		0%{-webkit-transform: scale(1);transform: scale(1);}
+		100%{-webkit-transform: scale(1.05);transform: scale(1.05);}
+	}

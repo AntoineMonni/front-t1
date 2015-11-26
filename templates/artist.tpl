@@ -1,9 +1,5 @@
 <div class="artist-meta">
-    <h2>{{name}}
-        {{#if details.age}}
-            - {{details.age}}
-        {{/if}}
-    </h2>
+    <h2>{{name}}</h2>
     <div class="website">
         <span class="underline">Site web </span><span>&nbsp;:&nbsp;</span>
         {{#each details.url}}
