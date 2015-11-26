@@ -42,8 +42,8 @@ Galaxy.prototype.createWidthAndHeight = function() {
 
 	var widthAndHeight = disponibleW > disponibleH ? disponibleH : disponibleW;
 
-	this.width = widthAndHeight
-	this.height = widthAndHeight
+	this.width = widthAndHeight;
+	this.height = widthAndHeight;
 }
 
 // Méthode bind spécifique à Galaxy
@@ -67,50 +67,15 @@ Galaxy.prototype.bind = function() {
 
 	var self = this;
 
-	this.domElem.find('.tags').on('click', 'a', function (e) {
-		
-		e.preventDefault();
-
-		if ($(this).hasClass("underline")) {
-			$(this).parent().siblings().children().each(function(e){
-				if ($(this).attr('href') == "film") {
-					$(this).addClass("underline").addClass("blue");
-					self.updateData(self.data);
-				} else if ($(this).attr('href') == "videogames") {
-					$(this).addClass("underline").addClass("red");
-					self.updateData(self.data);
-				} else if ($(this).attr('href') == "series") {
-					$(this).addClass("underline").addClass("yellow");
-					self.updateData(self.data);
-				}
-			})
-
-			$(this).removeClass()
-
-			self.filter($(this).attr('href'))
-		} else {
-			if ($(this).attr('href') == "film") {
-				$(this).addClass("underline").addClass("blue");
-				self.updateData(self.data);
-			} else if ($(this).attr('href') == "videogames") {
-				$(this).addClass("underline").addClass("red");
-				self.updateData(self.data);
-			} else if ($(this).attr('href') == "series") {
-				$(this).addClass("underline").addClass("yellow");
-				self.updateData(self.data);
-			}
-		}
-
-				
-	
-	})
-	// this.artistButton.on('click', $.proxy(this.onCtaClick, this));
 };
 
 
 Galaxy.prototype.onAnimateIn = function() {
 	
 	this.getJson(this.letter);
+
+
+	this.filterData = []
 
 	var self = this;
 	setTimeout(function(){
@@ -159,6 +124,59 @@ Galaxy.prototype.getJson = function(param){
 			.attr('height', self.height);
 
 		self.drawGalaxy(self.data);
+
+		self.domElem.find('.tags').unbind().bind().on('click', 'a', function (e) {
+		
+			e.preventDefault();
+
+			if ($(this).hasClass("underline")) {
+
+				$(this).parent().siblings().children().each(function(e){
+
+					if ($(this).attr('href') == "film") {
+
+						$(this).addClass("underline").addClass("blue");
+						self.updateData(self.data);
+
+					} else if ($(this).attr('href') == "videogames") {
+
+						$(this).addClass("underline").addClass("red");
+						self.updateData(self.data);
+
+					} else if ($(this).attr('href') == "series") {
+
+						$(this).addClass("underline").addClass("yellow");
+						self.updateData(self.data);
+
+					}
+
+				})
+
+				$(this).removeClass();
+
+				self.filter($(this).attr('href'));
+				
+			} else {
+
+				if ($(this).attr('href') == "film") {
+
+					$(this).addClass("underline").addClass("blue");
+					self.updateData(self.data);
+
+				} else if ($(this).attr('href') == "videogames") {
+
+					$(this).addClass("underline").addClass("red");
+					self.updateData(self.data);
+
+				} else if ($(this).attr('href') == "series") {
+
+					$(this).addClass("underline").addClass("yellow");
+					self.updateData(self.data);
+
+				}
+
+			}				
+		})
 	
 	});
 };

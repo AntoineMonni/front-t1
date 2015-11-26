@@ -99,6 +99,7 @@ View.prototype.onCloseView = function(e) {
 View.prototype.goToCurrentGalaxy = function(){
 	if ( app.currentPage.id != "home" )
 	{
+		console.log('coucou');
 		History.pushState(null, null, '/'+app.currentGalaxy.letter);
 	}
 	else
