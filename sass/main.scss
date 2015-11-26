@@ -151,6 +151,11 @@ body{
 				100%{background-size: 0% 6px;}
 			}
 
+		@keyframes swipeOutHome {
+			0%{background-size: 100% 10px;}
+			100%{background-size: 0% 10px;}
+		}
+
 		@-webkit-keyframes mooveLeft {
 			0%{background-position: 100% 95%;}
 			100%{background-position: 0% 95%;}
@@ -181,6 +186,11 @@ body{
 				100%{background-size: 100% 8px;}
 			}
 
+		@keyframes swipeInHome {
+			0%{background-size: 0% 10px;}
+			100%{background-size: 100% 10px;}
+		}
+
 		@-webkit-keyframes swipeInCenter {
 			0%{background-size: 0% 6px;}
 			100%{background-size: 100% 6px;}
@@ -200,29 +210,6 @@ body{
 	}
 	::-webkit-scrollbar-thumb{
 		background-color: #000;
-	}
-
-/* Common CTA */
-	.cta{
-		height: 40px;
-		line-height: 40px;
-		padding: 0 30px;
-		color: #FFF;
-		background: #2c2c2d;
-		font-size: 14px;
-		text-decoration: none;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		border: 1px solid #FFF;
-		display: inline-block;
-		text-align: center;
-		min-width: 90px;
-		transition: all 0.3s ease-out;
-	}
-
-	.cta:hover{
-		background: #FFF;
-		color: #9F8234;
 	}
 
 @import "views/header";
