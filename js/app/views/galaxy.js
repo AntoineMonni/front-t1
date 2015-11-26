@@ -345,6 +345,14 @@ Galaxy.prototype.drawGalaxy = function(data) {
 			History.pushState(null, null, e.url);
 
 		})
+		.on('mouseover',function(e) {
+			app.followAge.find('h4').html(e.name);
+			app.followAge.find('p span').html(e.worksCount);
+			app.followAge.addClass('active');
+		})
+		.on('mouseleave',function(e) {
+			app.followAge.removeClass('active');
+		})
 
 };
 
