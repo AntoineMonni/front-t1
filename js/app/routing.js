@@ -22,17 +22,19 @@ $(document).ready(function(){
 
 		app.pages.galaxy.show();
 
+		app.currentGalaxy = app.pages.galaxy;
 		app.currentPage = app.pages.galaxy;
 
 	});
 
 	// artist
-	crossroads.addRoute(/^\/[A-Z]{1}\/\w+.?\w*/, function(){
+	crossroads.addRoute(/^\/[A-Z]{1}\/\w+(.?\w*)*/, function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
 
 		app.pages.artist.show();
 
 		app.currentArtist = app.pages.artist;
+		app.currentPage = app.pages.artist;
 	});
 
 	// support
@@ -49,6 +51,13 @@ $(document).ready(function(){
 
 	});
 
+	crossroads.bypassed.add(function(request){
+		if ( app.currentPage != null ) app.currentPage.hide();
+	   	console.log(request);
+		// app.pages.404.show();
+
+		// app.currentPage = app.pages.404;
+	});
 
 	// Bind URL change
 	History.Adapter.bind(window, "statechange", function(e){

@@ -115,6 +115,8 @@ Artist.prototype.printTpl = function(data){
 
 	this.tplContent.append(this.tpl(data));
 	this.artistWork = $('.artist-work').find('a');
+	this.linkWork = $('.artist-meta').find('a');
+	this.linkWork.on('click', $.proxy(this.goToWebsites, this));
 	this.setArtistTable();
 	$('.legend-container').on('click',function(e){
 		e.preventDefault();
@@ -123,11 +125,18 @@ Artist.prototype.printTpl = function(data){
 
 };
 
+Artist.prototype.goToWebsites = function(e){
+	e.preventDefault();
+	var url = $(e.target).attr('href');
+	// crossroads.ignoreState
+	window.location.replace(url);
+};
+
 Artist.prototype.matchArtist = function(data){
 
 
 	var self = this;
-	var parseName = this.artist.replace(/-/g, " ");
+	var parseName = this.artist.replace(/-/g, " ").replace(/_/g, "'");
 	$.each(data, function( index, value ) {
 		if ( index == parseName ){
 			data = {name:index, details:value};
