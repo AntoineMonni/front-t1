@@ -21,35 +21,37 @@ Navigation.prototype.bind = function(key) {
 	// On sauvegarde la touche pressée et sa valeur
 	this.key = key;
 
-
-	// On lance la bonne fonction selon la touche
-	switch(true) {
-		// Si l'utilisateur a cliqué sur une touche [A-Z]
-		case (key > 64 && key < 91): 
-			this.displaySingleLetter(key);
-			break;
-		// Flèche vers la gauche
-		case (key == 37):
-			this.previousLetter();
-			break;
-		// Flèche vers le Haut
-		case (key == 38):
-			// if ( app.currentPage.id == 'artist' )
-			// {
-				this.previousArtist();
-			// }
-			break;
-		// Flèche vers la droite
-		case (key == 39):
-			this.nextLetter()
-			break;
-		// Flèche vers le Haut
-		case (key == 40):
-			// if ( app.currentPage.id == 'artist' )
-			// {
-				this.nextArtist();
-			// }
-			break;
+	if (app.currentPage != "lightBox" )
+	{
+		// On lance la bonne fonction selon la touche
+		switch(true) {
+			// Si l'utilisateur a cliqué sur une touche [A-Z]
+			case (key > 64 && key < 91): 
+				this.displaySingleLetter(key);
+				break;
+			// Flèche vers la gauche
+			case (key == 37):
+				this.previousLetter();
+				break;
+			// Flèche vers le Haut
+			case (key == 38):
+				// if ( app.currentPage.id == 'artist' )
+				// {
+					this.previousArtist();
+				// }
+				break;
+			// Flèche vers la droite
+			case (key == 39):
+				this.nextLetter()
+				break;
+			// Flèche vers le Haut
+			case (key == 40):
+				// if ( app.currentPage.id == 'artist' )
+				// {
+					this.nextArtist();
+				// }
+				break;
+		}		
 	}
 };
 

@@ -5,7 +5,7 @@ var Artist = function(){
 	// Ce qui va permettre de définir le sélecteur du domElem (cf. classe View)
 	this.id = 'artist';
 	this.artist = null;
-
+	this.actualImg = null;
 	this.tpl = app_templates.artist;
 
 	// Appelle le constructeur de View
@@ -39,6 +39,9 @@ Artist.prototype.bind = function() {
 	app.currentArtist = app.pages.artist;
 
 	this.letter = letter;
+
+	$(app.header).find('a').removeClass('active');
+	$(app.header).find('#'+this.letter).addClass('active');
 
 	// Bind Escape
 	this.document.on('keyup', $.proxy(this.keyEvent, this));
@@ -104,22 +107,24 @@ Artist.prototype.superTpl = function(){
 
 Artist.prototype.printTpl = function(data){
 
-	console.log(data);
-
-	var positionCounter = 1;
+	var positionCounter = 1,
+		self = this;
     Handlebars.registerHelper('position', function() {
         return positionCounter++;
     });
 
 	this.tplContent.append(this.tpl(data));
-
-	$('.legend-container').on('click', $.proxy(this.onClickPicture, this));
+	this.artistWork = $('.artist-work').find('a');
+	this.setArtistTable();
+	$('.legend-container').on('click',function(e){
+		e.preventDefault();
+		self.onClickPicture(this);
+	});
 
 };
 
 Artist.prototype.matchArtist = function(data){
 
-	console.log(data);
 
 	var self = this;
 	var parseName = this.artist.replace(/-/g, " ");
@@ -133,30 +138,42 @@ Artist.prototype.matchArtist = function(data){
 	});
 };
 
+Artist.prototype.setArtistTable = function(){
+	var self = this;
+	this.artistTable = [];
+	$.each(this.artistWork, function( index, value ) {
+		self.artistTable[$(value).attr('index')] = self.getPictureData(value);
+	});
+};
+
 // Au click sur une image, récupère le lien et déclenche l'ouverture de la lightbox
-Artist.prototype.onClickPicture = function(e) {
-		e.preventDefault();
+Artist.prototype.onClickPicture = function(target) {
 
-		this.link = $(e.target),
-		this.url = this.link.attr('href'),
+		this.actualImg = this.getPictureData(target);
 		this.lightbox = $('#lightbox');
-
-		// La div legende
-		this.legend = this.link.parent().find('.legend');
-
-		// Le nom de l'oeuvre et la date
-		this.workName = this.legend.find('strong').html();
-		this.workDate = this.legend.find('p').html();
-
 		this.openLightbox(this.url);
+};
+
+Artist.prototype.getPictureData = function(target){
+	var legend,
+		resultat = {};
+
+	legend = $(target).parent().find('.legend');
+
+	resultat.url = $(target).attr('href');
+	resultat.id = $(target).attr('index');
+	resultat.name = $(legend).find('strong').html();
+	resultat.date = $(legend).find('p').html();
+	return resultat;
 };
 
 // Affiche la lightbox avec la bonne url
 Artist.prototype.openLightbox = function(url) {
 
 	// Création de la lightbox avec les informations de l'image cliquée
-	this.lightbox.find('.lightbox-container').append('<img src="/assets/images/'+this.url+'" alt="'+this.workName+'"><div class="legend-container"><span class="legend"><strong>'+this.workName+'</strong>&nbsp;-&nbsp;'+this.workDate+'</span></div>');
-	console.log(this.url);
+	this.lightbox.find('.lightbox-container').append('<img src="/assets/images/'+this.actualImg.url+'" alt="'+this.actualImg.name+'"><div class="legend-container"><span class="legend"><strong>'+this.actualImg.name+'</strong>&nbsp;-&nbsp;'+this.actualImg.date+'</span></div>');
+
+	app.currentPage = "lightBox";
 
 	// On l'affiche et on appelle la fonction pour écouter les évènement qui vont permettre de la fermer
 	this.lightbox.fadeIn();
@@ -165,18 +182,65 @@ Artist.prototype.openLightbox = function(url) {
 	this.lightbox.on('click', $.proxy(this.closeLightbox, this));
 	this.lightbox.find('.close').on('click', $.proxy(this.closeLightbox, this));
 	// Ici on ferme grace au bouton échap
-	this.document.on('keyup', $.proxy(this.closeLightbox, this));
+	this.document.on('keyup', $.proxy(this.navigationLightbox, this));
 };
 
-Artist.prototype.closeLightbox = function(e) {
-	e.preventDefault();
+Artist.prototype.changePicture = function(){
+	this.lightbox.find('img').attr('src','/assets/images/'+this.actualImg.url);
+	this.lightbox.find('img').attr('alt',this.actualImg.name);
+	this.lightbox.find('.legend-container').find('.legend').html('<strong>'+this.actualImg.name+'</strong>&nbsp;-&nbsp;'+this.actualImg.date);
+};
 
-	// 27 pour échap et 1 pour le click
-	if(e.which == 27 || e.which == 1) {
-		this.lightbox.fadeOut();
-		this.lightbox.find('.lightbox-container').html('');
+Artist.prototype.closeLightbox = function() {
+	app.currentPage = app.pages.artist;
+	this.lightbox.fadeOut();
+	this.lightbox.find('.lightbox-container').html('');
+};
+
+Artist.prototype.nextLightbox = function() {
+	var id;
+
+	var id = Number(this.actualImg.id);
+	if ( id < this.artistTable.length - 1 )
+	{
+		this.actualImg = this.artistTable[id + 1];
+		this.changePicture();
 	}
+};
 
+Artist.prototype.previousLightbox = function() {
+	var id;
+
+	var id = Number(this.actualImg.id);
+	if ( id > 0 )
+	{
+		this.actualImg = this.artistTable[id - 1];
+		this.changePicture();
+	}
+};
+
+Artist.prototype.navigationLightbox = function(e) {
+	e.preventDefault();
+	key = e.which;
+// On lance la bonne fonction selon la touche
+	switch(true) {
+		// Si l'utilisateur a cliqué sur une touche [A-Z]
+		case (key == 27 ): 
+			this.closeLightbox(e);
+			break;
+		// Flèche vers la gauche
+		case (key == 37):
+			this.previousLightbox();
+			break;
+		// Flèche vers la droite
+		case (key == 39):
+			this.nextLightbox();
+			break;
+		// Click
+		case (key == 1):
+			this.closeLightbox(e);
+			break;
+	}		
 };
 
 Artist.prototype.keyEvent = function(e) {
@@ -189,8 +253,6 @@ Artist.prototype.keyEvent = function(e) {
 
 		// Echap
 		if ( e.which == 27 ){
-
-			console.log()
 			
 			// On exécute la fonction pour cacher la vue
 			self.hide();
