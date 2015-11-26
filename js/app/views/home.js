@@ -41,7 +41,12 @@ Home.prototype.bind = function() {
 	// Exécute moi la fonction onCtaButtonClick
 	// En gardant le contexte passé en 2ème paramètre, this
 	this.ctaButton.on('click', $.proxy(this.onCtaButtonClick, this));
-	
+
+	this.help.addClass('show');
+	$('#help-button').css('display', 'none');
+	this.header.css('display', 'none');
+	this.menu.css('display', 'none');
+	$('.logo').addClass('home-logo');
 };
 
 // Méthode onCtaButtonClick spécifique à Home
@@ -53,6 +58,12 @@ Home.prototype.onCtaButtonClick = function(e) {
 
 	// On exécute la fonction pour cacher la vue
 	this.hide();
+
+	this.help.removeClass('show');
+	$('#help-button').fadeIn();
+	this.header.fadeIn();
+	this.menu.fadeIn();
+	$('.logo').removeClass('home-logo');
 
 	// On dit à la vue Galaxy de s'afficher
 	History.pushState(null, null, '/'+app.pages.galaxy.letter);
