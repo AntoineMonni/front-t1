@@ -44,6 +44,8 @@ Galaxy.prototype.bind = function() {
 	if ( letter != "" )
 		this.letter = letter;
 
+	app.pages.navigation.letter = this.letter;
+	console.log(app.pages.navigation.letter);
 	app.currentGalaxy = app.pages.galaxy;
 	app.pages.artist.artist = null;
 
