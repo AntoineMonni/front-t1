@@ -25,6 +25,7 @@ Galaxy.prototype.init = function() {
 	this.sortStatistic = "worksCount";
 
 	this.scale = {};
+	this.filters = [];
 
 	View.apply(this, arguments);
 
@@ -44,6 +45,7 @@ Galaxy.prototype.createWidthAndHeight = function() {
 
 	this.width = widthAndHeight;
 	this.height = widthAndHeight;
+
 }
 
 // Méthode bind spécifique à Galaxy
@@ -73,9 +75,6 @@ Galaxy.prototype.bind = function() {
 Galaxy.prototype.onAnimateIn = function() {
 	
 	this.getJson(this.letter);
-
-
-	this.filterData = []
 
 	var self = this;
 	setTimeout(function(){
@@ -129,74 +128,55 @@ Galaxy.prototype.getJson = function(param){
 		
 			e.preventDefault();
 
-			if ($(this).hasClass("underline")) {
-
-				$(this).parent().siblings().children().each(function(e){
-
-					if ($(this).attr('href') == "film") {
-
-						$(this).addClass("underline").addClass("blue");
-						self.updateData(self.data);
-
-					} else if ($(this).attr('href') == "videogames") {
-
-						$(this).addClass("underline").addClass("red");
-						self.updateData(self.data);
-
-					} else if ($(this).attr('href') == "series") {
-
-						$(this).addClass("underline").addClass("yellow");
-						self.updateData(self.data);
-
-					}
-
-				})
-
-				$(this).removeClass();
-
-				self.filter($(this).attr('href'));
+			if (self.contains(self.filters, $(this).attr('href'))) {
 				
+				self.removeFilter($(this).attr('href'), $(this));
+
 			} else {
 
-				if ($(this).attr('href') == "film") {
-
-					$(this).addClass("underline").addClass("blue");
-					self.updateData(self.data);
-
-				} else if ($(this).attr('href') == "videogames") {
-
-					$(this).addClass("underline").addClass("red");
-					self.updateData(self.data);
-
-				} else if ($(this).attr('href') == "series") {
-
-					$(this).addClass("underline").addClass("yellow");
-					self.updateData(self.data);
-
-				}
-
-			}				
+				self.addFilter($(this).attr('href'), $(this));
+			
+			}
+				
 		})
 	
 	});
 };
 
-Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
+Galaxy.prototype.contains = function(table, element) {
+	for (var i = 0; i < table.length; i++) {
+		if (table[i] == element){
+			return true;
+		}
+	}
+	return false;
+}
 
-	this.sortStatistic = sortStatistic;
-	this.setScale(this.data);
-	$('svg').empty();
-	this.drawGalaxy(this.data);
+Galaxy.prototype.addFilter = function(filter, e) {
 
-};
+	this.filters.push(filter)
 
-Galaxy.prototype.filter = function(filter) {
+	if (filter == "film") {
+
+		e.addClass("underline").addClass("blue");
+
+	} else if (filter == "videogames") {
+
+		e.addClass("underline").addClass("red");
+
+	} else if (filter == "series") {
+
+		e.addClass("underline").addClass("yellow");
+
+	}
 
 	var filterData = []
 
 	for (var i = 0; i < this.data.length; i++) {
-		if (this.data[i].theme == filter) {
-			filterData.push(this.data[i])
+		for (var j = 0; j < this.filters.length; j++) {
+			if (this.data[i].theme == this.filters[j]) {
+				filterData.push(this.data[i])
+			}
 		}
 	}
 
@@ -214,6 +194,16 @@ Galaxy.prototype.updateData = function(data) {
 	this.setScale(this.data);
 	$('svg').empty();
 	this.drawGalaxy(this.data)
+
+};
+
+
+Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
+
+	this.sortStatistic = sortStatistic;
+	this.setScale(this.data);
+	$('svg').empty();
+	this.drawGalaxy(this.data);
 
 };
 
