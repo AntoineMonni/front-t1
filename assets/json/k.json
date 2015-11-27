@@ -1,7 +1,7 @@
 {
     "Mari Kasurinen": {
         "id": 43,
-        "worksCount": 1,
+        "worksCount": 112,
         "theme": "series",
         "url": [
             "marikasurinen.com"
@@ -10,65 +10,65 @@
         "quote": "La Pop Culture, c'est ça ma télévision.",
         "works": [
             {
-                "url": "",
+                "url": "KasurinenMari/b&r.png",
                 "year": 2009,
                 "name": "My Little Batman and Robin"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/edward.jpg",
                 "year": 2011,
                 "name": "My Little Edward Scissorhands"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/bride.jpg",
                 "year": 2009,
                 "name": "My Little Bride"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/harley.jpg",
                 "year": 2008,
                 "name": "My Little Harley Quinn"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/spock.jpg",
                 "year": 2009,
                 "name": "My Little Spock"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/leia.jpg",
                 "year": 2009,
                 "name": "My Little Slave Princess Leia"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/rorschach.jpg",
                 "year": 2010,
                 "name": "My Little Rorschach"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/heman.jpg",
                 "year": 2008,
                 "name": "My Little He-Man"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/cthulhu.jpg",
                 "year": 2012,
                 "name": "My cthulhu"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/ironman.jpg",
                 "year": 2011,
                 "name": "My Little Iron Man"
             },
             {
-                "url": "",
+                "url": "KasurinenMari/skeletor.jpg",
                 "year": 2009,
-                "name": "My Little Skeleton"
+                "name": "My Little Skeletor"
             }
         ]
     },
     "King Panpan": {
         "id": 44,
-        "worksCount": 1,
+        "worksCount": 351,
         "theme": "film",
         "url": [
             "kingpanpan.com"
@@ -77,37 +77,32 @@
         "quote": "J'aime dessiner des choses qui me font rire.",
         "works": [
             {
-                "url": "",
+                "url": "KingPanpan/totoro.png",
                 "year": 2010,
                 "name": "Totoro"
             },
             {
-                "url": "",
+                "url": "KingPanpan/king.png",
                 "year": 2010,
                 "name": "Porkins"
             },
             {
-                "url": "",
+                "url": "KingPanpan/buzz.jpg",
                 "year": 2010,
                 "name": "Buzz"
             },
             {
-                "url": "",
+                "url": "KingPanpan/galactus.png",
                 "year": 2010,
                 "name": "Galactus"
             },
             {
-                "url": "",
-                "year": 2010,
-                "name": "Soundwave"
-            },
-            {
-                "url": "",
+                "url": "KingPanpan/america.png",
                 "year": 2010,
                 "name": "Captain"
             },
             {
-                "url": "",
+                "url": "KingPanpan/batman.png",
                 "year": 2010,
                 "name": "Batman"
             }
@@ -115,7 +110,7 @@
     },
     "Patrick King": {
         "id": 45,
-        "worksCount": 1,
+        "worksCount": 157,
         "theme": "film",
         "url": [
             "patrickkingart.com"
@@ -124,55 +119,50 @@
         "quote": "Tout a commencé à 9 ans avec mon premier visionnage de Star Wars...",
         "works": [
             {
-                "url": "",
+                "url": "KingPatrick/royalguard.jpg",
                 "year": 2011,
                 "name": "Imperial Saints - Royal Guard"
             },
             {
-                "url": "",
+                "url": "KingPatrick/tiefighter.jpg",
                 "year": 2009,
                 "name": "Imperial Saints - TIE Fighter"
             },
             {
-                "url": "",
+                "url": "KingPatrick/navyfighter.jpg",
                 "year": 2011,
                 "name": "Imperial Saints - Navy Trooper"
             },
             {
-                "url": "",
+                "url": "KingPatrick/lordvader.jpg",
                 "year": 2011,
                 "name": "Imperial Saints - Lords Vader"
             },
             {
-                "url": "",
+                "url": "KingPatrick/stormtrooper.jpg",
                 "year": 2009,
                 "name": "Imperial Saints - StormTrooper"
             },
             {
-                "url": "",
+                "url": "KingPatrick/scouttrooper.jpg",
                 "year": 2009,
                 "name": "Imperial Saints - Scout Trooper"
             },
             {
-                "url": "",
+                "url": "KingPatrick/atat.jpg",
                 "year": 2010,
                 "name": "Imperial Saints - AT-AT Driver"
             },
             {
-                "url": "",
+                "url": "KingPatrick/sandtrooper.jpg",
                 "year": 2010,
                 "name": "Imperial Saints - Sandtrooper"
-            },
-            {
-                "url": "",
-                "year": 2010,
-                "name": "Imperial Saints - Scout Trooper"
             }
         ]
     },
     "kodykoala": {
         "id": 46,
-        "worksCount": 1,
+        "worksCount": 150,
         "theme": "videogames",
         "url": [
             "kodykoala.com"
@@ -181,32 +171,32 @@
         "quote": "J'aime me laisser guider par mon imagination.",
         "works": [
             {
-                "url": "",
+                "url": "KodyKoala/zombie.jpg",
                 "year": 2011,
                 "name": "Gameboy Zombie"
             },
             {
-                "url": "",
+                "url": "KodyKoala/megaman.jpg",
                 "year": 2010,
                 "name": "Anatomy of Megaman"
             },
             {
-                "url": "",
+                "url": "KodyKoala/donkey.jpg",
                 "year": 2011,
                 "name": "Cyborg Donkey Kong"
             },
             {
-                "url": "",
+                "url": "KodyKoala/yoshi.jpg",
                 "year": 2011,
-                "name": "Mario, Yoshi and Luigi Mechs"
+                "name": "Yoshi Mech"
             },
             {
-                "url": "",
+                "url": "KodyKoala/kirby.jpg",
                 "year": 2011,
                 "name": "Kirby eating Mario"
             },
             {
-                "url": "",
+                "url": "KodyKoala/wario.jpg",
                 "year": 2011,
                 "name": "Wario the Great"
             }
@@ -214,7 +204,7 @@
     },
     "Andrew Kolb": {
         "id": 47,
-        "worksCount": 1,
+        "worksCount": 125,
         "theme": "videogames",
         "url": [
             "kolbisneat.com"
@@ -223,47 +213,32 @@
         "quote": "Street Fighter vs It's a small world... Que du bonheur !",
         "works": [
             {
-                "url": "",
+                "url": "Kolbisneat/ryu.jpg",
                 "year": 2011,
                 "name": "Street Fighting World - Ryu"
             },
             {
-                "url": "",
-                "year": 2012,
-                "name": "Street Fighting World - Ken"
-            },
-            {
-                "url": "",
-                "year": 2011,
-                "name": "Street Fighting World - T.Hawk"
-            },
-            {
-                "url": "",
+                "url": "Kolbisneat/vega.jpg",
                 "year": 2012,
                 "name": "Street Fighting World - Vega"
             },
             {
-                "url": "",
-                "year": 2012,
-                "name": "Street Fighting World - Sagat"
-            },
-            {
-                "url": "",
+                "url": "Kolbisneat/chunli.jpg",
                 "year": 2011,
                 "name": "Street Fighting World - Chun Li"
             },
             {
-                "url": "",
+                "url": "Kolbisneat/guile.jpg",
                 "year": 2012,
                 "name": "Street Fighting World - Guile"
             },
             {
-                "url": "",
+                "url": "Kolbisneat/blanka.jpg",
                 "year": 2012,
                 "name": "Street Fighting World - Blanka"
             },
             {
-                "url": "",
+                "url": "Kolbisneat/deejay.jpg",
                 "year": 2011,
                 "name": "Street Fighting World - Dee Jay"
             }
@@ -271,7 +246,7 @@
     },
     "Andrew Kolb": {
         "id": 48,
-        "worksCount": 1,
+        "worksCount": 544,
         "theme": "videogames",
         "url": [
             "notesfromthezeitgeist.blogspot.fr"
@@ -280,42 +255,37 @@
         "quote": "Mélanger mes influences, fusionner les technologies.",
         "works": [
             {
-                "url": "",
+                "url": "KoshiJonathan/plumber.png",
                 "year": 2011,
                 "name": "Sugar Plumber"
             },
             {
-                "url": "",
+                "url": "KoshiJonathan/ultra.png",
                 "year": 2011,
                 "name": "Ultrasugar"
             },
             {
-                "url": "",
+                "url": "KoshiJonathan/kun.png",
                 "year": 2011,
                 "name": "Sugarkun"
             },
             {
-                "url": "",
+                "url": "KoshiJonathan/piggy.jpg",
                 "year": 2011,
                 "name": "Piggy's Sugar"
             },
             {
-                "url": "",
+                "url": "KoshiJonathan/lego.jpg",
                 "year": 2011,
                 "name": "Lego My Sugar"
             },
             {
-                "url": "",
+                "url": "KoshiJonathan/corn.jpg",
                 "year": 2011,
                 "name": "Sugarcorn"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Sugar Pellet"
-            },
-            {
-                "url": "",
+                "url": "KoshiJonathan/sugar.jpg",
                 "year": 2011,
                 "name": "Sugar vs Sugar"
             }
