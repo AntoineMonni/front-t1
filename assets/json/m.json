@@ -1,7 +1,7 @@
 {
     "Calvin Ma": {
         "id": 52,
-        "worksCount": 1,
+        "worksCount": 104,
         "theme": "film",
         "url": [
             "calvinmasculpts.com"
@@ -10,40 +10,40 @@
         "quote": "Mon travail revien ttoujours à la passion des enfants pour l'exploration créant et recréant des aventures captivantes avec leurs jouets préférés.",
         "works": [
             {
-                "url": "",
+                "url": "MaCalvin/wolverine.jpg",
                 "year": 2010,
                 "name": "Wolverine"
             },
             {
-                "url": "",
+                "url": "MaCalvin/batman.jpg",
                 "year": 2010,
                 "name": "Batman"
             },
             {
-                "url": "",
+                "url": "MaCalvin/heman.jpg",
                 "year": 2010,
                 "name": "He-Man"
             },
             {
-                "url": "",
+                "url": "MaCalvin/liono.jpg",
                 "year": 2010,
                 "name": "Lion-O"
             },
             {
-                "url": "",
+                "url": "MaCalvin/captainamerica.jpg",
                 "year": 2010,
                 "name": "Captain America"
             },
             {
-                "url": "",
+                "url": "MaCalvin/spiderman.jpg",
                 "year": 2010,
                 "name": "Spider-Man"
             }
         ]
     },
-    "Yves-José": {
+    "Yves-José Malgorn": {
         "id": 53,
-        "worksCount": 1,
+        "worksCount": 52,
         "theme": "film",
         "url": [
             "ym-graphix.com"
@@ -52,22 +52,22 @@
         "quote": "J4ai été programmé pour être un geek, jouer aux jeux vidéos, regarder des films cultes, lire des mangas et comics, dessiner des robtos...",
         "works": [
             {
-                "url": "",
+                "url": "MalgornYvesJosé/terminatrix.jpg",
                 "year": 2012,
                 "name": "Terminatrix"
             },
             {
-                "url": "",
+                "url": "MalgornYvesJosé/c3po.jpg",
                 "year": 2012,
                 "name": "C-3PO"
             },
             {
-                "url": "",
+                "url": "MalgornYvesJosé/bender.jpg",
                 "year": 2012,
-                "name": "Blender"
+                "name": "Bender"
             },
             {
-                "url": "",
+                "url": "MalgornYvesJosé/arale.jpg",
                 "year": 2012,
                 "name": "Arale"
             }
@@ -75,7 +75,7 @@
     },
     "Marko Manev": {
         "id": 54,
-        "worksCount": 1,
+        "worksCount": 186,
         "theme": "film",
         "url": [
             "markomanev.com"
@@ -84,52 +84,52 @@
         "quote": "Tout ça à cause des comics ! Et de Star Wars bien sûr.",
         "works": [
             {
-                "url": "",
+                "url": "ManevMarko/spiderman.jpg",
                 "year": 2011,
                 "name": "Minimalist Spider-Man"
             },
             {
-                "url": "",
+                "url": "ManevMarko/surfer.jpg",
                 "year": 2011,
                 "name": "Minimalist Silver Surfer"
             },
             {
-                "url": "",
+                "url": "ManevMarko/dr.jpg",
                 "year": 2011,
                 "name": "Minimalist Dr.Manhattan"
             },
             {
-                "url": "",
+                "url": "ManevMarko/iceman.jpg",
                 "year": 2011,
-                "name": "Minimalist Icerman"
+                "name": "Minimalist Iceman"
             },
             {
-                "url": "",
+                "url": "ManevMarko/niteowl.jpg",
                 "year": 2011,
                 "name": "Minimalist Nite Owl"
             },
             {
-                "url": "",
+                "url": "ManevMarko/cyclops.jpg",
                 "year": 2011,
                 "name": "Minimalist Cyclops"
             },
             {
-                "url": "",
+                "url": "ManevMarko/darevil.jpg",
                 "year": 2011,
                 "name": "Minimalist Daredevil"
             },
             {
-                "url": "",
+                "url": "ManevMarko/ironman.jpg",
                 "year": 2011,
                 "name": "Minimalist Iron Man"
             },
             {
-                "url": "",
+                "url": "ManevMarko/galactus.jpg",
                 "year": 2011,
                 "name": "Minimalist Galactus"
             },
             {
-                "url": "",
+                "url": "ManevMarko/magneto.jpg",
                 "year": 2011,
                 "name": "Minimalist Magneto"
             }
@@ -137,7 +137,7 @@
     },
     "Manuhell": {
         "id": 55,
-        "worksCount": 1,
+        "worksCount": 68,
         "theme": "videogames",
         "url": [
             "manuhell.deviantart.com"
@@ -146,37 +146,37 @@
         "quote": "La culture geek : le lien qui unissait tous les gosses qui n'aimaient pas le football ou les univers normaux.",
         "works": [
             {
-                "url": "",
+                "url": "Manuhell/blanka.jpg",
                 "year": 2009,
                 "name": "Blanka Zombie"
             },
             {
-                "url": "",
+                "url": "Manuhell/camy.jpg",
                 "year": 2009,
-                "name": "Cammy Zombie"
+                "name": "Camy Zombie"
             },
             {
-                "url": "",
+                "url": "Manuhell/vega.jpg",
                 "year": 2009,
                 "name": "Vega Zombie"
             },
             {
-                "url": "",
+                "url": "Manuhell/ken.jpg",
                 "year": 2009,
                 "name": "Ken Zombie"
             },
             {
-                "url": "",
+                "url": "Manuhell/ryu.jpg",
                 "year": 2009,
                 "name": "Ryu Zombie"
             },
             {
-                "url": "",
+                "url": "Manuhell/sagat.jpg",
                 "year": 2009,
                 "name": "Sagat Zombie"
             },
             {
-                "url": "",
+                "url": "Manuhell/akuma.jpg",
                 "year": 2009,
                 "name": "Akuma Zombie"
             }
@@ -184,7 +184,7 @@
     },
     "Jacob McAlister": {
         "id": 56,
-        "worksCount": 1,
+        "worksCount": 78,
         "theme": "film",
         "url": [
             "youfoundjacob.com"
@@ -193,42 +193,42 @@
         "quote": "Un jour, c'est évident, les geeks domineront le monde. Quand ce jour arrivera j'accepterai volontier le titre de porte parole officile.",
         "works": [
             {
-                "url": "",
+                "url": "McalisterJacob/dichotomy.jpg",
                 "year": 2012,
                 "name": "Dichotomy"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/moff.jpg",
                 "year": 2010,
                 "name": "Grand Moff Tarkin Icon"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/stromtrooper.jpg",
                 "year": 2010,
                 "name": "Stormtrooper Icon"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/avengers.jpg",
                 "year": 2012,
                 "name": "The Avengers"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/rat.jpg",
                 "year": 2011,
                 "name": "The Womp Rat Pack"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/knight.jpg",
                 "year": 2011,
                 "name": "Grail Knight"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/master.jpg",
                 "year": 2012,
                 "name": "Tri Force and master sword"
             },
             {
-                "url": "",
+                "url": "McalisterJacob/boba.jpg",
                 "year": 2011,
                 "name": "Boba Fett"
             }
@@ -236,7 +236,7 @@
     },
     "Mister Hope": {
         "id": 57,
-        "worksCount": 1,
+        "worksCount": 25,
         "theme": "series",
         "url": [
             "misterhope.com"
@@ -245,50 +245,25 @@
         "quote": "Mon art vient du monde dans lequel je vis : un monde dans lequel les souris parlent, où la magie est réelle et où Batman combat le crime chaque jour.",
         "works": [
             {
-                "url": "",
+                "url": "Misterhope/gb.jpg",
                 "year": 2011,
                 "name": "Ghostbuster"
             },
             {
-                "url": "",
-                "year": 2010,
-                "name": "Cowabunga"
-            },
-            {
-                "url": "",
-                "year": 2011,
-                "name": "Billions of Blistering Blue Barnacles"
-            },
-            {
-                "url": "",
+                "url": "Misterhope/got.jpg",
                 "year": 2011,
                 "name": "Winter is Coming"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "The Dude"
-            },
-            {
-                "url": "",
+                "url": "Misterhope/henson.jpg",
                 "year": 2010,
                 "name": "Jim Henson"
-            },
-            {
-                "url": "",
-                "year": 2010,
-                "name": "Indiana Jones headshots"
-            },
-            {
-                "url": "",
-                "year": 2010,
-                "name": "Boba vs the Sarlacc"
             }
         ]
     },
     "Nacho Molina": {
         "id": 58,
-        "worksCount": 1,
+        "worksCount": 46,
         "theme": "series",
         "url": [
             "nachomolinablog.blogspot.com"
@@ -297,45 +272,40 @@
         "quote": "Je suis né en 1985 et j'ai grandi dans les années 1990. Je suppose que vous savez tous ce que ca veut dire...",
         "works": [
             {
-                "url": "",
+                "url": "MolinaNacho/bu.jpg",
                 "year": 2009,
                 "name": "Babidi and Bu"
             },
             {
-                "url": "",
+                "url": "MolinaNacho/fools.jpg",
                 "year": 2009,
                 "name": "The Feast of Fools"
             },
             {
-                "url": "",
+                "url": "MolinaNacho/goblin.jpg",
                 "year": 2009,
                 "name": "Chasing the Green Goblin"
             },
             {
-                "url": "",
+                "url": "MolinaNacho/cell.jpg",
                 "year": 2009,
                 "name": "Cell"
             },
             {
-                "url": "",
+                "url": "MolinaNacho/x.jpg",
                 "year": 2009,
                 "name": "Weapon-X"
             },
             {
-                "url": "",
+                "url": "MolinaNacho/riders.jpg",
                 "year": 2009,
                 "name": "Sunset Riders Cornano"
-            },
-            {
-                "url": "",
-                "year": 2009,
-                "name": "Sunset Riders Steve"
             }
         ]
     },
     "Simon Monk": {
         "id": 59,
-        "worksCount": 1,
+        "worksCount": 136,
         "theme": "film",
         "url": [
             "simonmonk.com"
@@ -344,37 +314,32 @@
         "quote": "J'ai découvert le monde fascinant des comics en 1973 et je n'ai plus jamais arrêté d'en lire. Passionné également par la rennaissance, j'ai réussi à mixer ces obsessions et j'espère queje continuerai longtemps.",
         "works": [
             {
-                "url": "",
+                "url": "MonkSimon/wayne.jpg",
                 "year": 2012,
                 "name": "Bruce Wayne"
             },
             {
-                "url": "",
+                "url": "MonkSimon/banner.jpg",
                 "year": 2011,
                 "name": "Dr Bruce Banner"
             },
             {
-                "url": "",
+                "url": "MonkSimon/kent.jpg",
                 "year": 2011,
                 "name": "Clark Kent"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Dr Donad Blake"
-            },
-            {
-                "url": "",
+                "url": "MonkSimon/parker.jpg",
                 "year": 2011,
                 "name": "Peter Parker"
             },
             {
-                "url": "",
+                "url": "MonkSimon/rogers.jpg",
                 "year": 2011,
                 "name": "Steve Rogers"
             },
             {
-                "url": "",
+                "url": "MonkSimon/drake.jpg",
                 "year": 2012,
                 "name": "Tim Drake"
             }
@@ -382,7 +347,7 @@
     },
     "Michael Myers": {
         "id": 60,
-        "worksCount": 1,
+        "worksCount": 73,
         "theme": "videogames",
         "url": [
             "drawsgood.com",
@@ -392,72 +357,57 @@
         "quote": "Le geekdom, c'est un endroit rempli de nostalgie dans lequel je me réfugie pour échapper au chaos du monde réel.",
         "works": [
             {
-                "url": "",
+                "url": "MyersMichael/steve.png",
                 "year": 2011,
                 "name": "Steve Jobs"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Big Daddy"
-            },
-            {
-                "url": "",
+                "url": "MyersMichael/killzone.png",
                 "year": 2011,
                 "name": "Killzone"
             },
             {
-                "url": "",
+                "url": "MyersMichael/droids.jpg",
                 "year": 2011,
                 "name": "Droids"
             },
             {
-                "url": "",
+                "url": "MyersMichael/han.jpg",
                 "year": 2011,
                 "name": "Han & Chewie"
             },
             {
-                "url": "",
+                "url": "MyersMichael/jabba.png",
                 "year": 2011,
                 "name": "Jabba"
             },
             {
-                "url": "",
+                "url": "MyersMichael/father.jpg",
                 "year": 2011,
                 "name": "I'm your father. Really."
             },
             {
-                "url": "",
+                "url": "MyersMichael/deadspace.jpg",
                 "year": 2011,
                 "name": "Dead Space"
             },
             {
-                "url": "",
+                "url": "MyersMichael/freeman.png",
                 "year": 2011,
                 "name": "Gordon Freeman"
             },
             {
-                "url": "",
+                "url": "MyersMichael/samus.png",
                 "year": 2011,
                 "name": "Samus"
             },
             {
-                "url": "",
+                "url": "MyersMichael/hunter.png",
                 "year": 2011,
                 "name": "Bounty Hunter"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "The Chief"
-            },
-            {
-                "url": "",
-                "year": 2011,
-                "name": "Marcus"
-            },
-            {
-                "url": "",
+                "url": "MyersMichael/dr.png",
                 "year": 2011,
                 "name": "Doctor Who #4"
             }
