@@ -17,7 +17,7 @@ var App = function(){
 	this.helpButton = $('#help-button');
 	this.help = $('#help');
 	this.keyboardNav = $('#keyboardNav');
-	this.followAge = $('.follow-age');
+	this.followAge = $('[follow-age]');
 	this.letterSection = this.keyboardNav.find('single-letter');
 	this.artistSelection = this.keyboardNav.find('single-artist');
 
