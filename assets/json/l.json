@@ -1,7 +1,7 @@
 {
     "Boris Lechaftois": {
         "id": 49,
-        "worksCount": 1,
+        "worksCount": 76,
         "theme": "videogames",
         "url": [
             "lechaftoisbo.com"
@@ -10,27 +10,27 @@
         "quote": "Il est évident que je ne cesserai jamais d'être ce gamin dont les yeux brillent à chaque fois qu'il déballe son dernier achat de jeu vidéo ou de dvd.",
         "works": [
             {
-                "url": "",
+                "url": "LechaftoisBoris/splinter.jpg",
                 "year": 2010,
                 "name": "Ubisoft Tom Clancy's Splinter Cell Conviction Poster."
             },
             {
-                "url": "",
+                "url": "LechaftoisBoris/harmonix.jpg",
                 "year": 2010,
                 "name": "Harmonix's guitar Hero Poster"
             },
             {
-                "url": "",
+                "url": "LechaftoisBoris/halo.jpg",
                 "year": 2010,
                 "name": "Bungie's Halo Poster"
             },
             {
-                "url": "",
+                "url": "LechaftoisBoris/payne.jpg",
                 "year": 2010,
                 "name": "Remedy's Max Payne Poster"
             },
             {
-                "url": "",
+                "url": "LechaftoisBoris/rain.jpg",
                 "year": 2010,
                 "name": "Quantic Dream's Heavy Rain Poster"
             }
@@ -38,7 +38,7 @@
     },
     "Alex Leighton": {
         "id": 50,
-        "worksCount": 1,
+        "worksCount": 56,
         "theme": "film",
         "url": [
             "xander13.com",
@@ -48,55 +48,50 @@
         "quote": "Films, cartoons, jouets... Tout cela a fait de moi l'artiste que je suis aujourd'hui.",
         "works": [
             {
-                "url": "",
+                "url": "LeightonAlex/hoggle.jpg",
                 "year": 2010,
                 "name": "Hoggle"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/et.jpg",
                 "year": 2011,
                 "name": "ET"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/TMNT.jpg",
                 "year": 2010,
                 "name": "TMNT"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/rainbow.jpg",
                 "year": 2010,
                 "name": "Rainbow Brite"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/precious.jpg",
                 "year": 2012,
                 "name": "The precious"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/fluffy.jpg",
                 "year": 2011,
                 "name": "It'so Fluffy"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/obivader.jpg",
                 "year": 2011,
                 "name": "Vader vs Obi-Wan"
             },
             {
-                "url": "",
+                "url": "LeightonAlex/wild.jpg",
                 "year": 2009,
                 "name": "Where the wild Things are"
-            },
-            {
-                "url": "",
-                "year": 2011,
-                "name": "Christopher Johnson"
             }
         ]
     },
     "Josh Ln": {
         "id": 51,
-        "worksCount": 1,
+        "worksCount": 2500,
         "theme": "film",
         "url": [
             "society6.com/joshln"
@@ -105,37 +100,37 @@
         "quote": "Ma passion a débuté dès l'enfance, dans les années 1980, quand l'art, les vêtements et les films baignaient dans la culture SF.",
         "works": [
             {
-                "url": "",
+                "url": "LnJosh/batmobile.jpg",
                 "year": 2012,
                 "name": "The Batmobile"
             },
             {
-                "url": "",
+                "url": "LnJosh/lightcycle.jpg",
                 "year": 2012,
                 "name": "The Light Cycle"
             },
             {
-                "url": "",
+                "url": "LnJosh/delorean.jpg",
                 "year": 2011,
                 "name": "The Delorean"
             },
             {
-                "url": "",
+                "url": "LnJosh/falcon.jpg",
                 "year": 2012,
                 "name": "The Millenium Falcon"
             },
             {
-                "url": "",
+                "url": "LnJosh/enterprise.jpg",
                 "year": 2012,
                 "name": "The Enterprise"
             },
             {
-                "url": "",
+                "url": "LnJosh/van.jpg",
                 "year": 2012,
                 "name": "The Turtle Van"
             },
             {
-                "url": "",
+                "url": "LnJosh/ecto1.jpg",
                 "year": 2012,
                 "name": "The Ecto-1"
             }
