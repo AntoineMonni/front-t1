@@ -71,6 +71,7 @@ App.prototype.init = function() {
 
 };
 
+// Bind tous les évènements fixes des différentes pages
 App.prototype.bind = function(){
 
 	this.allMenuItem.on('click', $.proxy(this.menuRoads, this));
@@ -85,12 +86,14 @@ App.prototype.bind = function(){
 
 };
 
+// Routing au clic les éléments du menu
 App.prototype.menuRoads = function(e) {
 	e.preventDefault();
 	var url = $(e.target).attr('href');
 	History.pushState(null, null, url);
 };
 
+// Affichage et disparition du menu au click sur l'icone de menu
 App.prototype.toggleMenu = function(e){
 	e.preventDefault();
 	// Active state on the button
@@ -116,6 +119,7 @@ App.prototype.mouseLeave = function(e) {
 	this.footer.find('span').css('left', -10);
 };
 
+// Applique un effect actif sur l'élément du menu de la page courante
 App.prototype.toggleActive = function(e){
 	e.preventDefault();
 
@@ -123,6 +127,7 @@ App.prototype.toggleActive = function(e){
 	$(e.target).addClass('active');
 };
 
+// Affiche la section d'aide au clic sur le point d'interrogation
 App.prototype.showHelp = function(e){
 	e.preventDefault();
 
@@ -130,6 +135,7 @@ App.prototype.showHelp = function(e){
 	this.help.toggleClass('show');
 }
 
+// Cache la section d'aide au click autours des cadres
 App.prototype.toggleHelp = function(e){
 	e.preventDefault();
 
