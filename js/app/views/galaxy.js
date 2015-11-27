@@ -111,6 +111,7 @@ Galaxy.prototype.getJson = function(param){
 	return $.getJSON( "/assets/json/"+letter+".json", function(response) {
 	
 		self.data = self.formatData(response);
+		self.filterData = self.data;
 		self.dataForArtist = response;
 	
 	}).then(function() {
@@ -212,6 +213,7 @@ Galaxy.prototype.removeFilter = function(filter, e) {
 Galaxy.prototype.updateData = function(data) {
 
 	this.data = data;
+	this.filterData = data;
 	this.setScale(this.data);
 	$('svg').empty();
 	this.drawGalaxy(this.data)
@@ -222,9 +224,9 @@ Galaxy.prototype.updateData = function(data) {
 Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
 
 	this.sortStatistic = sortStatistic;
-	this.setScale(this.data);
+	this.setScale(this.filterData);
 	$('svg').empty();
-	this.drawGalaxy(this.data);
+	this.drawGalaxy(this.filterData);
 
 };
 
