@@ -1,0 +1,36 @@
+#notfound {
+	z-index: 30;
+	.notfound-section {
+		position: absolute;
+		width: 300px;
+		height: 400px;
+		left: 50%;
+		top: 50%;
+		padding: 30px;
+		border: 3px solid $black;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		box-sizing: border-box;
+		h4 {
+			font-size: 24px;
+			font-family: $bold;
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 40px;
+		}
+		.arrow-down {
+			display: block;
+			margin-bottom: 50px;
+			margin-left: 40%;
+		}
+		.cta {
+			display: inline-block;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $black;
+			font-family: $black;
+		}
+	}
+}

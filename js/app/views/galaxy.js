@@ -78,12 +78,6 @@ Galaxy.prototype.onAnimateIn = function() {
 	this.filterData = []
 
 	var self = this;
-	setTimeout(function(){
-
-		// On affiche le CTA
-		//self.help.addClass('show');
-
-	}, 200);
 
 };
 
