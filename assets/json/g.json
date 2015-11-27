@@ -283,7 +283,7 @@
     },
     "Alex Gross": {
         "id": 31,
-        "worksCount": 1,
+        "worksCount": 291,
         "theme": "film",
         "url": [
             "alexgross.com"
@@ -292,52 +292,52 @@
         "quote": "Travailler sur ces héros de comics et de films a été le projet le plus excitant sur lequel j'ai jamais oeuvré.",
         "works": [
             {
-                "url": "",
+                "url": "GrossAlex/torch.jpg",
                 "year": 2012,
                 "name": "Torch"
             },
             {
-                "url": "",
+                "url": "GrossAlex/goldenageflash.jpg",
                 "year": 2012,
                 "name": "Golden Age Flash"
             },
             {
-                "url": "",
+                "url": "GrossAlex/giantman.jpg",
                 "year": 2012,
                 "name": "Giant-Man and Wasp"
             },
             {
-                "url": "",
+                "url": "GrossAlex/moleman.jpg",
                 "year": 2012,
                 "name": "Mole Man"
             },
             {
-                "url": "",
+                "url": "GrossAlex/reedrichards.jpg",
                 "year": 2012,
                 "name": "Reed Richards"
             },
             {
-                "url": "",
+                "url": "GrossAlex/scarletwitch.jpg",
                 "year": 2012,
                 "name": "Scarlet Witch"
             },
             {
-                "url": "",
+                "url": "GrossAlex/sandman.jpg",
                 "year": 2012,
                 "name": "Sandman"
             },
             {
-                "url": "",
+                "url": "GrossAlex/vindicator.jpg",
                 "year": 2012,
                 "name": "Vindicator"
             },
             {
-                "url": "",
+                "url": "GrossAlex/clark.jpg",
                 "year": 2012,
                 "name": "Clark"
             },
             {
-                "url": "",
+                "url": "GrossAlex/ironfist.jpg",
                 "year": 2012,
                 "name": "Iron Fist"
             }
@@ -345,7 +345,7 @@
     },
     "Grégoire Guillemin": {
         "id": 32,
-        "worksCount": 1,
+        "worksCount": 353,
         "theme": "film",
         "url": [
             "greg-guillemin.com",
@@ -356,32 +356,32 @@
         "quote": "Le Geek-Art est un terrain de jeu formidable.",
         "works": [
             {
-                "url": "",
+                "url": "GuilleminGrégoire/hellboy.jpg",
                 "year": 2011,
                 "name": "Hellboy Gropius Spirit"
             },
             {
-                "url": "",
+                "url": "GuilleminGrégoire/ironman.jpg",
                 "year": 2011,
                 "name": "Iron Man - Cassandre Spirit"
             },
             {
-                "url": "",
+                "url": "GuilleminGrégoire/batman.jpg",
                 "year": 2011,
                 "name": "Batman - Cassandre Spirit"
             },
             {
-                "url": "",
+                "url": "GuilleminGrégoire/superman.jpg",
                 "year": 2011,
                 "name": "Superman - Soviet Art"
             },
             {
-                "url": "",
+                "url": "GuilleminGrégoire/thor.jpg",
                 "year": 2011,
                 "name": "Thor - Cassandre Spirit"
             },
             {
-                "url": "",
+                "url": "GuilleminGrégoire/silversurfer.jpg",
                 "year": 2011,
                 "name": "Silver Surfer - Metropolis"
             }
@@ -389,7 +389,7 @@
     },
     "Benjamin Guy": {
         "id": 33,
-        "worksCount": 1,
+        "worksCount": 297,
         "theme": "film",
         "url": [
             "funbeard.blogspot.com"
@@ -398,44 +398,44 @@
         "quote": "Tout est parti de Star Wars.",
         "works": [
             {
-                "url": "",
+                "url": "GuyBenjamin/brad.jpg",
                 "year": 2011,
                 "name": "Brad"
             },
             {
-                "url": "",
+                "url": "GuyBenjamin/ben.jpg",
                 "year": 2010,
                 "name": "Ben"
             },
             {
-                "url": "",
+                "url": "GuyBenjamin/juliet.jpg",
                 "year": 2012,
                 "name": "Juliet"
             },
             {
-                "url": "",
-                "year": 2012,
-                "name": "Jake"
-            },
-            {
-                "url": "",
+                "url": "GuyBenjamin/lucy.jpg",
                 "year": 2012,
                 "name": "Lucy"
             },
             {
-                "url": "",
+                "url": "GuyBenjamin/katiegrace.jpg",
                 "year": 2012,
                 "name": "Katie & Grace"
             },
             {
-                "url": "",
-                "year": 2011,
-                "name": "Saturn"
-            },
-            {
-                "url": "",
+                "url": "GuyBenjamin/jacob.jpg",
                 "year": 2010,
                 "name": "Jacob"
+            },
+            {
+                "url": "GuyBenjamin/roy.jpg",
+                "year": 2010,
+                "name": "Roy"
+            },
+            {
+                "url": "GuyBenjamin/james.jpg",
+                "year": 2010,
+                "name": "James"
             }
         ]
     }

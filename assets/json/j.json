@@ -1,7 +1,7 @@
 {
     "Aaron Jasinski": {
         "id": 42,
-        "worksCount": 1,
+        "worksCount": 92,
         "theme": "film",
         "url": [
             "aaronjasinski.com"
@@ -10,17 +10,17 @@
         "quote": "Je pense que ma peinture est la première pièce d'un puzzle en deux parties, qui ne devient complet qu'avec l'expérience et la perspective propre à chaque personne.",
         "works": [
             {
-                "url": "",
+                "url": "JasinskiAaron/octomegatron.jpg",
                 "year": 2010,
                 "name": "Octamegatron"
             },
             {
-                "url": "",
+                "url": "JasinskiAaron/octanator.jpg",
                 "year": 2010,
                 "name": "Octanator"
             },
             {
-                "url": "",
+                "url": "JasinskiAaron/octacylon.jpg",
                 "year": 2010,
                 "name": "Octacylon"
             }

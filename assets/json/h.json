@@ -1,7 +1,7 @@
 {
     "JD Hancock": {
         "id": 34,
-        "worksCount": 1,
+        "worksCount": 1068,
         "theme": "film",
         "url": [
             "jdhancock.com"
@@ -10,57 +10,57 @@
         "quote": "SF, jouet, photos... Être geek c'est être un passionné quel que soit le sujet.",
         "works": [
             {
-                "url": "",
+                "url": "HancockJD/moon.jpg",
                 "year": 2010,
                 "name": "The Wry Song of the Moon"
             },
             {
-                "url": "",
+                "url": "HancockJD/flash.jpg",
                 "year": 2010,
                 "name": "Black Flash"
             },
             {
-                "url": "",
+                "url": "HancockJD/storm.jpg",
                 "year": 2010,
                 "name": "Heart of the Storm"
             },
             {
-                "url": "",
+                "url": "HancockJD/soloamerica.jpg",
                 "year": 2010,
                 "name": "Captain Han Solo vs Captain America"
             },
             {
-                "url": "",
+                "url": "HancockJD/luthorcommander.jpg",
                 "year": 2012,
                 "name": "Lex Luthor vs CObra Commander"
             },
             {
-                "url": "",
+                "url": "HancockJD/beast.jpg",
                 "year": 2010,
                 "name": "Beauty vs Beast"
             },
             {
-                "url": "",
+                "url": "HancockJD/norris.jpg",
                 "year": 2010,
                 "name": "Chuck Norris vs the Monolith"
             },
             {
-                "url": "",
+                "url": "HancockJD/mario.jpg",
                 "year": 2010,
                 "name": "Mario vs Super Luigi"
             },
             {
-                "url": "",
+                "url": "HancockJD/minnie.jpg",
                 "year": 2010,
                 "name": "Mini-me vs Minnie Mouse"
             },
             {
-                "url": "",
+                "url": "HancockJD/alien.jpg",
                 "year": 2010,
                 "name": "Alien vs Alien"
             },
             {
-                "url": "",
+                "url": "HancockJD/stormy.jpg",
                 "year": 2010,
                 "name": "Stormy romance"
             }
@@ -68,64 +68,49 @@
     },
     "Hannes": {
         "id": 35,
-        "worksCount": 1,
+        "worksCount": 365,
         "theme": "videogames",
         "url": [
-            "hannesbeer.com"
+            "hannesbeer.de"
         ],
         "presentation": "Hannes est un graphiste allemand vivant à Stuttgart. S'il se considère comme un geek, il donne une définition toute personnelle de ce terme : quelqu'un qui n'a perdu les passions et les fascinations de son enfance pour les univers ô combien créatifs des jeux-vidéos et des comics.",
         "quote": "Tout n'est qu'une question de jeu. Et c'est une bonne chose.",
         "works": [
             {
-                "url": "",
-                "year": 2011,
-                "name": "The Vest"
-            },
-            {
-                "url": "",
+                "url": "Hannes/assassin.jpg",
                 "year": 2011,
                 "name": "Assassin"
             },
             {
-                "url": "",
+                "url": "Hannes/trueblood.jpg",
                 "year": 2011,
                 "name": "True Blood"
             },
             {
-                "url": "",
+                "url": "Hannes/helghan.jpg",
                 "year": 2011,
                 "name": "helghan"
             },
             {
-                "url": "",
+                "url": "Hannes/survive.jpg",
                 "year": 2011,
                 "name": "To Join is to survive"
             },
             {
-                "url": "",
+                "url": "Hannes/deadspace.jpg",
                 "year": 2011,
                 "name": "Dead Space"
             },
             {
-                "url": "",
+                "url": "Hannes/scott.jpg",
                 "year": 2011,
                 "name": "Scott"
             },
-            {
-                "url": "",
-                "year": 2011,
-                "name": "Machette"
-            },
-            {
-                "url": "",
-                "year": 2011,
-                "name": "Lost"
-            }
         ]
     },
     "Hello I'm Wild": {
         "id": 36,
-        "worksCount": 1,
+        "worksCount": 642,
         "theme": "film",
         "url": [
             "helloimwild.com"
@@ -134,37 +119,37 @@
         "quote": "Le Geek-Art deviendra, je l'espère, un courant artistique à part entière pour les générations futures.",
         "works": [
             {
-                "url": "",
+                "url": "Helloimwild/addicted.jpg",
                 "year": 2011,
                 "name": "Addicted"
             },
             {
-                "url": "",
+                "url": "Helloimwild/precieux.jpg",
                 "year": 2011,
                 "name": "Mon précieux"
             },
             {
-                "url": "",
+                "url": "Helloimwild/paulette.jpg",
                 "year": 2011,
                 "name": "Be Paulette"
             },
             {
-                "url": "",
+                "url": "Helloimwild/bestseller.jpg",
                 "year": 2012,
                 "name": "A bestseller"
             },
             {
-                "url": "",
+                "url": "Helloimwild/trip.jpg",
                 "year": 2012,
                 "name": "Road(eo) Trip"
             },
             {
-                "url": "",
+                "url": "Helloimwild/jedi.jpg",
                 "year": 2011,
                 "name": "If only I were a Jedi"
             },
             {
-                "url": "",
+                "url": "Helloimwild/pere.jpg",
                 "year": 2012,
                 "name": "J'essuie ton père"
             }
@@ -172,7 +157,7 @@
     },
     "Viktor Hertz": {
         "id": 37,
-        "worksCount": 1,
+        "worksCount": 442,
         "theme": "film",
         "url": [
             "viktorhertz.com"
@@ -181,37 +166,37 @@
         "quote": "J'aime l'art relatif à la pop culture... Plus la référence est pointue, plus elle est savoureuse.",
         "works": [
             {
-                "url": "",
+                "url": "HertzViktor/clock.jpg",
                 "year": 2011,
                 "name": "A clockwork orange pictogram poster"
             },
             {
-                "url": "",
+                "url": "HertzViktor/jaws.jpg",
                 "year": 2011,
                 "name": "Jaws Pictogram Poster"
             },
             {
-                "url": "",
+                "url": "HertzViktor/taxi.jpg",
                 "year": 2011,
                 "name": "Taxi Driver Pictogram Poster"
             },
             {
-                "url": "",
+                "url": "HertzViktor/psycho.jpg",
                 "year": 2011,
                 "name": "Psycho Driver pictogram poster"
             },
             {
-                "url": "",
+                "url": "HertzViktor/451.jpg",
                 "year": 2011,
                 "name": "Fahrenheit 451 poster"
             },
             {
-                "url": "",
+                "url": "HertzViktor/spiderman.jpg",
                 "year": 2011,
                 "name": "Spiderman pictogram poster"
             },
             {
-                "url": "",
+                "url": "HertzViktor/inception.jpg",
                 "year": 2011,
                 "name": "Inception pictogram poster"
             }
@@ -219,7 +204,7 @@
     },
     "Hexagonall": {
         "id": 38,
-        "worksCount": 1,
+        "worksCount": 197,
         "theme": "film",
         "url": [
             "hexagonall.com"
@@ -228,57 +213,57 @@
         "quote": "",
         "works": [
             {
-                "url": "",
+                "url": "Hexagonall/lost.jpg",
                 "year": 2010,
                 "name": "Numbers, Lost"
             },
             {
-                "url": "",
+                "url": "Hexagonall/plane.jpg",
                 "year": 2010,
                 "name": "Oceanic Flight 815"
             },
             {
-                "url": "",
+                "url": "Hexagonall/pulp.jpg",
                 "year": 2010,
                 "name": "Pulp Fiction"
             },
             {
-                "url": "",
+                "url": "Hexagonall/jackiebrown.jpg",
                 "year": 2010,
                 "name": "Jackie Brown"
             },
             {
-                "url": "",
+                "url": "Hexagonall/killbill.jpg",
                 "year": 2010,
                 "name": "Kill Bill"
             },
             {
-                "url": "",
+                "url": "Hexagonall/deathproof.jpg",
                 "year": 2010,
                 "name": "Death Proof"
             },
             {
-                "url": "",
+                "url": "Hexagonall/beetlejuice.jpg",
                 "year": 2010,
-                "name": "Bettlejuice"
+                "name": "Beetlejuice"
             },
             {
-                "url": "",
+                "url": "Hexagonall/games.jpg",
                 "year": 2010,
                 "name": "Videogames, Tron"
             },
             {
-                "url": "",
+                "url": "Hexagonall/lost.jpg",
                 "year": 2010,
                 "name": "MCP, Tron"
             },
             {
-                "url": "",
+                "url": "Hexagonall/race.jpg",
                 "year": 2010,
                 "name": "Light cycles Race, Tron"
             },
             {
-                "url": "",
+                "url": "Hexagonall/recognizer.jpg",
                 "year": 2010,
                 "name": "Recognizer, Tron"
             }
@@ -286,46 +271,46 @@
     },
     "Justin Hillgrove": {
         "id": 39,
-        "worksCount": 1,
+        "worksCount": 196,
         "theme": "film",
         "url": [
-            "impandmonsters.com"
+            "impsandmonsters.com"
         ],
         "presentation": "Justin Hillgrove est un artiste américain dont l'enfance a baigné dans Donjons & Dragons et les wargames fantastiques. Cet autodidacte expose aujourd'hui dans de nombreuses galeries, et travaille comme illustrateur pour de nombreux supports comme les livres, les magazines, les jeux de cartes ou les jeux vidéo.",
         "quote": "Les jeux de rôle, les wargames, les jeux-vidéos, les cartoons, les comics, les films... Tout se mélange en une incroyable potion magique d'influences et d'inspiration.",
         "works": [
             {
-                "url": "",
+                "url": "Hillgrove/badcompany.jpg",
                 "year": 2010,
                 "name": "Bad Company"
             },
             {
-                "url": "",
+                "url": "Hillgrove/duel.jpg",
                 "year": 2010,
                 "name": "Duel"
             },
             {
-                "url": "",
+                "url": "Hillgrove/priori.jpg",
                 "year": 2010,
                 "name": "Priori Incantatum"
             },
             {
-                "url": "",
+                "url": "Hillgrove/wampa.jpg",
                 "year": 2010,
                 "name": "Wampa Encore"
             },
             {
-                "url": "",
+                "url": "Hillgrove/doctorwho.jpg",
                 "year": 2010,
                 "name": "Doctor Who"
             },
             {
-                "url": "",
+                "url": "Hillgrove/gandalf.jpg",
                 "year": 2010,
                 "name": "Gandalf's Descent"
             },
             {
-                "url": "",
+                "url": "Hillgrove/hellboy.jpg",
                 "year": 2010,
                 "name": "Hellboy"
             }
@@ -333,7 +318,7 @@
     },
     "Björn Hurri": {
         "id": 40,
-        "worksCount": 1,
+        "worksCount": 159,
         "theme": "film",
         "url": [
             "bjornhurri.com"
@@ -342,37 +327,37 @@
         "quote": "J'ai toujours aimé voyager dans des mondes imaginaires. Quelle joie le jour où j'ai réalisé que je pouvais créer les miens !",
         "works": [
             {
-                "url": "",
+                "url": "HurriBjörn/leia.jpg",
                 "year": 2012,
                 "name": "Leia"
             },
             {
-                "url": "",
+                "url": "HurriBjörn/yoda.jpg",
                 "year": 2012,
                 "name": "Yoda"
             },
             {
-                "url": "",
+                "url": "HurriBjörn/bobafett.jpg",
                 "year": 2012,
                 "name": "Boba Fett"
             },
             {
-                "url": "",
+                "url": "HurriBjörn/C3PO.jpg",
                 "year": 2012,
                 "name": "C-3PO"
             },
             {
-                "url": "",
+                "url": "HurriBjörn/stormtrooper.jpg",
                 "year": 2012,
                 "name": "Stormtrooper"
             },
             {
-                "url": "",
+                "url": "HurriBjörn/jabba.jpg",
                 "year": 2012,
                 "name": "Jabba the Hunt"
             },
             {
-                "url": "",
+                "url": "HurriBjörn/chewbacca.jpg",
                 "year": 2012,
                 "name": "Chewbacca"
             }
