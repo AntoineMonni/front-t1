@@ -1,0 +1,144 @@
+{
+    "Boris Lechaftois": {
+        "id": 49,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "lechaftoisbo.com"
+        ],
+        "presentation": "Bercé par le générique de Retour Vers le futur, nourri aux Ghostbusters, toujours acompagné de sa fidèle Game Boy, Boris Lechaftois, graphiste freelance basé à Toulouse, n'aura pas mis longtemps avant de s'intérésser de près au Geek-Art, apportant sa contribution à travers le prisme de jeux vidéos cultes.",
+        "quote": "Il est évident que je ne cesserai jamais d'être ce gamin dont les yeux brillent à chaque fois qu'il déballe son dernier achat de jeu vidéo ou de dvd.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Ubisoft Tom Clancy's Splinter Cell Conviction Poster."
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Harmonix's guitar Hero Poster"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Bungie's Halo Poster"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Remedy's Max Payne Poster"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Quantic Dream's Heavy Rain Poster"
+            }
+        ]
+    },
+    "Alex Leighton": {
+        "id": 50,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "xander13.com",
+            "mukpuddy.com"
+        ],
+        "presentation": "Alex Leighton est un artiste vivant à Auckland en Nouvelle Zélande. Élevé aux cartoons, à Star Wars et au Mupplet Show il comprend très vite ce qu'il veut faire de sa vie. Après ses études, il crée Mukpuddy son propre studio d'animation en compagnie de deux de ses amis. Son travail personnel lui permet de rendre hommage aux héros qui ont depuis toujours nourri sa passion.",
+        "quote": "Films, cartoons, jouets... Tout cela a fait de moi l'artiste que je suis aujourd'hui.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Hoggle"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "ET"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "TMNT"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Rainbow Brite"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The precious"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "It'so Fluffy"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Vader vs Obi-Wan"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Where the wild Things are"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Christopher Johnson"
+            }
+        ]
+    },
+    "Josh Ln": {
+        "id": 51,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "society6.com/joshln"
+        ],
+        "presentation": "Obsédé depuis son plus jeune âge par les Tortues Ninjas, Robocop, Ghostbusters et Voltron, Josh Ln travaille comme graphiste dans la ville de Kansas City. Il aime particulièrement mélanger culture populaire et graphisme minimaliste.",
+        "quote": "Ma passion a débuté dès l'enfance, dans les années 1980, quand l'art, les vêtements et les films baignaient dans la culture SF.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Batmobile"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Light Cycle"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The Delorean"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Millenium Falcon"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Enterprise"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Turtle Van"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Ecto-1"
+            }
+        ]
+    }
+}
