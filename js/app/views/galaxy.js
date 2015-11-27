@@ -140,6 +140,18 @@ Galaxy.prototype.getJson = function(param){
 			}
 				
 		})
+
+		self.domElem.find('.filters').unbind().bind().on('click', 'a', function(e)  {
+
+			e.preventDefault();
+
+			$(this).parent().parent().find(".filter").find("a").each(function() {
+				$(this).toggleClass("active")
+			})
+
+			self.swapSortStatistic($(this).attr('href'))
+
+		})
 	
 	});
 };
