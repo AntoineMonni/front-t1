@@ -71,7 +71,7 @@ Galaxy.prototype.bind = function() {
 
 };
 
-
+// Appelle le bon json au chargement de la vue
 Galaxy.prototype.onAnimateIn = function() {
 	
 	this.getJson(this.letter);
@@ -88,14 +88,7 @@ Galaxy.prototype.onAnimateOut = function() {
 
 };
 
-Galaxy.prototype.onCtaClick = function(e) {
-	
-	e.preventDefault();
-	this.hide();
-	History.pushState(null, null, '/'+app.pages.galaxy.letter+'/olly-moss');
-
-};
-
+// Récupère le Json et l'envoi au D3
 Galaxy.prototype.getJson = function(param){
 
 	var self = this;
@@ -159,6 +152,7 @@ Galaxy.prototype.contains = function(table, element) {
 	return false;
 }
 
+// Ajoute les filtres (séries, jeux vidéos, films) et trie les points
 Galaxy.prototype.addFilter = function(filter, e) {
 
 	this.filters.push(filter)
@@ -183,6 +177,7 @@ Galaxy.prototype.addFilter = function(filter, e) {
 
 }
 
+// Enlève le filtre au clic et revient à la disposition de base de la galaxie
 Galaxy.prototype.removeFilter = function(filter, e) {
 
 	var newFilters = [];

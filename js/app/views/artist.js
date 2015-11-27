@@ -105,6 +105,7 @@ Artist.prototype.superTpl = function(){
 	}
 };
 
+// Ici on appelle le template artiste avec les informations de l'artiste courant
 Artist.prototype.printTpl = function(data){
 
 	var positionCounter = 1,
@@ -132,6 +133,7 @@ Artist.prototype.goToWebsites = function(e){
 	window.location.replace(url);
 };
 
+// On vérifie que l'artiste existe bien et on récupère ses informations
 Artist.prototype.matchArtist = function(data){
 
 
