@@ -40,6 +40,9 @@ App.prototype.init = function() {
 	// On crée une instance de la classe Home
 	this.pages.home = new Home();
 
+	// On crée une instance de la classe NotFound
+	this.pages.notFound = new NotFound();
+
 	// On crée une instance de la classe Galaxy
 	this.pages.galaxy = new Galaxy();
 
@@ -97,7 +100,7 @@ App.prototype.menuRoads = function(e) {
 App.prototype.toggleMenu = function(e){
 	e.preventDefault();
 	// Active state on the button
-	$(e.target).toggleClass('active');
+	this.menu.toggleClass('active');
 
 	// Show the this.footer / menu
 	this.footer.toggleClass('show');

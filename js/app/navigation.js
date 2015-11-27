@@ -10,6 +10,7 @@ Navigation.prototype.init = function(target) {
 	this.letter = app.pages.galaxy.letter;
 	this.beforeLetter = null;
 	this.artist = null;
+	this.selectingLetter = 0;
 	this.menuLetters = app.keyboardNav.find('.single-letter').find('ul');
 	this.allLetters = this.menuLetters.find('li');
 	this.menuArtist = app.keyboardNav.find('.single-artist').find('ul');
@@ -35,10 +36,10 @@ Navigation.prototype.bind = function(key) {
 				break;
 			// Flèche vers le Haut
 			case (key == 38):
-				// if ( app.currentPage.id == 'artist' )
-				// {
+				if ( ( app.currentPage.id == 'artist' || app.currentPage.id == 'galaxy' ) && this.selectingLetter == 0 )
+				{
 					this.previousArtist();
-				// }
+				}
 				break;
 			// Flèche vers la droite
 			case (key == 39):
@@ -46,10 +47,10 @@ Navigation.prototype.bind = function(key) {
 				break;
 			// Flèche vers le Haut
 			case (key == 40):
-				// if ( app.currentPage.id == 'artist' )
-				// {
+				if ( ( app.currentPage.id == 'artist' || app.currentPage.id == 'galaxy' ) && this.selectingLetter == 0 )
+				{
 					this.nextArtist();
-				// }
+				}
 				break;
 		}		
 	}
@@ -61,6 +62,7 @@ Navigation.prototype.letterNav = function() {
 	if ( this.status != 1 ){
 		clearInterval(this.interval);
 		this.timer();
+		this.selectingLetter = 1;
 		app.keyboardNav.fadeIn();
 		this.menuArtist.css('display','none');
 		this.menuLetters.css('display','block');
@@ -122,6 +124,7 @@ Navigation.prototype.nextLetter = function() {
 	this.timeShow = this.timeMax;
 
 	var IDLetter = this.tableLettersByLetter[this.letter];
+
 	if ( IDLetter < $(this.allLetters).length - 1 )
 	{
 		IDLetter ++ ;
@@ -170,7 +173,10 @@ Navigation.prototype.nextArtist = function() {
 	this.timeShow = this.timeMax;
 
 	IDArtist = this.tableArtistsByParseName[this.artist];
-
+	if ( IDArtist == undefined )
+	{
+		IDArtist = 0;
+	}
 	if ( IDArtist < this.tableArtistsByNum.length - 1 )
 	{
 		IDArtist ++ ;
@@ -195,6 +201,10 @@ Navigation.prototype.previousArtist = function() {
 	this.timeShow = this.timeMax;
 
 	IDArtist = this.tableArtistsByParseName[this.artist.replace(/'/g, "_")];
+	if ( IDArtist == undefined )
+	{
+		IDArtist = 0;
+	}
 	if ( IDArtist > 0 )
 	{
 		IDArtist -- ;
@@ -223,6 +233,7 @@ Navigation.prototype.closing = function(){
 Navigation.prototype.onAnimateOut = function(){
 
 	this.status = 0;
+	this.selectingLetter = 0;
 };
 
 // Initialise les tableaux qui permettent de définir la position d'une lettre dans l'aphabet
