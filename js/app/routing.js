@@ -53,10 +53,10 @@ $(document).ready(function(){
 
 	crossroads.bypassed.add(function(request){
 		if ( app.currentPage != null ) app.currentPage.hide();
-	   	console.log(request);
-		// app.pages.404.show();
 
-		// app.currentPage = app.pages.404;
+		app.pages.notFound.show();
+
+		app.currentPage = app.pages.notFound;
 	});
 
 	// Bind URL change

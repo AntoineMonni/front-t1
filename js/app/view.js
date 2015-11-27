@@ -65,7 +65,6 @@ View.prototype.bind = function() {
 
 	// Bind footer menu items to display right views
 	// this.footerItem.on('click', $.proxy(this.onFooterClick, this));
-
 	// Bind close button for all views
 	this.closeButton.on('click', $.proxy(this.onCloseView, this));
 
@@ -89,7 +88,6 @@ View.prototype.onCloseView = function(e) {
 	
 	// On intercepte le click
 	e.preventDefault();
-
 	// On exécute la fonction pour cacher la vue
 	this.hide();
 	this.goToCurrentGalaxy();
