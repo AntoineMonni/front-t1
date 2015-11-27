@@ -218,10 +218,22 @@
 		}
 	}
 
+// Navigation
 
+@media screen and (max-width: 980px) {
 
+	#keyboardNav {
+		.single-artist{
+			font-size: 80px;
+		}
+	}
+}
 
+@media screen and (max-width: 780px) {
 
-
-
-
+	#keyboardNav {
+		.single-artist{
+			font-size: 60px;
+		}
+	}
+}
