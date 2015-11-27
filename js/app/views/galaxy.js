@@ -235,6 +235,7 @@ Galaxy.prototype.formatData = function(data) {
 	var formattedData = []
 
 	for (var key in data) {
+
 		if (data.hasOwnProperty(key)){
 			formattedData.push({})
 			formattedData[formattedData.length - 1].name = key
@@ -388,6 +389,16 @@ Galaxy.prototype.drawOrbits = function() {
 			.attr("r", i * (self.width/2)/6)
 			.attr("cx", self.centerPosition.x)
 			.attr("cy", self.centerPosition.y)
+	}
+	for (var i = 4; i >= 0; i--) {
+	
+		this.svg
+			.append('text')
+			.html(i + 2009)
+			.attr("y", self.centerPosition.y + 3)
+			.attr("x", (self.width/2)/11 + self.centerPosition.x + i * (self.width/2)/6)
+			.attr("fill", "black")
+			.attr("class", "scale")
 	}
 	
 }
