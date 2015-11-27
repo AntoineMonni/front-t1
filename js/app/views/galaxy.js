@@ -329,7 +329,7 @@ Galaxy.prototype.setScale = function(data) {
 
 	this.scale.planetRadius = d3.scale.linear()
 		.domain([0, this.getMax(data, this.sortStatistic)])
-		.range([2, (this.width/2)/15]);
+		.range([(this.width/2)/25, (this.width/2)/15]);
 
 };
 
