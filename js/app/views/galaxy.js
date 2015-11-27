@@ -25,6 +25,7 @@ Galaxy.prototype.init = function() {
 	this.sortStatistic = "worksCount";
 
 	this.scale = {};
+	this.filters = ["videogames", "film", "series"];
 
 	View.apply(this, arguments);
 
@@ -44,6 +45,7 @@ Galaxy.prototype.createWidthAndHeight = function() {
 
 	this.width = widthAndHeight;
 	this.height = widthAndHeight;
+
 }
 
 // Méthode bind spécifique à Galaxy
@@ -74,9 +76,6 @@ Galaxy.prototype.onAnimateIn = function() {
 	
 	this.getJson(this.letter);
 
-
-	this.filterData = []
-
 	var self = this;
 
 };
@@ -106,6 +105,7 @@ Galaxy.prototype.getJson = function(param){
 	return $.getJSON( "/assets/json/"+letter+".json", function(response) {
 	
 		self.data = self.formatData(response);
+		self.filterData = self.data;
 		self.dataForArtist = response;
 	
 	}).then(function() {
@@ -123,74 +123,88 @@ Galaxy.prototype.getJson = function(param){
 		
 			e.preventDefault();
 
-			if ($(this).hasClass("underline")) {
-
-				$(this).parent().siblings().children().each(function(e){
-
-					if ($(this).attr('href') == "film") {
-
-						$(this).addClass("underline").addClass("blue");
-						self.updateData(self.data);
-
-					} else if ($(this).attr('href') == "videogames") {
-
-						$(this).addClass("underline").addClass("red");
-						self.updateData(self.data);
-
-					} else if ($(this).attr('href') == "series") {
-
-						$(this).addClass("underline").addClass("yellow");
-						self.updateData(self.data);
-
-					}
-
-				})
-
-				$(this).removeClass();
-
-				self.filter($(this).attr('href'));
+			if (self.contains(self.filters, $(this).attr('href'))) {
 				
+				self.removeFilter($(this).attr('href'), $(this));
+
 			} else {
 
-				if ($(this).attr('href') == "film") {
+				self.addFilter($(this).attr('href'), $(this));
+			
+			}
+				
+		})
 
-					$(this).addClass("underline").addClass("blue");
-					self.updateData(self.data);
+		self.domElem.find('.filters').unbind().bind().on('click', 'a', function(e)  {
 
-				} else if ($(this).attr('href') == "videogames") {
+			e.preventDefault();
 
-					$(this).addClass("underline").addClass("red");
-					self.updateData(self.data);
+			$(this).parent().parent().find(".filter").find("a").each(function() {
+				$(this).toggleClass("active")
+			})
 
-				} else if ($(this).attr('href') == "series") {
+			self.swapSortStatistic($(this).attr('href'))
 
-					$(this).addClass("underline").addClass("yellow");
-					self.updateData(self.data);
-
-				}
-
-			}				
 		})
 	
 	});
 };
 
-Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
+Galaxy.prototype.contains = function(table, element) {
+	for (var i = 0; i < table.length; i++) {
+		if (table[i] == element){
+			return true;
+		}
+	}
+	return false;
+}
 
-	this.sortStatistic = sortStatistic;
-	this.setScale(this.data);
-	$('svg').empty();
-	this.drawGalaxy(this.data);
+Galaxy.prototype.addFilter = function(filter, e) {
 
-};
+	this.filters.push(filter)
 
-Galaxy.prototype.filter = function(filter) {
+	e.removeClass("active").addClass("underline");
 
 	var filterData = []
 
 	for (var i = 0; i < this.data.length; i++) {
-		if (this.data[i].theme == filter) {
-			filterData.push(this.data[i])
+		for (var j = 0; j < this.filters.length; j++) {
+			if (this.data[i].theme == this.filters[j]) {
+				filterData.push(this.data[i])
+			}
+		}
+	}
+
+	this.filterData = filterData;
+
+	this.setScale(this.filterData);
+	$('svg').empty();
+	this.drawGalaxy(this.filterData)
+
+}
+
+Galaxy.prototype.removeFilter = function(filter, e) {
+
+	var newFilters = [];
+	for (var i = 0; i < this.filters.length; i++) {
+		if (this.filters[i] != filter) {
+			newFilters.push(this.filters[i]);
+		}
+	}
+
+	this.filters = newFilters;
+
+	e.addClass("active");
+
+
+
+	var filterData = []
+
+	for (var i = 0; i < this.data.length; i++) {
+		for (var j = 0; j < this.filters.length; j++) {
+			if (this.data[i].theme == this.filters[j]) {
+				filterData.push(this.data[i])
+			}
 		}
 	}
 
@@ -205,9 +219,20 @@ Galaxy.prototype.filter = function(filter) {
 Galaxy.prototype.updateData = function(data) {
 
 	this.data = data;
+	this.filterData = data;
 	this.setScale(this.data);
 	$('svg').empty();
 	this.drawGalaxy(this.data)
+
+};
+
+
+Galaxy.prototype.swapSortStatistic = function(sortStatistic) {
+
+	this.sortStatistic = sortStatistic;
+	this.setScale(this.filterData);
+	$('svg').empty();
+	this.drawGalaxy(this.filterData);
 
 };
 
@@ -216,6 +241,7 @@ Galaxy.prototype.formatData = function(data) {
 	var formattedData = []
 
 	for (var key in data) {
+
 		if (data.hasOwnProperty(key)){
 			formattedData.push({})
 			formattedData[formattedData.length - 1].name = key
@@ -297,7 +323,7 @@ Galaxy.prototype.setScale = function(data) {
 
 	this.scale.planetRadius = d3.scale.linear()
 		.domain([0, this.getMax(data, this.sortStatistic)])
-		.range([2, (this.width/2)/15]);
+		.range([(this.width/2)/25, (this.width/2)/15]);
 
 };
 
@@ -369,6 +395,16 @@ Galaxy.prototype.drawOrbits = function() {
 			.attr("r", i * (self.width/2)/6)
 			.attr("cx", self.centerPosition.x)
 			.attr("cy", self.centerPosition.y)
+	}
+	for (var i = 4; i >= 0; i--) {
+	
+		this.svg
+			.append('text')
+			.html(i + 2009)
+			.attr("y", self.centerPosition.y + 3)
+			.attr("x", (self.width/2)/11 + self.centerPosition.x + i * (self.width/2)/6)
+			.attr("fill", "black")
+			.attr("class", "scale")
 	}
 	
 }

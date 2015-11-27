@@ -1,7 +1,7 @@
 {
     "Infinite Continues": {
         "id": 41,
-        "worksCount": 1,
+        "worksCount": 203,
         "theme": "videogames",
         "url": [
             "infinitecontinues.net",
@@ -11,42 +11,42 @@
         "quote": "Je me demandais si MArio, Luigi, Mega Man, Master Chief et les autres étaient identifiables sous la forme de simples formes géométriques. La réponse est un vibrant OUI !",
         "works": [
             {
-                "url": "",
+                "url": "Infinitecontinues/luigi.jpg",
                 "year": 2009,
                 "name": "Luigi"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/mario.jpg",
                 "year": 2009,
                 "name": "Mario"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/toad.jpg",
                 "year": 2009,
                 "name": "Toad"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/pikachu.jpg",
                 "year": 2009,
                 "name": "Pikachu"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/sagat.jpg",
                 "year": 2009,
                 "name": "Sagat"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/vega.jpg",
                 "year": 2009,
                 "name": "Vega"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/bison.jpg",
                 "year": 2009,
                 "name": "Bison"
             },
             {
-                "url": "",
+                "url": "Infinitecontinues/e-honda.jpg",
                 "year": 2009,
                 "name": "E-Honda"
             }

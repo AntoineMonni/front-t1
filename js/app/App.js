@@ -136,8 +136,8 @@ App.prototype.toggleHelp = function(e){
 	if(app.currentPage.id != "home") {
 		
 		this.helpButton.removeClass('active');
-		if($(e.target).hasClass('show')) {
-			$(e.target).removeClass('show');
+		if(this.help.hasClass('show')) {
+			this.help.removeClass('show');
 		}
 	}
 
