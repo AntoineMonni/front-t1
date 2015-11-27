@@ -9,7 +9,6 @@ $(document).ready(function(){
 	// home
 	crossroads.addRoute('/', function(){
 		if ( app.currentPage != null ) app.currentPage.hide();
-		console.log('proc');
 		app.pages.home.show();
 
 		app.currentPage = app.pages.home;
@@ -42,7 +41,6 @@ $(document).ready(function(){
   		if ( app.currentPage != null ) app.currentPage.hide();
   		var url = History.getState().hash;
   		var param = url.substring(1);
-  		console.log(param);
 
 		app.pages[param].show();
 

@@ -27,12 +27,18 @@ Navigation.prototype.bind = function(key) {
 		// On lance la bonne fonction selon la touche
 		switch(true) {
 			// Si l'utilisateur a cliqué sur une touche [A-Z]
-			case (key > 64 && key < 91): 
-				this.displaySingleLetter(key);
+			case (key > 64 && key < 91):
+				if ( app.currentPage.id != 'home' )
+				{
+					this.displaySingleLetter(key);
+				}
 				break;
 			// Flèche vers la gauche
 			case (key == 37):
-				this.previousLetter();
+				if ( app.currentPage.id != 'home' )
+				{
+					this.previousLetter();					
+				}
 				break;
 			// Flèche vers le Haut
 			case (key == 38):
@@ -43,7 +49,10 @@ Navigation.prototype.bind = function(key) {
 				break;
 			// Flèche vers la droite
 			case (key == 39):
-				this.nextLetter()
+				if ( app.currentPage.id != 'home' )
+				{
+					this.nextLetter();
+				}
 				break;
 			// Flèche vers le Haut
 			case (key == 40):
