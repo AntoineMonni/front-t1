@@ -1,0 +1,466 @@
+{
+    "Calvin Ma": {
+        "id": 52,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "calvinmasculpts.com"
+        ],
+        "presentation": "Sculpteur vivant et travaillant à San Francisco, Calvin Ma étudie la sculpture à l'académie des Arts Universitaires et laisse bien volontiers son travail être influencé par sa passion de toujours pour les jouets et les figurines.",
+        "quote": "Mon travail revien ttoujours à la passion des enfants pour l'exploration créant et recréant des aventures captivantes avec leurs jouets préférés.",
+        "works": [
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Wolverine"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Batman"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "He-Man"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Lion-O"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Captain America"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Spider-Man"
+            }
+        ]
+    },
+    "Yves-José": {
+        "id": 53,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "ym-graphix.com"
+        ],
+        "presentation": "Graphiste français travaillant en freelance, Yves-Jo Malgorn se nourrit depuis toujours de plusieurs univers qu'ils soient musicaux, cinématographiques ou littéraires. Cet artiste est aisni un grand admirateur de science fiction, de mangas, d'aimation ou encore de design graphique ce qui se ressent énormément dans ses oeuvres.",
+        "quote": "J4ai été programmé pour être un geek, jouer aux jeux vidéos, regarder des films cultes, lire des mangas et comics, dessiner des robtos...",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Terminatrix"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "C-3PO"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Blender"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Arale"
+            }
+        ]
+    },
+    "Marko Manev": {
+        "id": 54,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "markomanev.com"
+        ],
+        "presentation": "Habitant en Macédoine, MArko MAnev n'a pas touché un crayon avant toucher un comics entre ses mains. Ce catalyseur agit comme une révélation puisqu'entre ses activités de sculpteur, de peintre, de graphiste ou encore d'écrivain, il est désormais impossible de l'arrêter.",
+        "quote": "Tout ça à cause des comics ! Et de Star Wars bien sûr.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Spider-Man"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Silver Surfer"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Dr.Manhattan"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Icerman"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Nite Owl"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Cyclops"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Daredevil"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Iron Man"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Galactus"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Minimalist Magneto"
+            }
+        ]
+    },
+    "Manuhell": {
+        "id": 55,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "manuhell.deviantart.com"
+        ],
+        "presentation": "De son véritable nom Manuel Augusto Dishinger Moura, Manuhell vit à Sao Paulo. Enfant des années 1980 et 1990, il s'est pris d'affection pour la culture qui allait plus tard devenir le geekdom. Après avoir longtemps dessiné ses héros préférés, il travaille sur ses propres univers mais ne résiste pas toujours à la tentation de redésigner les surhommes qui peuplaient autrefois ses rêves.",
+        "quote": "La culture geek : le lien qui unissait tous les gosses qui n'aimaient pas le football ou les univers normaux.",
+        "works": [
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Blanka Zombie"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Cammy Zombie"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Vega Zombie"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Ken Zombie"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Ryu Zombie"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Sagat Zombie"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Akuma Zombie"
+            }
+        ]
+    },
+    "Jacob McAlister": {
+        "id": 56,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "youfoundjacob.com"
+        ],
+        "presentation": "Jacob McAlister est un illustrateur qui voue un culte aux univers de George Lucas. Il est tellement passionné qu'il a été jusqu'à baptiser son site Internet d'après l'un des plats proposés au Docteur Jones dans Indiana Jones et le Temple Maudit !",
+        "quote": "Un jour, c'est évident, les geeks domineront le monde. Quand ce jour arrivera j'accepterai volontier le titre de porte parole officile.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Dichotomy"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Grand Moff Tarkin Icon"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Stormtrooper Icon"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "The Avengers"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The Womp Rat Pack"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Grail Knight"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Tri Force and master sword"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Boba Fett"
+            }
+        ]
+    },
+    "Mister Hope": {
+        "id": 57,
+        "worksCount": 1,
+        "theme": "series",
+        "url": [
+            "misterhope.com"
+        ],
+        "presentation": "Vivant dans la charmante bourgade britannique de Buxton, Mister Hope a autant qu'il s'en souvienne toujours dessinné. Travaillant principalement à l'aquarelle, on lui a lancé un défi : dessiner un personnage par jour pendant un an. De ce pari saugrenu naîtra un livre. Il puisse son inspiration dans les oeuvres de Ti Burton à celles de Quentin Blake en passant par le travail de Maurice Sendak.",
+        "quote": "Mon art vient du monde dans lequel je vis : un monde dans lequel les souris parlent, où la magie est réelle et où Batman combat le crime chaque jour.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Ghostbuster"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Cowabunga"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Billions of Blistering Blue Barnacles"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Winter is Coming"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The Dude"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Jim Henson"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Indiana Jones headshots"
+            },
+            {
+                "url": "",
+                "year": 2010,
+                "name": "Boba vs the Sarlacc"
+            }
+        ]
+    },
+    "Nacho Molina": {
+        "id": 58,
+        "worksCount": 1,
+        "theme": "series",
+        "url": [
+            "nachomolinablog.blogspot.com"
+        ],
+        "presentation": "Diplômé de l'université des Arts de Carlos à Valence, Nacho Molina travaille en tant que peintre digital pour des développeurs de jeux comme World of Warcraft, Game of Thrones, Le Segineur des Anneaux ou encore l'Appel du cihulhu. Il a depuis quitté son Espagne pour vivre à EastBourne en Angleterre.",
+        "quote": "Je suis né en 1985 et j'ai grandi dans les années 1990. Je suppose que vous savez tous ce que ca veut dire...",
+        "works": [
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Babidi and Bu"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "The Feast of Fools"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Chasing the Green Goblin"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Cell"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Weapon-X"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Sunset Riders Cornano"
+            },
+            {
+                "url": "",
+                "year": 2009,
+                "name": "Sunset Riders Steve"
+            }
+        ]
+    },
+    "Simon Monk": {
+        "id": 59,
+        "worksCount": 1,
+        "theme": "film",
+        "url": [
+            "simonmonk.com"
+        ],
+        "presentation": "Simon MOnk est un peintre britannique ayant ensigné l'histoire de l'art à l'unviersité. Il se remet à la peinture après 15 ans d'abstinence et trouve rapidement son public grâce à ses séries sur les comics US et sa technique inspirée de la Renaissance. Simon a aujourd'hui cessé d'enseigner et travaille dans son studio à plein temps.",
+        "quote": "J'ai découvert le monde fascinant des comics en 1973 et je n'ai plus jamais arrêté d'en lire. Passionné également par la rennaissance, j'ai réussi à mixer ces obsessions et j'espère queje continuerai longtemps.",
+        "works": [
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Bruce Wayne"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Dr Bruce Banner"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Clark Kent"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Dr Donad Blake"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Peter Parker"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Steve Rogers"
+            },
+            {
+                "url": "",
+                "year": 2012,
+                "name": "Tim Drake"
+            }
+        ]
+    },
+    "Michael Myers": {
+        "id": 60,
+        "worksCount": 1,
+        "theme": "videogames",
+        "url": [
+            "drawsgood.com",
+            "drawsgood.tumblr.com"
+        ],
+        "presentation": "Vivant et travaillant à Waterloo, dans l'Iowa, Mike Myers travaille comme illustrateur et graphiste freelance et il s'illustre également comme animateur 2D,3D pour Phantom EFX. Ce grand fan de jeux vidéos avoue être très influencé par les jeux de rôles et les univers steampunk.",
+        "quote": "Le geekdom, c'est un endroit rempli de nostalgie dans lequel je me réfugie pour échapper au chaos du monde réel.",
+        "works": [
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Steve Jobs"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Big Daddy"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Killzone"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Droids"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Han & Chewie"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Jabba"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "I'm your father. Really."
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Dead Space"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Gordon Freeman"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Samus"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Bounty Hunter"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "The Chief"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Marcus"
+            },
+            {
+                "url": "",
+                "year": 2011,
+                "name": "Doctor Who #4"
+            }
+        ]
+    }
+}
