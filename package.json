@@ -4,7 +4,8 @@
   "description": "http://geek-art.borislaporte.com/",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp --gulpfile ./gulpfile.js js_libs js_app sass handlebars"
   },
   "repository": {
     "type": "git",
